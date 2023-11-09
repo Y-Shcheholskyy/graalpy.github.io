@@ -38,4 +38,8 @@ exclude:
   - Gemfile.lock
   - vendor
 
-minima:
+header_pages:
+  - about.md
+  - docs.md
+  - learn.md
+  - graal-stack.md

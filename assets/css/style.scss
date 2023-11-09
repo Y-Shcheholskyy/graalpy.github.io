@@ -3,13 +3,14 @@
 ---
 
 @import
+  "minima/layout",
   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
   "minima/initialize";
 
-  .text-color-1 {
-    color: aqua;
-  }
+  // .text-color-1 {
+  //   color: aqua;
+  // }
 
-  .text-test {
-    color: #F29111;
-  }
+  // .text-test {
+  //   color: #F29111;
+  // }

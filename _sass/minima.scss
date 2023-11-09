@@ -1,6 +1,9 @@
 @charset "utf-8";
 
 // Import partials.
-@import 
-"minima/layout/home"
+@import "minima/utilities/variables",
+"minima/utilities/mixins",
+
+"minima/layout/home",
+"minima/layout/docs"
 ;

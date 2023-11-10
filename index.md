@@ -16,7 +16,7 @@ See the [FAQ](FAQ.md) for commonly asked questions about this implementation.
   <tr>
     <td>If you are new to GraalPy, we suggest you start here: <a href="getting_started/">Getting Started</a>.</td>
     <td>If you're looking for help with some of the features of GraalPy, look through the <a href="guides/">Guides</a> or try some of the <a href="examples/">Examples</a>.</td>
-    <td>Or, if you're looking for reference material, there's lots in Reference.</td>
+    <td>Or, if you're looking for reference material, there's lots in <a href="reference/">Reference</a>.</td>
     <td>Stuck? Try Troubleshooting GraalPy.</td>
   </tr>
 </table>

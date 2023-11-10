@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Python Code Parsing and pyc Files
-permalink: /parser_details/
+permalink: /reference/parser_details/
 ---
-# Python Code Parsing and pyc Files
+This document describes how Python files are parsed by GraalPy.
 
-This guide describes how Python files are parsed by GraalPy.
+TODO: NEEDS A TOC
 
 ## Creating and Managing pyc Files
 
@@ -33,7 +33,7 @@ Note that if you use _.pyc_ files, you must allow write-access to GraalPy at lea
 Otherwise, the regeneration of source code files will fail and every import will have the overhead of accessing each old _.pyc_ file, parsing the code, serializing it, and trying (and failing) to write out a new _.pyc_ file.
 
 The directory structure created for _.pyc_ files is as follows:
-```python
+```
 top_directory
   __pycache__
     sourceA.graalpy.pyc

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Astronauts
-permalink: /examples/astronauts/
+title: Using the Requests Module in GraalPy
+permalink: /examples/requests_module/
 ---
 
 This example provides a demonstration of using the Python [`requests`](https://pypi.org/project/requests/) module to call a REST API.
@@ -10,11 +10,11 @@ This example provides a demonstration of using the Python [`requests`](https://p
 (For more information, see [Getting Started](/getting_started/).)
 
 2. Install the `requests` package using `pip`:
-
+    
     ```bash
     % pip install requests
     ```
-
+  
 3. Copy the following contents into a file named _astronauts.py_:
 
     ```python

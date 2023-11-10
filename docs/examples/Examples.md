@@ -10,7 +10,7 @@ However:
 * [Fibonacci](/examples/fibonacci/)
   * [Standalone Fibonacci](/examples/standalone_fibonacci/)
 * [Styled Text](/examples/styled_text/)
-* [Astronauts](/examples/astronauts/)
+* [Using the Requests Module](/examples/requests_module/)
   * [Standalone Astronauts](/examples/standalone_astronauts/)
 * [Currency Exchange](/examples/currency_exchange/)
   * [Standalone Currency Exchange](/examples/standalone_currency_exchange/)

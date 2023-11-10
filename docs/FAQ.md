@@ -1,6 +1,5 @@
 ---
 layout: page
-toc_group: python
 title: FAQ
 permalink: /faq/
 ---

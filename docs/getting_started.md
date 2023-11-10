@@ -4,6 +4,10 @@ title: Getting Started
 permalink: /getting_started/
 ---
 
+<h4>Table of Contents</h4>
+* this unordered seed list will be replaced by toc as unordered list
+{:toc}
+
 ## Installing GraalPy
 
 ### Linux and macOS
@@ -78,5 +82,6 @@ Hello World!
 ```
 
 ### Related Documentation
+{:.no_toc}
 * [Creating a Virtual Environment](/guides/creating_a_virtual_environment/)
 * [Running a Python Application](/guides/running_a_python_application/)

@@ -5,7 +5,9 @@ permalink: /reference/parser_details/
 ---
 This document describes how Python files are parsed by GraalPy.
 
-TODO: NEEDS A TOC
+<h4>Table of Contents</h4>
+* this unordered seed list will be replaced by toc as unordered list
+{:toc}
 
 ## Creating and Managing pyc Files
 

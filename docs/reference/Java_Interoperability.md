@@ -4,7 +4,9 @@ title: Java Interoperability
 permalink: /reference/java_interoperability/
 ---
 
-TODO: THIS NEEDS A TOC
+<h4>Table of Contents</h4>
+  * this unordered seed list will be replaced by toc as unordered list
+  {:toc}
 
 ## The Java Host Interop API
 

@@ -9,7 +9,9 @@ These are described below.
 
 For more information about these tools, use the command `graalpy --help:tools`.
 
-TODO: THIS NEEDS A TOC
+<h4>Table of Contents</h4>
+  * this unordered seed list will be replaced by toc as unordered list
+  {:toc}
 
 ## CPU Sampler
 Use the `--cpusampler` command-line option to take a CPU sample.
@@ -21,7 +23,8 @@ For example:
 
 You should see output similar to:
 
-TODO: THIS NEEDS TO COLLAPSE/EXPAND
+{::options parse_block_html="true" /}
+<details><summary markdown="span">CPU Sampler Output (Click to expand)</summary>
 ```
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 Sampling Histogram. Recorded 564 samples with period 10ms. Missed 235 samples.
@@ -393,6 +396,8 @@ Thread[main,5,main]
  read_chunked                                                               ||               50ms   0.9% ||                0ms   0.0% || <venv-dir>/lib/python3.10/site-packages/urllib3/response.py~789-857:27123-29805
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 ```
+</details>
+{::options parse_block_html="false" /}
 
 ## CPU Tracer
 
@@ -405,7 +410,8 @@ For example:
 
 You should see output similar to:
 
-TODO: THIS NEEDS TO COLLAPSE/EXPAND
+{::options parse_block_html="true" /}
+<details><summary markdown="span">CPU Tracer Output (Click to Expand)</summary>
 ```
 --------------------------------------------------------------------------------------------------------------------
 Tracing Histogram. Counted a total of 1135 element executions.
@@ -528,6 +534,11 @@ Tracing Histogram. Counted a total of 1135 element executions.
  PyModule_AddType                    |             1   0.1% |             1 100.0% |             0   0.0% | modsupport_shared.c~70:0
 --------------------------------------------------------------------------------------------------------------------
 ```
+</details>
+{::options parse_block_html="false" /}
+
+
+
 
 ## Memory Tracer
 
@@ -540,8 +551,9 @@ For example:
 
 You should see output similar to:
 
-TODO: THIS NEEDS TO COLLAPSE/EXPAND
+{::options parse_block_html="true" /}
 
+<details><summary markdown="span">Memory Tracer Output (Click to Expand)</summary>
 ```
 ----------------------------------------------------------------------------
  Location Histogram with Allocation Counts. Recorded a total of 565 allocations.
@@ -578,4 +590,8 @@ TODO: THIS NEEDS TO COLLAPSE/EXPAND
  PyDict_DelItemString         |        0   0.0% |        1   0.2% | dictobject.c~109:0
 ----------------------------------------------------------------------------
 ```
+</details>
+{::options parse_block_html="false" /}
+
+
 

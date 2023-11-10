@@ -12,7 +12,7 @@ It is based on the [Fibonacci](/examples/fibonacci/) example.
 (For example, on Linux and macOS, use the command `unset JAVA_HOME`.)
 
 3. Create a native executable based on your _fib.py_ script, as shown below.
-(For more information about the command-line options, see [Standalone Applications with Python]().)
+(For more information about the command-line options, see [Standalone Python Applications](/reference/standalone-applications/).)
 
     ```bash
     % graalpy -m standalone native \
@@ -37,4 +37,4 @@ It is based on the [Fibonacci](/examples/fibonacci/) example.
 
 ### Related Documentation
 * [Fibonacci](/examples/fibonacci/)
-* [Standalone Applications with Python]()
+* [Standalone Python Applications](/reference/standalone-applications/)

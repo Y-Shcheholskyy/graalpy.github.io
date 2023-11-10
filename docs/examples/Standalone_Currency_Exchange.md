@@ -13,7 +13,7 @@ It is based on the [Currency Exchange](/examples/currency_exchange/) example.
 (For example, on Linux and macOS, use the command `unset JAVA_HOME`.)
 
 3. Create a native executable based on your _currency\_exchange.py_ script, as shown below.
-(For more information about the command-line options, see [Standalone Applications with Python]().)
+(For more information about the command-line options, see [Standalone Python Applications](/reference/standalone-applications/).)
 
     ```bash
     % graalpy -m standalone native \
@@ -34,4 +34,4 @@ It is based on the [Currency Exchange](/examples/currency_exchange/) example.
 
 ### Related Documentation
 * [Currency Exchange](/examples/currency_exchange/)
-* [Standalone Applications with Python]()
+* [Standalone Python Applications](/reference/standalone-applications/)

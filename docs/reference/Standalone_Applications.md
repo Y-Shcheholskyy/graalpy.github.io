@@ -22,7 +22,7 @@ Suppose there is a simple Python script, _my_script.py_, that does some useful w
 To distribute it as a standalone native binary, run the following command:
 
 ```bash
-graalpy -m standalone native \
+% graalpy -m standalone native \
       --module my_script.py \
       --output my_binary
 ```
@@ -36,7 +36,7 @@ You can also generate a Java-Python polyglot project skeleton.
 To achieve this, run the `polyglot_app` subcommand of GraalPy's `standalone` module:
 
 ```bash
-graalpy -m standalone polyglot_app --output-directory MyJavaApplication
+% graalpy -m standalone polyglot_app --output-directory MyJavaApplication
 ```
 
 It creates a Java project _MyJavaApplication_. It includes a _pom.xml_ file that makes it easy to generate a GraalVM native executable with Maven.

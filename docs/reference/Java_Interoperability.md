@@ -69,6 +69,35 @@ True
 True
 ```
 
+## Embedding GraalPy in a Java Application
+
+The best way to embed GraalPy is to use the [GraalVM SDK Polyglot API](https://www.graalvm.org/sdk/javadoc/org/graalvm/polyglot/package-summary.html).
+
+As of GraalVM for JDK 21, all necessary artifacts can be downloaded directly from Maven Central. 
+All artifacts relevant to embedders can be found in the Maven dependency group [`org.graalvm.polyglot`](https://central.sonatype.com/namespace/org.graalvm.polyglot).
+
+To embed GraalPy into a Java host application, add GraalPy as a Maven dependency or explicitly put the JAR on the module path. Below is the Maven configuration for a Python embedding:
+```xml
+<dependency>
+    <groupId>org.graalvm.polyglot</groupId>
+    <artifactId>polyglot</artifactId>
+    <version>23.1.0</version>
+</dependency>
+<dependency>
+    <groupId>org.graalvm.polyglot</groupId>
+    <artifactId>python</artifactId>
+    <version>23.1.0</version>
+    <scope>runtime</scope>
+    <type>pom</type>
+</dependency>
+```
+
+The `<scope>runtime</scope>` parameter is only necessary if you need the runtime dependency.
+
+Depending on which supported JDK you run embedded GraalPy, the level of optimizations varies, as described [here](https://www.graalvm.org/reference-manual/embed-languages/#runtime-optimization-support).
+
+Learn more in a dedicated [GraalPy Interoperability guide](Interoperability.md). See also the [Embedding Languages documentation](https://www.graalvm.org/reference-manual/embed-languages/) on how a guest language like Python can possibly interact with Java.
+
 ## Including packages in a Java application
 
 When using Python from Java via the GraalVM embedder APIs, some preparation is required to make packages available to the runtime.

@@ -21,11 +21,11 @@ If it succeeds without errors, you should already be able to run `mx python` and
 If you just want to copy and paste some commands, these should get you started:
 
 ```bash
-git clone https://github.com/graalvm/mx.git
-git clone https://github.com/graalvm/graalpython.git
-cd graalpython
-../mx/mx build
-../mx/mx python -c "print(42)"
+% git clone https://github.com/graalvm/mx.git
+% git clone https://github.com/graalvm/graalpython.git
+% cd graalpython
+% ../mx/mx build
+% ../mx/mx python -c "print(42)"
 ```
 
 For development, we recommend running `mx ideinit` next.

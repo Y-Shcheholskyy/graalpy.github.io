@@ -26,7 +26,7 @@ In order to work better with existing Python code, the standard library `trace` 
 So, for example, you trace a script as follows:
 
 ```bash
-graalpy -m trace -m -c -s my_script.py
+% graalpy -m trace -m -c -s my_script.py
 ```
 
 This works in the same way as CPython.
@@ -40,14 +40,14 @@ The `_lsprof` built-in module is implemented using the GraalVM `cpusampler` tool
 Not all profiling features are currently supported, but basic profiling works. For example:
 
 ```bash
-graalpy -m cProfile -s calls -m ginstall --help
+% graalpy -m cProfile -s calls -m ginstall --help
 ```
 
 The interactive exploration of a stats output file also works:
 
 ```bash
-graalpy -m cProfile -o ginstall.profile -m ginstall --help
-graalpy -m pstats ginstall.profile
+% graalpy -m cProfile -o ginstall.profile -m ginstall --help
+% graalpy -m pstats ginstall.profile
 ginstall.profile%
 callers
 [...]
@@ -56,12 +56,12 @@ callers
 The `profile` module works as well:
 
 ```bash
-graalpy -m profile -s calls -m ginstall --help
+% graalpy -m profile -s calls -m ginstall --help
 ```
 
 or
 
-```bash
+```python
 >>> import profile
 >>> profile.run('l = []; l.append(1)')
          5 function calls in 0.002 seconds

@@ -94,9 +94,9 @@ To embed GraalPy into a Java host application, add GraalPy as a Maven dependency
 
 The `<scope>runtime</scope>` parameter is only necessary if you need the runtime dependency.
 
-Depending on which supported JDK you run embedded GraalPy, the level of optimizations varies, as described [here](https://www.graalvm.org/reference-manual/embed-languages/#runtime-optimization-support).
+Depending on which supported JDK you run embedded GraalPy, the level of optimizations varies, as described [here](https://www.graalvm.org/latest/reference-manual/embed-languages/#runtime-optimization-support).
 
-Learn more in a dedicated [GraalPy Interoperability guide](Interoperability.md). See also the [Embedding Languages documentation](https://www.graalvm.org/reference-manual/embed-languages/) on how a guest language like Python can possibly interact with Java.
+Learn more in a dedicated [GraalPy Interoperability guide](/reference/interoperability). See also the [Embedding Languages documentation](https://www.graalvm.org/latest/reference-manual/embed-languages/) on how a guest language like Python can possibly interact with Java.
 
 ## Including packages in a Java application
 

@@ -4,10 +4,12 @@ title: Debugging a Python Application
 permalink: /guides/debugging_a_python_application/
 ---
 
-GraalPy is incomplete and cannot launch the standard Python debugger pdb.
-Instead, the standard Python built-in `breakpoint()` function works using GraalVM’s Chrome Inspector.
+The standard python debugger `pdb` is supported on GraalPy. 
+Refer to the official [PDB documentation](https://docs.python.org/3/library/pdb.html) for usage.
+The built-in `breakpoint()` function uses `pdb` by default.
+
+To enable [GraalVM's Chrome Inspector](https://www.graalvm.org/latest/tools/chrome-debugger/) debugger, pass the `--inspect` command-line option.
 You can inspect variables, set watch expressions, interactively evaluate code snippets, and so on.
-However, this only works if you pass the `--inspect` command-line option (or some other inspect option).
 
 Follow the steps below to debug the [Currency Exchange](/examples/currency_exchange/) example.
 
@@ -58,7 +60,7 @@ Follow the steps below to debug the [Currency Exchange](/examples/currency_excha
 5. Open your Chrome browser and enter the URL provided.
 Now you can inspect the stack, variables, evaluate variables, and selected expressions in a tooltip, and so on.
 For example:
-![Chrome Inspector](/guides/assets/Chrome_Inspector.png)
+    ![Chrome Inspector](/docs/guides/assets/Chrome_Inspector.png)
 
 ### Related Documentation
 * [GraalVM’s Chrome Inspector](https://www.graalvm.org/latest/tools/chrome-debugger/)

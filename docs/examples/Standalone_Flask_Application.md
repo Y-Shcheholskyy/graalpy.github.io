@@ -15,7 +15,7 @@ This example provides a demonstration of creating a standalone [Flask](https://f
     % pip install flask
     ```
 
-3. Copy the following content into a file named _hello\_flask.py_. 
+3. Copy the following contents into a file named _hello\_flask.py_. 
 It is adapted from the Flask [Quickstart](https://flask.palletsprojects.com/en/3.0.x/quickstart/) documentation.
     >Note: This code takes a slightly unconventional approach.
     Instead of using Flask's built-in application discovery behavior, the code explicitly calls the `main` function.

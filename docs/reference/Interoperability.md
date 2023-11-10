@@ -1,10 +1,13 @@
 ---
 layout: page
 title: Interoperability
-permalink: /interoperability/
+permalink: /reference/interoperability/
 ---
-# Interoperability
 The best way to embed GraalPy is to use the [GraalVM SDK Polyglot API](https://www.graalvm.org/sdk/javadoc/org/graalvm/polyglot/package-summary.html).
+
+<h4>Table of Contents</h4>
+* this unordered seed list will be replaced by toc as unordered list
+{:toc}
 
 ## The Polyglot API
 
@@ -107,8 +110,9 @@ To run this example, first install the required R library:
 R -e 'install.packages("https://www.rforge.net/src/contrib/jpeg_0.1-8.tar.gz", repos=NULL)'
 ```
 
-This example also uses [image_magix.py](https://www.graalvm.org/resources/img/python/image_magix.py) and works
-on a JPEG image input (you can try with [this image](https://www.graalvm.org/resources/img/python_demo_picture.jpg)). These files have to be in the same directory that the script below is located in and run from.
+This example also uses [image_magix.py](/docs/reference/assets/image_magix.py) and works
+on a JPEG image input (you can try with [this image](/docs/reference/assets/python_demo_picture.jpg)).
+These files have to be in the same directory that the script below is located in and run from.
 ```python
 import polyglot
 import sys

@@ -18,7 +18,7 @@ If the same module is imported again, then the existing _.pyc_ file is used.
 That means that there are no _.pyc_ files for source files that were not executed (imported) yet.
 The creation of _.pyc_ files is achieved entirely through the [FileSystem API](https://www.graalvm.org/sdk/javadoc/org/graalvm/polyglot/io/FileSystem.html), so that embedders can manage file system access.
 
-GraalPy never deletes a _.pyc_ file.
+> Note: GraalPy never deletes a _.pyc_ file.
 
 Every subsequent execution of a script will reuse existing _.pyc_ files, or will generate new ones.
 A _.pyc_ file is regenerated if the timestamp or hashcode of the original source file is changed.
@@ -53,8 +53,7 @@ This directory may store _.pyc_ files created with different versions of Python 
 
 _.pyc_ files are largely managed automatically by GraalPy in a manner compatible to CPython. GraalPy provides options similar to CPython to specify the location of the _.pyc_ files, and if they should be written at all, and both of these options can be changed by guest code.
 
-The creation of _.pyc_ files can be controlled in the same way as CPython
-(c.f. https://docs.python.org/3/using/cmdline.html):
+The creation of _.pyc_ files can be controlled in the [same way as CPython](https://docs.python.org/3/using/cmdline.html):
 
   * The GraalPy launcher (`graalpy`) reads the `PYTHONDONTWRITEBYTECODE`
     environment variable. If this is set to a non-empty string, Python will not

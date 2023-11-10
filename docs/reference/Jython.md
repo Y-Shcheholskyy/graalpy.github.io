@@ -1,12 +1,10 @@
 ---
 layout: page
 title: Jython Compatibility
-permalink: /jython/
+permalink: /reference/jython/
 ---
-# Jython Migration Guide
 
-Most Jython code that uses Java integration will be based on a
-stable Jython release, and these only come in Python 2.x versions.
+Most Jython code that uses Java integration will be based on a stable Jython release, and these only come in Python 2.x versions.
 GraalPy, in contrast, is only targeting Python 3.x.
 GraalPy does not provide full compatibility with these earlier 2.x versions of Jython.
 Thus, a significant migration step will have to be taken to migrate all your code to Python 3.
@@ -15,6 +13,10 @@ For Jython-specific features, follow this document to learn about migration to G
 
 Note that some features of Jython have a negative impact on runtime performance, and are disabled by default.
 To make migration easier, you can enable some features using a command line option: `--python.EmulateJython`.
+
+<h4>Table of Contents</h4>
+  * this unordered seed list will be replaced by toc as unordered list
+  {:toc}
 
 ## Importing Java Packages
 

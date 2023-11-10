@@ -537,9 +537,6 @@ Tracing Histogram. Counted a total of 1135 element executions.
 </details>
 {::options parse_block_html="false" /}
 
-
-
-
 ## Memory Tracer
 
 Use the `--memtracer --memtracer.TraceStatements` command-line options to trace memory usage.

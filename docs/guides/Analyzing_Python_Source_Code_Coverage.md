@@ -11,6 +11,7 @@ permalink: /guides/analyzing_coverage/
 ## Coverage
 
 GraalPy provides a _coverage_ feature, using the `--coverage` command-line option.
+(For details, use the `graalpy --help:tools` command.)
 For example:
 
 ```bash
@@ -275,6 +276,10 @@ Code coverage histogram.
 ## Trace
 
 The standard Python `trace` module is also provided.
+> Note: This works in the same way as CPython.
+The programmatic API also works, with some limitations: 
+it does not currently track calls, only line counts and called functions.
+
 For example: 
 
 ```bash

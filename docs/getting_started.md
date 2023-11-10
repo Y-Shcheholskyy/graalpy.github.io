@@ -71,7 +71,7 @@ Hello World!
 
 ### Invoke a Python Script
 
-Copy the following content into a file named _helloworld.py_:
+Copy the following contents into a file named _helloworld.py_:
 
 ```python
 print("Hello World!")

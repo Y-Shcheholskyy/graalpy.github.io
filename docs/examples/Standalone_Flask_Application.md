@@ -2,9 +2,9 @@
 layout: page
 title: Standalone Flask Application
 permalink: /examples/standalone_flask_application/
+description: This example provides a demonstration of creating a standalone [Flask](https://flask.palletsprojects.com/en/3.0.x/) application, using GraalVM Native Image.
 ---
-
-This example provides a demonstration of creating a standalone [Flask](https://flask.palletsprojects.com/en/3.0.x/) application, using GraalVM Native Image.
+{{ page.description }}
 
 1. Install `graalpy` and [create a Virtual Environment](/guides/creating_a_virtual_environment/), then activate it. 
 (For more information, see [Getting Started](/getting_started/).)

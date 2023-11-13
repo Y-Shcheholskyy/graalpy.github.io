@@ -3,18 +3,16 @@ layout: page
 title: Reference
 permalink: /reference/
 ---
+Lorem Ipsum
 
-A list of references. This should not be manually created.
+{% comment %}
+  The list of docs for this page is in _data/reference_list.yml
+{% endcomment %}
 
-However:
-* [GraalPy Distributions](/reference/distributions/)
-  * [Windows Distribution](/reference/windows_distribution/)
-* [GraalPy Options](/reference/options/)
-* [Interoperability](/reference/interoperability/)
-  * [Java Interoperability](/reference/java_interoperability/)
-* [Jython Migration Guide](/reference/jython/)
-* [Operating System Interfaces](/reference/os_interfaces/)
-* [Python Code Parsing and pyc Files](/reference/parser_details/)
-* [Native GraalPy Executables](/reference/native-executables/)
-* [Standalone Python Applications](/reference/standalone-applications/)
-* [Tooling Support for GraalPy](/reference/tooling/)
+
+<ul>
+   {% for item in site.data.reference_list.docs %}
+      {%- assign reference_page = site.pages | where: "path", item | first -%}
+      <li><a class="page-link" href="{{ reference_page.url | relative_url }}">{{ reference_page.title | escape }}</a></li>
+   {% endfor %}
+</ul>

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Jython Compatibility
+title: Jython Migration Guide
 permalink: /reference/jython/
 ---
 

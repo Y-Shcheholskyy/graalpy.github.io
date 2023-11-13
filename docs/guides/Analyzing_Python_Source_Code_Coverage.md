@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Analyze Python Source Code Coverage
+title: Analyzing Python Source Code Coverage
 permalink: /guides/analyzing_coverage/
 ---
-
 <h4>Table of Contents</h4>
 * this unordered seed list will be replaced by toc as unordered list
 {:toc}

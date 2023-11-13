@@ -2,9 +2,10 @@
 layout: page
 title: Pandas DataFrame
 permalink: /examples/pandas_dataframe/
+description: This example provides a demonstration of using the Python [`requests`](https://pypi.org/project/requests/) and [`pandas`](https://pandas.pydata.org/) modules to manipulate data from an open source dataset provided by the US government.
 ---
+{{ page.description }}
 
-This example provides a demonstration of using the Python [`requests`](https://pypi.org/project/requests/) and [`pandas`](https://pandas.pydata.org/) modules to manipulate data from an open source dataset provided by the US government.
 
 1. Install `graalpy` and [create a Virtual Environment](/guides/creating_a_virtual_environment/), then activate it. 
 (For more information, see [Getting Started](/getting_started/).)

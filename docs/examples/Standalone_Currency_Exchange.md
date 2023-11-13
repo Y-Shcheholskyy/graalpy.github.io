@@ -2,9 +2,9 @@
 layout: page
 title: Standalone Currency Exchange
 permalink: /examples/standalone_currency_exchange/
+description: This example provides a demonstration of creating a standalone executable from your Python application, using GraalVM Native Image.
 ---
-
-This example provides a demonstration of creating a standalone executable from your Python application, using GraalVM Native Image. 
+{{ page.description }}
 It is based on the [Currency Exchange](/examples/currency_exchange/) example.
 
 1. Follow the steps in the [Currency Exchange](/examples/currency_exchange/) example.

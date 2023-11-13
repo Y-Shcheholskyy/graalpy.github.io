@@ -2,9 +2,9 @@
 layout: page
 title: Covid Plot
 permalink: /examples/covid_plot/
+description: This example provides a demonstration of the use of [Matplotlib](https://matplotlib.org/), a visualization library for Python, combined with [`pandas`](https://pandas.pydata.org/), an open source data analysis and manipulation tool.
 ---
-
-This example provides a demonstration of the use of [Matplotlib](https://matplotlib.org/), a visualization library for Python, combined with [`pandas`](https://pandas.pydata.org/), an open source data analysis and manipulation tool.
+{{ page.description }}
 
 >**Prerequisites**: A recent version of [CMake](https://cmake.org/) is required to install the matplotlib package. (For more information, see [Installing CMake](https://cmake.org/install/).)
 

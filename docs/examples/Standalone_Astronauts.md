@@ -2,9 +2,9 @@
 layout: page
 title: Standalone Astronauts
 permalink: /examples/standalone_astronauts/
+description: This example provides a demonstration of creating a standalone executable from your Python application, using GraalVM Native Image. 
 ---
-
-This example provides a demonstration of creating a standalone executable from your Python application, using GraalVM Native Image. 
+{{ page.description }}
 It is based on the [Astronauts](/examples/astronauts/) example.
 
 1. Follow the steps in the [Astronauts](/examples/astronauts/) example.

@@ -2,8 +2,9 @@
 layout: page
 title: Fibonacci
 permalink: /examples/fibonacci/
+description: This example provides a demonstration of a small Python script.
 ---
-This example provides a demonstration of a small Python script.
+{{ page.description }}
 
 1. Install `graalpy` and [create a Virtual Environment](/guides/creating_a_virtual_environment/), then activate it. 
 (For more information, see [Getting Started](/getting_started/).)

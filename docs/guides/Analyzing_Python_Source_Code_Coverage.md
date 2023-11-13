@@ -1,14 +1,16 @@
 ---
 layout: page
-title: Analyze Python Source Code Coverage
+title: Analyzing Python Source Code Coverage
 permalink: /guides/analyzing_coverage/
 ---
-
-TODO: THIS NEEDS A TOC
+<h4>Table of Contents</h4>
+* this unordered seed list will be replaced by toc as unordered list
+{:toc}
 
 ## Coverage
 
 GraalPy provides a _coverage_ feature, using the `--coverage` command-line option.
+(For details, use the `graalpy --help:tools` command.)
 For example:
 
 ```bash
@@ -17,7 +19,8 @@ For example:
 
 Gives example output:
 
-TODO: THIS NEEDS A COLLAPSE/EXPAND
+{::options parse_block_html="true" /}
+<details><summary markdown="span">Coverage (Click to expand)</summary>
 ```
 ------------------------------------------------------------------------------------------------------------------------------------------------
 Code coverage histogram.
@@ -266,10 +269,16 @@ Code coverage histogram.
  main/sulong/mxbuild/darwin-amd64/SULONG_HOME/include/graalvm/llvm/internal/polyglot-impl.h                 |     100.00% |          |    0.00%
 ------------------------------------------------------------------------------------------------------------------------------------------------
 ```
+</details>
+{::options parse_block_html="false" /}
 
 ## Trace
 
 The standard Python `trace` module is also provided.
+> Note: This works in the same way as CPython.
+The programmatic API also works, with some limitations: 
+it does not currently track calls, only line counts and called functions.
+
 For example: 
 
 ```bash
@@ -278,8 +287,8 @@ For example:
 
 Gives example output:
 
-TODO: THIS NEEDS A COLLAPSE/EXPAND
-
+{::options parse_block_html="true" /}
+<details><summary markdown="span">Trace (Click to expand)</summary>
 ```
 _       __     __                             __     
 | |     / /__  / /________  ____ ___  ___     / /_____
@@ -376,8 +385,10 @@ lines   cov%   module   (path)
   127   100%   weakref   (<install-dir>/lib/python3.10/weakref.py)
   432   100%   zipfile   (<install-dir>/lib/python3.10/zipfile.py)
 ```
+</details>
+{::options parse_block_html="false" /}
 
 ## Related Documentation
-
+{:.no_toc}
 * [GraalVM Code Coverage Tool](ttps://www.graalvm.org/latest/tools/code-coverage/)
 * [Python Trace](https://docs.python.org/3/library/trace.html)

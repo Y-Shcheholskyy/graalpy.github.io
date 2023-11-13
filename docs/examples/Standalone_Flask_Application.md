@@ -2,9 +2,9 @@
 layout: page
 title: Standalone Flask Application
 permalink: /examples/standalone_flask_application/
+description: This example provides a demonstration of creating a standalone [Flask](https://flask.palletsprojects.com/en/3.0.x/) application, using GraalVM Native Image.
 ---
-
-This example provides a demonstration of creating a standalone [Flask](https://flask.palletsprojects.com/en/3.0.x/) application, using GraalVM Native Image.
+{{ page.description }}
 
 1. Install `graalpy` and [create a Virtual Environment](/guides/creating_a_virtual_environment/), then activate it. 
 (For more information, see [Getting Started](/getting_started/).)
@@ -15,7 +15,7 @@ This example provides a demonstration of creating a standalone [Flask](https://f
     % pip install flask
     ```
 
-3. Copy the following content into a file named _hello\_flask.py_. 
+3. Copy the following contents into a file named _hello\_flask.py_. 
 It is adapted from the Flask [Quickstart](https://flask.palletsprojects.com/en/3.0.x/quickstart/) documentation.
     >Note: This code takes a slightly unconventional approach.
     Instead of using Flask's built-in application discovery behavior, the code explicitly calls the `main` function.
@@ -62,7 +62,7 @@ It is adapted from the Flask [Quickstart](https://flask.palletsprojects.com/en/3
 (For example, on Linux and macOS, use the command `unset JAVA_HOME`.)
 
 8. Create a native executable based on your _hello\_flask.py_ script, as shown below.
-(For more information about the command-line options, see [Standalone Applications with Python]().)
+(For more information about the command-line options, see [Standalone Python Applications](/reference/standalone-applications/).)
 
     ```bash
     % graalpy -m standalone native \
@@ -82,4 +82,4 @@ And you should see the same output as earlier.
 ### Related Documentation
 * [Getting Started](/getting_started/)
 * [Creating a Virtual Environment](/guides/creating_a_virtual_environment/)
-* [Standalone Applications with Python]()
+* [Standalone Python Applications](/reference/standalone-applications/)

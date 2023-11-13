@@ -3,24 +3,22 @@ layout: page
 title: Examples
 permalink: /examples/
 ---
+Lorem Ipsum
 
-A list of examples. This should not be manually created.
+{% comment %}
+  The list of docs for this page is in _data/example_list.yml
+{% endcomment %}
 
-However:
-* [Fibonacci](/examples/fibonacci/)
-  * [Standalone Fibonacci](/examples/standalone_fibonacci/)
-* [Styled Text](/examples/styled_text/)
-* [Astronauts](/examples/astronauts/)
-  * [Standalone Astronauts](/examples/standalone_astronauts/)
-* [Currency Exchange](/examples/currency_exchange/)
-  * [Standalone Currency Exchange](/examples/standalone_currency_exchange/)
-* [Pandas DataFrame](/examples/pandas_dataframe/)
-  * [Standalone DataFrame](/examples/standalone_pandas_dataframe/)
-* [Covid Plot](/examples/covid_plot/)
-* [Polynomial Plot](/examples/polynomial_plot/)
-* [Interpolation Plot](/examples/interpolation_plot/)
-* [Machine Learning](/examples/machine_learning/)
-  * [Standalone Machine Learning](/examples/standalone_machine_learning/)
-* [Standalone Web Server](/examples/standalone_web_server/)
-* [Standalone Flask Application](/examples/standalone_flask_application/)
-* [Standalone SQLite REST Server](/examples/standalone_sqlite_rest_server/)
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+  </tr>
+  {% for item in site.data.example_list.docs %}
+    {%- assign example_page = site.pages | where: "path", item | first -%}
+    <tr>
+      <td><a class="page-link" href="{{ example_page.url | relative_url }}">{{ example_page.title | escape }}</a></td>
+      <td>{{ example_page.description | markdownify }}</td>
+    </tr>
+   {% endfor %}
+</table>

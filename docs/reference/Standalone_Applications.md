@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Python Standalone Applications
-permalink: /standalone-binaries/
+title: Standalone Python Applications
+permalink: /reference/standalone-applications/
 ---
-# Standalone Applications with Python
 
 With GraalPy, you can distribute Python applications or libraries as standalone binaries or JAR files without any external dependencies.
 The [Truffle framework](https://github.com/oracle/graal/tree/master/truffle) on which GraalPy is built, and the [Sulong LLVM runtime](https://github.com/oracle/graal/tree/master/sulong) that GraalPy leverages for managed execution of Python's native extensions enables users to completely virtualize all filesystem accesses of Python programs, including those to the standard library and installed packages.
@@ -14,17 +13,21 @@ The binaries bundle everything into a single-file native executable.
 The tool can also generate a skeleton Maven project that sets up a polyglot embedding of Python packages into Java.
 The polyglot skeletons are set up with Maven to to generate a standalone binary for a simple Java-Python HelloWorld example and can be used as a starting point or inspiration for further Java-Python polyglot development.
 
-### Prerequisite
+<h4>Table of Contents</h4>
+  * this unordered seed list will be replaced by toc as unordered list
+  {:toc}
+
+## Prerequisite
 
 Any GraalPy distribution starting from than 23.1 from [the GraalPy releases page](https://github.com/oracle/graalpython/releases).
 
-## Creating GraalPy Native Binaries
+## Creating GraalPy Native Applications
 
 Suppose there is a simple Python script, _my_script.py_, that does some useful work when run directly.
 To distribute it as a standalone native binary, run the following command:
 
 ```bash
-graalpy -m standalone native \
+% graalpy -m standalone native \
       --module my_script.py \
       --output my_binary
 ```
@@ -38,7 +41,7 @@ You can also generate a Java-Python polyglot project skeleton.
 To achieve this, run the `polyglot_app` subcommand of GraalPy's `standalone` module:
 
 ```bash
-graalpy -m standalone polyglot_app --output-directory MyJavaApplication
+% graalpy -m standalone polyglot_app --output-directory MyJavaApplication
 ```
 
 It creates a Java project _MyJavaApplication_. It includes a _pom.xml_ file that makes it easy to generate a GraalVM native executable with Maven.

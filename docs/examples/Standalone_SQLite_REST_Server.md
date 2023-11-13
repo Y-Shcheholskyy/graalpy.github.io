@@ -2,9 +2,9 @@
 layout: page
 title: Standalone SQLite REST Server
 permalink: /examples/standalone_sqlite_rest_server/
+description: This example provides a demonstration of creating a standalone web server to provide a minimal REST interface to a SQLite database, using the Python `http.server` and sqlite modules, and GraalVM Native Image.
 ---
-
-This example provides a demonstration of creating a standalone web server to provide a minimal REST interface to a SQLite database, using the Python `http.server` and sqlite modules, and GraalVM Native Image.
+{{ page.description }}
 The database models musical genres.
 
 1. Install `graalpy` and [create a Virtual Environment](/guides/creating_a_virtual_environment/), then activate it. 
@@ -147,7 +147,7 @@ Run the following commands:
 (For example, on Linux and macOS, use the command `unset JAVA_HOME`.)
 
 8. Create a native executable based on your _sqlite_rest.py_ script, as shown below.
-(For more information about the command-line options, see [Standalone Applications with Python]().)
+(For more information about the command-line options, see [Standalone Python Applications](/reference/standalone-applications/).)
 
     ```bash
     % graalpy -m standalone native \
@@ -167,4 +167,4 @@ And you should see the same output as earlier.
 ### Related Documentation
 * [Getting Started](/getting_started/)
 * [Creating a Virtual Environment](/guides/creating_a_virtual_environment/)
-* [Standalone Applications with Python]()
+* [Standalone Python Applications](/reference/standalone-applications/)

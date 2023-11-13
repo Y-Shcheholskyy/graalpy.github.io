@@ -4,6 +4,10 @@ title: Getting Started
 permalink: /getting_started/
 ---
 
+<h4>Table of Contents</h4>
+* this unordered seed list will be replaced by toc as unordered list
+{:toc}
+
 ## Installing GraalPy
 
 ### Linux and macOS
@@ -21,7 +25,14 @@ Installed graalpy-23.1.0 to ~/.pyenv/versions/graalpy-23.1.0
 % pyenv shell graalpy-23.1.0
 ```
 
-Alternatively, download a compressed GraalPy installation file appropriate for your platform from https://github.com/oracle/graalpython/releases.
+For Conda-Forge, use the following command:
+
+```bash
+% conda create -c conda-forge -n graalpy graalpy
+```
+
+
+Alternatively, download a compressed GraalPy installation file appropriate for your platform from [GitHub releases](https://github.com/oracle/graalpython/releases).
 For example, for Linux, download a file that matches the pattern _graalpy-XX.Y.Z-linux-amd64.tar.gz_.
 Uncompress the file and and update your PATH variable as necessary.
 If you are using macOS Catalina or later, you may need to remove the quarantine attribute.
@@ -38,8 +49,8 @@ For example
 ```
 
 ### Windows
-There is currently no installer for Windows. 
-Instead, follow the instructions on [github.com](https://github.com/oracle/graalpython#user-content-building-from-source) to build GraalPy from source.
+There is a GraalPy preview build for Windows that you can [download](https://github.com/oracle/graalpython/releases/).
+It supports installation of pure Python packages via `pip`.
 
 ## Hello World!
 
@@ -60,7 +71,7 @@ Hello World!
 
 ### Invoke a Python Script
 
-Copy the following content into a file named _helloworld.py_:
+Copy the following contents into a file named _helloworld.py_:
 
 ```python
 print("Hello World!")
@@ -78,5 +89,6 @@ Hello World!
 ```
 
 ### Related Documentation
+{:.no_toc}
 * [Creating a Virtual Environment](/guides/creating_a_virtual_environment/)
 * [Running a Python Application](/guides/running_a_python_application/)

@@ -1,10 +1,13 @@
 ---
 layout: page
 title: Interoperability
-permalink: /interoperability/
+permalink: /reference/interoperability/
 ---
-# Interoperability
 The best way to embed GraalPy is to use the [GraalVM SDK Polyglot API](https://www.graalvm.org/sdk/javadoc/org/graalvm/polyglot/package-summary.html).
+
+<h4>Table of Contents</h4>
+* this unordered seed list will be replaced by toc as unordered list
+{:toc}
 
 ## The Polyglot API
 
@@ -107,8 +110,9 @@ To run this example, first install the required R library:
 R -e 'install.packages("https://www.rforge.net/src/contrib/jpeg_0.1-8.tar.gz", repos=NULL)'
 ```
 
-This example also uses [image_magix.py](https://www.graalvm.org/resources/img/python/image_magix.py) and works
-on a JPEG image input (you can try with [this image](https://www.graalvm.org/resources/img/python_demo_picture.jpg)). These files have to be in the same directory that the script below is located in and run from.
+This example also uses [image_magix.py](/docs/reference/assets/image_magix.py) and works
+on a JPEG image input (you can try with [this image](/docs/reference/assets/python_demo_picture.jpg)).
+These files have to be in the same directory that the script below is located in and run from.
 ```python
 import polyglot
 import sys
@@ -145,69 +149,6 @@ draw = polyglot.eval(string="""function(processedImgObj) {
 draw(result)
 time.sleep(10)
 ```
-
-## The Java Host Interop API
-
-Finally, to interoperate with Java (only when running on the JVM), you can use the `java` module:
-```python
->>> import java
->>> BigInteger = java.type("java.math.BigInteger")
->>> myBigInt = BigInteger.valueOf(42)
->>> # public Java methods can just be called
->>> myBigInt.shiftLeft(128)
-<JavaObject[java.math.BigInteger] at ...>
->>> # Java method names that are keywords in Python can be accessed using `getattr`
->>> getattr(myBigInt, "not")()
-<JavaObject[java.math.BigInteger] at ...>
->>> byteArray = myBigInt.toByteArray()
->>> # Java arrays can act like Python lists
->>> list(byteArray)
-[42]
-```
-
-For packages under the `java` package, you can also use the normal Python import
-syntax:
-```python
->>> import java.util.ArrayList
->>> from java.util import ArrayList
->>>
->>> java.util.ArrayList == ArrayList
-True
->>> al = ArrayList()
->>> al.add(1)
-True
->>> al.add(12)
-True
->>> al
-[1, 12]
-```
-
-In addition to the `type` built-in method, the `java` module exposes the following
-methods as well:
-
-Built-in                  | Specification
----                      | ---
-`instanceof(obj, class)` | returns `True` if `obj` is an instance of `class` (`class` must be a foreign object class)
-`is_function(obj)`       | returns `True` if `obj` is a Java host language function wrapped using Truffle interop
-`is_object(obj)`         | returns `True` if `obj` if the argument is Java host language object wrapped using Truffle interop
-`is_symbol(obj)`         | returns `True` if `obj` if the argument is a Java host symbol, representing the constructor and static members of a Java class, as obtained by `java.type`
-
-```python
->>> ArrayList = java.type('java.util.ArrayList')
->>> my_list = ArrayList()
->>> java.is_symbol(ArrayList)
-True
->>> java.is_symbol(my_list)
-False
->>> java.is_object(ArrayList)
-True
->>> java.is_function(my_list.add)
-True
->>> java.instanceof(my_list, ArrayList)
-True
-```
-
-See [Polyglot Programming](https://github.com/oracle/graal/blob/master/docs/reference-manual/polyglot-programming.md) and [Embed Languages](https://github.com/oracle/graal/blob/master/docs/reference-manual/embedding/embed-languages.md) for more information about interoperability with other programming languages.
 
 ## The Behavior of Types
 

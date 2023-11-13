@@ -2,9 +2,9 @@
 layout: page
 title: Standalone Pandas DataFrame
 permalink: /examples/standalone_pandas_dataframe/
+description: This example provides a demonstration of creating a standalone executable from your Python application, using GraalVM Native Image.
 ---
-
-This example provides a demonstration of creating a standalone executable from your Python application, using GraalVM Native Image. 
+{{ page.description }}
 It is based on the [Pandas DataFrame](/examples/pandas_dataframe/) example.
 
 1. Follow the steps in the [Pandas DataFrame](/examples/pandas_dataframe/) example.
@@ -13,7 +13,7 @@ It is based on the [Pandas DataFrame](/examples/pandas_dataframe/) example.
 (For example, on Linux and macOS, use the command `unset JAVA_HOME`.)
 
 3. Create a native executable based on your _pandas\_dataframe.py_ script, as shown below.
-(For more information about the command-line options, see [Standalone Applications with Python]().)
+(For more information about the command-line options, see [Standalone Python Applications](/reference/standalone-applications/).)
 
     ```bash
     % graalpy -m standalone native \
@@ -65,4 +65,4 @@ It is based on the [Pandas DataFrame](/examples/pandas_dataframe/) example.
 
 ### Related Documentation
 * [Pandas DataFrame](/examples/pandas_dataframe/)
-* [Standalone Applications with Python]()
+* [Standalone Python Applications](/reference/standalone-applications/)

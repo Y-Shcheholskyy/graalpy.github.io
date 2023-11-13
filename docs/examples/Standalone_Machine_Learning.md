@@ -2,9 +2,9 @@
 layout: page
 title: Standalone Machine Learning
 permalink: /examples/standalone_machine_learning/
+description: This example provides a demonstration of creating a standalone executable from your Python application, using GraalVM Native Image.
 ---
-
-This example provides a demonstration of creating a standalone executable from your Python application, using GraalVM Native Image. 
+{{ page.description }}
 It is based on the [Machine Learning](/examples/machine_learning/) example.
 
 1. Follow the steps in the [Machine Learning](/examples/machine_learning/) example.
@@ -13,7 +13,7 @@ It is based on the [Machine Learning](/examples/machine_learning/) example.
 (For example, on Linux and macOS, use the command `unset JAVA_HOME`.)
 
 3. Create a native executable based on your _irises.py_ script, as shown below.
-(For more information about the command-line options, see [Standalone Applications with Python]().)
+(For more information about the command-line options, see [Standalone Python Applications](/reference/standalone-applications/).)
 
     ```bash
     % graalpy -m standalone native \
@@ -44,4 +44,4 @@ It is based on the [Machine Learning](/examples/machine_learning/) example.
 
 ### Related Documentation
 * [Currency Exchange](/examples/currency_exchange/)
-* [Standalone Applications with Python]()
+* [Standalone Python Applications](/reference/standalone-applications/)

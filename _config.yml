@@ -1,0 +1,38 @@
+title: GraalPy
+email: your-email@domain.com
+description: 
+  GraalPy, the GraalVM Implementation of Python.
+  Copyright © 2018, 2023, Oracle and/or its affiliates. All rights reserved. Oracle and Java are registered trademarks. Other names may be trademarks of their respective owners.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+header_pages:
+  - docs/Getting_Started.md
+  - docs/guides/Guides.md
+  - docs/examples/Examples.md
+  - docs/reference/Reference.md
+
+footer_pages:
+  - docs/contributor/Contributing.md
+  - docs/License.md

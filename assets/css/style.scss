@@ -5,12 +5,13 @@
 @import
   // "minima/layout",
   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
-  "minima/initialize";
+  "minima/initialize",
 
-  // .text-color-1 {
-  //   color: aqua;
-  // }
+  "minima/layout/home",
+  "minima/layout/docs",
+  "minima/utilities/variables",
+  "minima/layout/buttons",
 
-  // .text-test {
-  //   color: #F29111;
-  // }
+  "minima/base",
+  "minima/layout"
+;

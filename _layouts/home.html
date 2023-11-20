@@ -1,0 +1,177 @@
+---
+layout: base
+---
+
+<section>
+  <div>
+    <div class="hi">
+      <div class="container">
+        <div class="hi__row">
+          <div class="hi__body">
+            <h1 class="hi__title">Run your applications faster and more efficiently with GraalPy</h1>
+            <div class="hi__buttons">
+              <a href='{{ "/downloads/" | relative_url }}' class="btn btn-primary">Download</a>
+              <a href='{{ "/docs/getting-started/" | relative_url }}' class="btn btn-primary">Get Started</a>
+            </div>
+          </div>
+          <div class="hi__image">
+            <img src='{{ "/resources/img/home/python-logo.svg" | relative_url }}' alt="python-icon">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="home__overview">
+  <div class="container">
+    <div class="home__overview-text">
+      <h5>GraalPy is a Python 3.10 compliant runtime. A primary goal of GraalPy is to support SciPy and its constituent
+        libraries, as well as to work with other data science and machine learning libraries from the rich Python
+        ecosystem. GraalPy is available for experimentation and curious end-users.</h5>
+    </div>
+  </div>
+</section>
+<!-- Benefits -->
+<section class="content-section">
+  <div class="pybenefits">
+    <div class="container">
+      <h3 class="pybenefits__maintitle">Benefits</h3>
+      <div class="pybenefits__row">
+        <div class="pybenefits__card">
+          <div class="pybenefits__icon">
+            <img src='{{ "/resources/img/home/high-peformance-icon.svg" | relative_url }}' alt="high performance icon">
+          </div>
+          <div class="pybenefits__title">
+            <h4>High Performance</h4>
+          </div>
+          <div class="pybenefits__text">
+            <h5>GraalPy optimizes your workload across language boundaries
+            </h5>
+          </div>
+        </div>
+        <div class="pybenefits__card">
+          <div class="pybenefits__icon">
+            <img src='{{ "/resources/img/home/interoperability-icon.svg" | relative_url }}' alt="interoperability icon">
+          </div>
+          <div class="pybenefits__title">
+            <h4>Interoperability</h4>
+          </div>
+          <div class="pybenefits__text">
+            <h5>Get access to multiple language ecosystems and tools out of the box
+            </h5>
+          </div>
+        </div>
+        <div class="pybenefits__card">
+          <div class="pybenefits__icon">
+            <img src='{{ "/resources/img/home/managed-exec-icon.svg" | relative_url }}'
+              alt="improved security advantage icon">
+          </div>
+          <div class="pybenefits__title">
+            <h4>Managed Execution</h4>
+          </div>
+          <div class="pybenefits__text">
+            <h5>Reduce risks by running native extensions in a managed mode
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<!-- Gets Started section -->
+<section class="pygetstarted__radial">
+  <div class="pygetstarted">
+    <div class="container">
+      <h3 class="pygetstarted__title">Getting Started</h3>
+      <div class="pygetstarted__descrip">
+        <h5>If you are new to GraalPy, we suggest you start here</h5>
+      </div>
+      <div class="pygetstarted__flowcard">
+        <div class="pygs__step">
+          <h2 class="pygetstarted__section-title">Installing GraalPy</h2>
+          <h4 class="pygetstarted__section-subtitle">Linux and MacOS</h4>
+          <h5 class="pygs__text">The easiest way to install GraalPy on Linux and macOS platforms is to use <a
+              class="link" href="https://github.com/pyenv/pyenv" target="_blank">Puenv </a> (the Python version manager)
+            or <a href="https://conda-forge.org/" target="_blank">Conda-Forge </a> (Conda-Forge provides GraalPy Community
+            only). For example, to install version 23.1.0 using <code>puenv</code>, run the following commands:</h5>
+          <div class="language-bash highlighter-rouge">
+            <div class="highlight">
+              <pre class="highlight marg-extend">
+                <code>
+  % pyenv <span class="nb">install </span>graalpy-23.1.0
+
+  Downloading graalpy-23.0.0.tar.gz...
+  -&gt; https://github.com/oracle/graalpython/releases/download/graal-23.1.0/graalpython-23.1.0-macos-amd64.tar.gz
+  Installing graalpy-23.1.0...
+  Installed graalpy-23.1.0 to ~/.pyenv/versions/graalpy-23.1.0
+
+  % pyenv shell graalpy-23.1.0</code>
+              </pre>
+            </div>
+          </div>
+          <h5 class="pygs__text">For Conda-Forge, use the following command:</h5>
+          <div class="language-bash highlighter-rouge">
+            <div class="highlight">
+              <pre class="highlight marg-extend">
+                <code>
+  % conda create -c conda-forge -n graalpy graalpy</code>
+              </pre>
+            </div>
+          </div>
+          <h5 class="pygs__text">Alternatively, download a compressed GraalPy installation file appropriate for your
+            platform from <a href="https://github.com/oracle/graalpython/releases" target="_blank">Github releases</a>.
+            For example, for Linux, download a file that matches the pattern graalpy-XX.Y.Z-linux-amd64.tar.gz.
+            Uncompress the file and and update your PATH variable as necessary. If you are using macOS Catalina or
+            later, you may need to remove the quarantine attribute. To do this, run the following:
+          </h5>
+          <div class="language-bash highlighter-rouge">
+            <div class="highlight">
+              <pre class="highlight marg-extend">
+                <code>
+  % sudo xattr -r -d com.apple.quarantine /path/to/GRAALPYTHON_HOME</code>
+              </pre>
+            </div>
+          </div>
+          <h5 class="pygs__text">For example</h5>
+          <div class="language-bash highlighter-rouge">
+            <div class="highlight">
+              <pre class="highlight marg-extend">
+                <code>
+  % sudo xattr -r -d com.apple.quarantine ~/.pyenv/versions/graalpy-23.1.0</code>
+              </pre>
+            </div>
+          </div>
+          <h4 class="pygetstarted__section-subtitle">Windows</h4>
+          <h5 class="pygs__text">There is a GraalPy preview build for Windows that you can <a
+            href="https://github.com/oracle/graalpython/releases/" target="_blank">download</a>. It supports installation
+          of pure Python packages via <code>pip</code>.
+          </h5>
+        </div>
+        <div class="pygs__step">
+          <h2 class="pygetstarted__section-title">Hello World!</h2>
+          <h4 class="pygetstarted__section-subtitle">Invoke the Python Interpreter</h4>
+          <h5 class="pygs__text">Copy the following contents into a file named <em>helloworld.py</em>:</h5>
+          <div class="language-python highlighter-rouge">
+            <div class="highlight">
+              <pre class="highlight marg-extend"><code><span class="k">print</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">)</span></code></pre>
+            </div>
+          </div>
+          <h5 class="pygs__text">Start <code class="language-plaintext highlighter-rouge">graalpy</code> and pass the
+            file name as an argument</h5>
+          <div class="language-bash highlighter-rouge">
+            <div class="highlight">
+              <pre class="highlight marg-extend"><code>% graalpy helloworld.py</code></pre>
+            </div>
+          </div>
+          <h5 class="pygs__text">You should see the following output</h5>
+          <div class="language-plaintext highlighter-rouge">
+            <div class="highlight">
+              <pre class="highlight marg-extend"><code>Hello World!</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

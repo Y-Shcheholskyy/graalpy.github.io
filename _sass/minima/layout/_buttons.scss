@@ -1,0 +1,68 @@
+.btn {
+    border: none;
+    display: inline-block;
+    background: none;
+    outline: none;
+    padding: 0;
+    vertical-align: middle;
+    user-select: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+  
+    &:hover,
+    &:active {
+      background-color: transparent;
+      text-decoration: none;
+      outline: none!important;
+    }
+  
+    &.disabled,
+    &[disabled] {
+      &,
+      &:hover, &:focus {
+        background-color: transparent;
+      }
+    }
+  }
+  
+  .btn-try {
+    border-radius: 3px;
+    text-align: center;
+    // display: block;
+    font-size: 16px!important;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    border-radius: 12px;
+    border: 1px solid $oracle-orange;
+    padding: 16px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.44px;
+    transition: background-color .3s, color .3s;
+  }
+  
+  .btn-primary {
+    background-color: $oracle-orange;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px 48px 8px 48px;
+  
+    &:hover,
+    &:focus {
+      background-color: darken($oracle-orange, 5%);
+      border-color: darken($oracle-orange, 5%);
+      color: #ffffff;
+    }
+  
+    &--filled {
+      &:hover,
+      &:focus {
+        color: #ffffff;
+        background-color: lighten($oracle-orange, 10%);
+        border-color: lighten($oracle-orange, 10%);
+      }
+    }
+  }

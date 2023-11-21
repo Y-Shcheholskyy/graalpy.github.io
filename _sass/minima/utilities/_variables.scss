@@ -6,25 +6,10 @@
 //      url("{{ '/resources/fonts/open-sans/OpenSans-Light.ttf');
 // }
 
-@font-face {
-  font-family: "OracleSans";
-  src: url('../resources/fonts/oracle-sans/OracleSans_Bd.ttf'),
-  url('../resources/fonts/oracle-sans/OracleSans_BdIt.ttf'),
-  url('../resources/fonts/oracle-sans/OracleSans_It.ttf'),
-  url('../resources/fonts/oracle-sans/OracleSans_Lt.ttf'),
-  url('../resources/fonts/oracle-sans/OracleSans_LtIt.ttf'),
-  url('../resources/fonts/oracle-sans/OracleSans_SBd.ttf'),
-  url('../resources/fonts/oracle-sans/OracleSans_SBdIt.ttf'),
-  url('../resources/fonts/oracle-sans/OracleSans_ULt.ttf'),
-  url('../resources/fonts/oracle-sans/OracleSans_ULtIt.ttf'),
-  url('../resources/fonts/oracle-sans/OracleSans_XBd.ttf'),
-  url('../resources/fonts/oracle-sans/OracleSans_XBdIt.ttf');
-}
-
 $oracle-blue: #00758F !default;
-$oracle-oragne: #f29110 !default;
+$oracle-orange: #f29110 !default;
 
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$base-font-family: "Oracle Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $base-font-size:   1rem !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
@@ -38,8 +23,9 @@ $nav-bar-color:         #333 !default;
 $background-color:      #ffffff !default; //#ebf0f1 !default; //#ededed!default;
 $brand-color:           $oracle-blue !default; //#0081aa !default;
 $brand-highlight-color: $oracle-blue !default; //#00b1ea !default;
-$link-color:            #0081aa !default;
+$link-color:            #f29111 !default;
 $link-highlight-color:  #d9810c !default;
+$link-base-color: #f29111 !default;
 
 $grey-color:               #828282 !default;
 $grey-color-light:         lighten($grey-color, 40%) !default;

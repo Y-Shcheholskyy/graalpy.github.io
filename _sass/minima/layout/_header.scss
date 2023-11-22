@@ -1,0 +1,28 @@
+  .site-header {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+    min-height: $spacing-unit * 1.865;
+    line-height: $base-line-height * $base-font-size * 2.25;
+    background-color: #09222E;
+    z-index: 50;
+    &--header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 0 auto;
+      width: 100%;
+      padding: 0;
+      background-color: #3a4daa;
+      z-index: 50;
+    }
+  }
+  
+  .site--header {
+    position: fixed;
+    top: 0;
+  }
+  
+  
+  

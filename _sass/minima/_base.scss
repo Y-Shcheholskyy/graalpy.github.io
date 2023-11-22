@@ -125,17 +125,18 @@ h6 {
  * Links
  */
 a {
-  color: $link-base-color;
+  color: #f29111;
   text-decoration: none;
 
-  &:visited {
-    // color: $link-visited-color;
-    color: #f29111;
-  }
+  // &:visited {
+  //   // color: $link-visited-color;
+  //   color: #f29111;
+  // }
 
   &:hover {
-    color: $link-hover-color;
-    text-decoration: underline;
+    // color: $link-hover-color;
+    color: #AFDEED;
+    // text-decoration: underline;
   }
 
   .social-media-list &:hover {

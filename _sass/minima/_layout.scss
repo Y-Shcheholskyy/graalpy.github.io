@@ -1,16 +1,16 @@
 /**
  * Site header
  */
-.site-header {
-  // border-top: 5px solid $border-color-03;
-  // border-bottom: 1px solid $border-color-01;
-  min-height: $spacing-unit * 1.865;
-  line-height: $base-line-height * $base-font-size * 2.25;
-  background-color: #09222E;
+// .site-header {
+//   // border-top: 5px solid $border-color-03;
+//   // border-bottom: 1px solid $border-color-01;
+//   min-height: $spacing-unit * 1.865;
+//   line-height: $base-line-height * $base-font-size * 2.25;
+//   background-color: #09222E;
 
-  // Positioning context for the mobile navigation icon
-  position: relative;
-}
+//   // Positioning context for the mobile navigation icon
+//   position: relative;
+// }
 
 .site-title {
   @include relative-font-size(1.625);

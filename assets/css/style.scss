@@ -7,8 +7,13 @@
   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
   "minima/initialize",
 
+  "minima/utilities/mixins",
+
   "minima/layout/home",
   "minima/layout/docs",
+  "minima/layout/footer",
+  "minima/layout/header",
+  "minima/layout/menu",
   "minima/utilities/variables",
   "minima/layout/buttons",
 

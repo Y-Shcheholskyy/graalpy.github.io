@@ -1,10 +1,9 @@
-<header class="site-header">
+<header class="site-header site--header">
 
   <div class="wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
-    <!-- <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a> -->
     <a class="menu__logograalpy" href="{{ "/" | relative_url }}">
       <img src='{{ "/resources/img/home/graalpy-logo.svg" | relative_url }}' alt="GraalPy logo">
     </a>
@@ -19,23 +18,63 @@
             </svg>
           </span>
         </label>
-
-        <!-- <div class="trigger">
-          {%- for path in page_paths -%}
-            {%- assign my_page = site.pages | where: "path", path | first -%}
-            {%- if my_page.title -%}
-            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-            {%- endif -%}
-          {%- endfor -%}
-        </div> -->
-        <div class="trigger">
-          {%- for path in page_paths -%}
-            {%- assign my_page = site.pages | where: "path", path | first -%}
-            {%- if my_page.title -%}
-              <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-            {%- endif -%}
-          {%- endfor -%}
-        </div> 
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href='{{ "/about/" | relative_url }}' class="menu__link">About</a>
+          </li>
+          <li class="menu__item">
+            <a href='{{ "/docs/" | relative_url }}' class="menu__link">Docs</a>
+          </li>
+          <li class="menu__item">
+            <div class="stack-container">
+              <a href="#" class="menu__link stack__header">Learn</a>
+              <div class="stack-menu-learn">
+                <div class="stack-row">
+                  <div class="stack-column">
+                    <div class="stack__item">
+                      <img src='{{ "/resources/img/header/guides.svg" | relative_url }}'>
+                      <a href='{{ "/guides/" | relative_url }}' class="item-line">Guides</a>
+                    </div>
+                    <div class="stack__item">
+                      <img src='{{ "/resources/img/header/guides.svg" | relative_url }}'>
+                      <a href='{{ "/examples/" | relative_url }}' class="item-line">Examples</a>
+                    </div>
+                    <div class="stack__item">
+                      <img src='{{ "/resources/img/header/guides.svg" | relative_url }}'>
+                      <a href='{{ "/reference/" | relative_url }}' class="item-line">References</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="menu__item">
+            <div class="stack-container">
+              <a href="#" class="menu__link stack__header">Graal Products</a>
+              <div class="stack-menu">
+                <div class="stack-row">
+                  <div class="stack-column">
+                    <div class="stack__item">
+                      <img src="/resources/img/header/graalstack.svg">
+                      <a href="https://graal.cloud/" class="item-line">Graal Stack</a>
+                    </div>
+                    <div class="stack__item">
+                      <img src="/resources/img/header/graalvm.svg">
+                      <a href="https://graalvm.org" class="item-line">GraalVM</a>
+                    </div>
+                    <div class="stack__item">
+                      <img src="/resources/img/header/gcn.svg">
+                      <a href="https://graal.cloud/gcn/" class="item-line">Graal Cloud Native</a>
+                    </div>
+                    <div class="stack__item">
+                      <img src="/resources/img/header/graalos.svg">
+                      <a href="https://graal.cloud/graalos/" class="item-line">GraalOS</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
       </nav>
     {%- endif -%}
   </div>

@@ -11,8 +11,8 @@ permalink: /getting_started/
 ## Installing GraalPy
 
 ### Linux and macOS
-The easiest way to install GraalPy on Linux and macOS platforms is to use [Pyenv](https://github.com/pyenv/pyenv) (the Python version manager) or [Conda-Forge](https://conda-forge.org/) (Conda-Forge provides GraalPy Community only).
-For example, to install version 23.1.0 using `pyenv`, run the following commands:
+The easiest way to install GraalPy on Linux and macOS platforms is to use [Pyenv](https://github.com/pyenv/pyenv) (the Python version manager).
+To install version 23.1.0 using `pyenv`, run the following commands:
 
 ```bash
 % pyenv install graalpy-23.1.0
@@ -24,13 +24,6 @@ Installed graalpy-23.1.0 to ~/.pyenv/versions/graalpy-23.1.0
  
 % pyenv shell graalpy-23.1.0
 ```
-
-For Conda-Forge, use the following command:
-
-```bash
-% conda create -c conda-forge -n graalpy graalpy
-```
-
 
 Alternatively, download a compressed GraalPy installation file appropriate for your platform from [GitHub releases](https://github.com/oracle/graalpython/releases).
 For example, for Linux, download a file that matches the pattern _graalpy-XX.Y.Z-linux-amd64.tar.gz_.

@@ -95,7 +95,7 @@ a.menu__link {
 }
 
 a.stack__header {
-    background: url("{{ '/resources/img/header/arrow-down.svg' | relative_url }}") 99% 50% no-repeat;
+    background: url("/resources/img/header/arrow-down.svg") 99% 50% no-repeat;
     padding: 5px 24px 5px 0px;
 }
 

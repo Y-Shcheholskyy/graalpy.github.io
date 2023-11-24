@@ -2,7 +2,7 @@ title: GraalPy
 email: your-email@domain.com
 description: 
   GraalPy, the GraalVM Implementation of Python.
-  Copyright © 2018, 2023, Oracle and/or its affiliates. All rights reserved. Oracle and Java are registered trademarks. Other names may be trademarks of their respective owners.
+  Copyright © 2023, 2024, All rights reserved. Other names may be trademarks of their respective owners.
 baseurl: # the subpath of your site, e.g. /blog
 url: https://graalpy.github.io # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb

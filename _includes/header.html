@@ -20,33 +20,19 @@
         </label>
         <ul class="menu__list">
           <li class="menu__item">
+            <a href='{{ "/getting_started/" | relative_url }}' class="menu__link">Getting Started</a>
+          </li>
+          <li class="menu__item">
             <a href='{{ "/about/" | relative_url }}' class="menu__link">About</a>
           </li>
           <li class="menu__item">
-            <a href='{{ "/docs/" | relative_url }}' class="menu__link">Docs</a>
+            <a href='{{ "/reference/" | relative_url }}' class="menu__link">Docs</a>
           </li>
           <li class="menu__item">
-            <div class="stack-container">
-              <a href="#" class="menu__link stack__header">Learn</a>
-              <div class="stack-menu-learn">
-                <div class="stack-row">
-                  <div class="stack-column">
-                    <div class="stack__item">
-                      <img src='{{ "/resources/img/header/guides.svg" | relative_url }}'>
-                      <a href='{{ "/guides/" | relative_url }}' class="item-line">Guides</a>
-                    </div>
-                    <div class="stack__item">
-                      <img src='{{ "/resources/img/header/guides.svg" | relative_url }}'>
-                      <a href='{{ "/examples/" | relative_url }}' class="item-line">Examples</a>
-                    </div>
-                    <div class="stack__item">
-                      <img src='{{ "/resources/img/header/guides.svg" | relative_url }}'>
-                      <a href='{{ "/reference/" | relative_url }}' class="item-line">References</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <a href='{{ "/guides/" | relative_url }}' class="menu__link">Guides</a>
+          </li>
+          <li class="menu__item">
+            <a href='{{ "/examples/" | relative_url }}' class="menu__link">Examples</a>
           </li>
           <li class="menu__item">
             <div class="stack-container">

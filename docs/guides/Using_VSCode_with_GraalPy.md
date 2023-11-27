@@ -1,8 +1,12 @@
 ---
 layout: guides
+toc_group: guides
+permalink: /guides/using-vscode/
+link_title: Using Visual Studio Code with GraalPy
 title: Using Visual Studio Code with GraalPy
-permalink: /guides/using_vscode/
 ---
+
+# Using Visual Studio Code with GraalPy
 
 1. Install `graalpy`. 
 (For more information, see [Getting Started](/getting_started/).)

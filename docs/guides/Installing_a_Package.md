@@ -1,8 +1,13 @@
 ---
 layout: guides
-title: Installing a Package
-permalink: /guides/installing_a_package/
+toc_group: guides
+permalink: /guides/installing-package/
+link_title: Installing a Python Package
+title: Installing a Python Package
 ---
+
+# Installing a Python Package
+
 ## pip
 The `pip` package installer is available when using a virtual environment. 
 The GraalPy implementation of `pip` installs patches as required. 

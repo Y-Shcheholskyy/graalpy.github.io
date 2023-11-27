@@ -1,14 +1,12 @@
 ---
 layout: guides
-title: Guides
+toc_group: guides
 permalink: /guides/
+link_title: User Guides
+title: User Guides
 ---
-Lorem Ipsum
 
-{% comment %}
-  The list of docs for this page is in _data/guide_list.yml
-{% endcomment %}
-
+# GraalPy User Guides
 
 <ul>
    {% for item in site.data.guide_list.docs %}

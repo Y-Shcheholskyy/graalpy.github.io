@@ -1,8 +1,13 @@
 ---
 layout: guides
+toc_group: guides
+permalink: /guides/creating-virtual-environment/
+link_title: Creating a Virtual Environment
 title: Creating a Virtual Environment
-permalink: /guides/creating_a_virtual_environment/
 ---
+
+# Creating a Virtual Environment
+
 The best way of using GraalPy is from a [venv](https://docs.python.org/3/library/venv.html) virtual environment.
 This generates wrapper scripts and makes the implementation usable from a shell as the standard Python interpreter. 
 To create a virtual environment with GraalPy, run the following command:

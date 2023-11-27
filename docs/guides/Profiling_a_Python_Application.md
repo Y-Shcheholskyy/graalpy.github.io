@@ -1,8 +1,12 @@
 ---
 layout: guides
+toc_group: guides
+permalink: /guides/profiling-python-application/
+link_title: Profiling a Python Application
 title: Profiling a Python Application
-permalink: /guides/profiling_a_python_application/
 ---
+
+# Profiling a Python Application
 
 GraalPy provides three main profiling capabilities: a cpu sampler, a cpu tracer, and a memory tracer.
 These are described below.

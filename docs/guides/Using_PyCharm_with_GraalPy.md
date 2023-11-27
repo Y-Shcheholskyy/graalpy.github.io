@@ -1,8 +1,12 @@
 ---
 layout: guides
+toc_group: guides
+permalink: /guides/using-pycharm/
+link_title: Using PyCharm with GraalPy
 title: Using PyCharm with GraalPy
-permalink: /guides/using_pycharm/
 ---
+
+# Using PyCharm with GraalPy
 
 1. Install `graalpy`. 
 (For more information, see [Getting Started](/getting_started/).)

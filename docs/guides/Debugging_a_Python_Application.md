@@ -1,8 +1,12 @@
 ---
 layout: guides
+toc_group: guides
+permalink: /guides/debugging-python-application/
+link_title: Debugging a Python Application
 title: Debugging a Python Application
-permalink: /guides/debugging_a_python_application/
 ---
+
+# Debugging a Python Application
 
 The standard python debugger `pdb` is supported on GraalPy. 
 Refer to the official [PDB documentation](https://docs.python.org/3/library/pdb.html) for usage.

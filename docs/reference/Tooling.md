@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: reference
 title: Tooling Support for Python
 permalink: /reference/tooling/
 ---

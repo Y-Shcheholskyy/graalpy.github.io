@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: guides
 title: Creating a Virtual Environment
 permalink: /guides/creating_a_virtual_environment/
 ---

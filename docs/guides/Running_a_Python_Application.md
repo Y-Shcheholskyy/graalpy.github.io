@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: guides
 title: Running a Python Application
 permalink: /guides/running_a_python_application/
 ---

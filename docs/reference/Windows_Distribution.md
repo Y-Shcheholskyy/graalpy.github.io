@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: reference
 title: Windows Distribution
 permalink: /reference/windows_distribution/
 ---

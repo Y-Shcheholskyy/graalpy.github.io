@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: reference
 title: Native GraalPy Executables
 permalink: /reference/native-executables/
 ---

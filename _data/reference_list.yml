@@ -5,7 +5,7 @@ docs:
   - docs/reference/Interoperability.md
   - docs/reference/Java_Interoperability.md
   - docs/reference/Jython.md
-  - docs/reference/Os_Interfaces.md
+  - docs/reference/OS_Interfaces.md
   - docs/reference/Parser_Details.md
   - docs/reference/Native_Executables.md
   - docs/reference/Standalone_Applications.md

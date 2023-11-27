@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: guides
 title: Using PyCharm with GraalPy
 permalink: /guides/using_pycharm/
 ---

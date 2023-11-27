@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: examples
 title: Fibonacci
 permalink: /examples/fibonacci/
 description: This example provides a demonstration of a small Python script.

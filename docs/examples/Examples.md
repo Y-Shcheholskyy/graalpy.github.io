@@ -1,13 +1,10 @@
 ---
-layout: page
-title: Examples
+layout: examples
+title: GraalPy Examples
 permalink: /examples/
 ---
-Lorem Ipsum
 
-{% comment %}
-  The list of docs for this page is in _data/example_list.yml
-{% endcomment %}
+# Examples to Run on GraalPy
 
 <table>
   <tr>

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: reference
 title: Python Code Parsing and pyc Files
 permalink: /reference/parser_details/
 ---

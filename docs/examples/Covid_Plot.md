@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: examples
 title: Covid Plot
 permalink: /examples/covid_plot/
 description: This example provides a demonstration of the use of [Matplotlib](https://matplotlib.org/), a visualization library for Python, combined with [`pandas`](https://pandas.pydata.org/), an open source data analysis and manipulation tool.

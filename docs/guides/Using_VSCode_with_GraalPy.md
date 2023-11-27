@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: guides
 title: Using Visual Studio Code with GraalPy
 permalink: /guides/using_vscode/
 ---

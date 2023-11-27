@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: guides
 title: Analyzing Python Source Code Coverage
 permalink: /guides/analyzing_coverage/
 ---

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: guides
 title: Debugging a Python Application
 permalink: /guides/debugging_a_python_application/
 ---

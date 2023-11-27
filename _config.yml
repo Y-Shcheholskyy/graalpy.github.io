@@ -1,49 +1,113 @@
 title: GraalPy
 email: your-email@domain.com
-description: 
-  GraalPy, the GraalVM Implementation of Python.
-  Copyright © 2023, 2024, All rights reserved. Other names may be trademarks of their respective owners.
-baseurl: # the subpath of your site, e.g. /blog
-url: https://graalpy.github.io # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+description: GraalPy is a Python 3.10 compliant runtime on top of GraalVM. GraalPy offers high-performance execution, modern language features, and easy interoperability with Java. 
+baseurl: ""
+url: "https://graalpy.github.io"
+
+header_links: [docs/Getting_Started.md, docs/reference/Reference.md, docs/guides/Guides.md, docs/examples/Examples.md]
+
+tables_of_contents:
+  - toc_group: reference
+    subgroups:
+      - main_link: docs/Getting_Started.md
+      - main_link: docs/reference/Reference.md
+        links:
+          [
+            docs/reference/Distributions.md,
+            docs/reference/Windows_Distribution.md,
+            docs/reference/Options.md,
+            docs/reference/Interoperability.md,
+            docs/reference/Java_Interoperability.md,
+            docs/reference/Jython.md,
+            docs/reference/OS_Interfaces.md,
+            docs/reference/Parser_Details.md,
+            docs/reference/Native_Executables.md,
+            docs/reference/Standalone_Applications.md,
+            docs/reference/Tooling.md
+          ]
+      - main_link: docs/guides/Guides.md
+      - main_link: docs/examples/Examples.md
+
+  - toc_group: guides
+    subgroups:
+      - main_link: docs/Getting_Started.md
+      - main_link: docs/reference/Reference.md
+      - main_link: docs/guides/Guides.md
+        links:
+          [
+            docs/guides/Creating_a_Virtual_Environment.md,
+            docs/guides/Running_a_Python_Application.md,
+            docs/guides/Installing_a_Package.md,
+            docs/guides/Debugging_a_Python_Application.md,
+            docs/guides/Profiling_a_Python_Application.md,
+            docs/guides/Analyzing_Python_Source_Code_Coverage.md,
+            docs/guides/Using_PyCharm_with_GraalPy.md,
+            docs/guides/Using_VSCode_with_GraalPy.md
+          ]
+      - main_link: docs/examples/Examples.md
+
+  - toc_group: examples
+    subgroups:
+      - main_link: docs/Getting_Started.md
+      - main_link: docs/reference/Reference.md
+      - main_link: docs/guides/Guides.md
+      - main_link: docs/examples/Examples.md
+        links:
+          [
+            docs/examples/Fibonacci.md,
+            docs/examples/Standalone_Fibonacci.md,
+            docs/examples/Styled_Text.md,
+            docs/examples/Astronauts.md,
+            docs/examples/Standalone_Astronauts.md,
+            docs/examples/Currency_Exchange.md,
+            docs/examples/Standalone_Currency_Exchange.md,
+            docs/examples/Pandas_DataFrame.md,
+            docs/examples/Standalone_Pandas_DataFrame.md,
+            docs/examples/Covid_Plot.md,
+            docs/examples/Polynomial_Plot.md,
+            docs/examples/Interpolation_Plot.md,
+            docs/examples/Machine_Learning.md,
+            docs/examples/Standalone_Machine_Learning.md,
+            docs/examples/Standalone_Web_Server.md,
+            docs/examples/Standalone_Flask_Application.md,
+            docs/examples/Standalone_SQLite_REST_Server.md
+          ]
+
+  - toc_group: contributing
+    subgroups:
+      - main: docs/contributor/Contributing.md
+
 
 # Build settings
-markdown: kramdown
-theme: minima
-
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - script
+  
+gems:
   - jekyll-redirect-from
   - jekyll-relative-links
   - jekyll-last-modified-at
   - jekyll-sitemap
-exclude:
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
 
-header_pages:
-  - docs/Getting_Started.md
-  - docs/guides/Guides.md
-  - docs/examples/Examples.md
-  - docs/reference/Reference.md
+markdown: kramdown
+theme: minima
 
-footer_pages:
-  - docs/contributor/Contributing.md
-  - docs/License.md
+kramdown:
+  input: GFM
+  syntax_highlighter: none
+  syntax_highlighter_opts:
+    disable: true
 
+autoprefixer:
+  browsers:
+  - last 3 versions
+  only_production: true
 
-
-
-
-
-
+defaults:
+  sitemap: false

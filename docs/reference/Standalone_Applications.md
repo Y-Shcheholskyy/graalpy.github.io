@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: reference
 title: Standalone Python Applications
 permalink: /reference/standalone-applications/
 ---

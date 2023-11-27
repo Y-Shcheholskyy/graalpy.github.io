@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: examples
 title: Styled Text
 permalink: /examples/styled_text/
 description: This example provides a demonstration of the [Pyfiglet](https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/) ASCII art package.

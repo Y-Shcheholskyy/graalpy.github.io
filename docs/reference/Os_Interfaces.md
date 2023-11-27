@@ -1,12 +1,8 @@
 ---
-layout: page
+layout: reference
 title: Operating System Interfaces
 permalink: /reference/os_interfaces/
 ---
-
-<h4>Table of Contents</h4>
-  * this unordered seed list will be replaced by toc as unordered list
-  {:toc}
 
 ## Background
 

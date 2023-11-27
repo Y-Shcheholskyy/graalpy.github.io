@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: reference
 title: Jython Migration Guide
 permalink: /reference/jython/
 ---

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: examples
 title: Interpolation Plot
 permalink: /examples/interpolation_plot/
 description: This example provides a demonstration creating an interpolation plot with the use of [Matplotlib](https://matplotlib.org/) (a visualization library for Python), [NumPy](https://numpy.org/) (an open source library of mathematical functions), and [SciPy](https://scipy.org/) (an open source library for scientific and  technical computing).

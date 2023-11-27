@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: reference
 title: Java Interoperability
 permalink: /reference/java_interoperability/
 ---

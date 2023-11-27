@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: examples
 title: Standalone Web Server
 permalink: /examples/standalone_web_server/
 description: This example provides a demonstration of creating a standalone web server, using the Python `http.server` module and GraalVM Native Image.

@@ -1,8 +1,10 @@
 ---
 layout: page
 title: Contributing to GraalPy
-permalink: contributor/contributing/
+permalink: /contributor/
 ---
+
+# Contributing to GraalPy
 
 If you're thinking about contributing something to this repository, you will need to sign the [Oracle Contributor Agreement](http://www.graalvm.org/community/contributors/) for us to able to merge your work.
 Please also take note of our [code of conduct](http://www.graalvm.org/community/conduct/) for contributors.

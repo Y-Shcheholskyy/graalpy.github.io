@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: examples
 title: Currency Exchange
 permalink: /examples/currency_exchange/
 description: This example provides a demonstration of using the Python [`requests`](https://pypi.org/project/requests/) and [`beautifulsoup`](https://www.crummy.com/software/BeautifulSoup/) modules to scrape a web page.

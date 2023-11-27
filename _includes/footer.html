@@ -1,82 +1,49 @@
-<!-- <footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
-  <div class="wrapper">
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col">
-        {%- assign page_paths = site.footer_pages -%}
-        {%- for path in page_paths -%}
-          {%- assign my_page = site.pages | where: "path", path | first -%}
-          {%- if my_page.title -%}
-            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-            <br/>
-          {%- endif -%}
-        {%- endfor -%}
-      </div>
-      <div class="footer-col">
-        <p>{{ site.description | escape }}</p>
-      </div>
-    </div>
-
-<<<<<<< HEAD
-    <div class="social-links">
-      {%- include social.html -%}
-    </div>
-
-=======
->>>>>>> e42b88b (Extend website configuration)
-  </div>
-
-</footer> -->
-
 <footer class="footer footer__mobile">
 
   <div class="container">
 
-        <div class="row footer-content">
-          <div class="footer__logo">
-            <div class="rubber-footer">
-              <img src='{{ "/resources/img/home/graalpy-logo.svg" | relative_url }}' alt="GraalPy logo">
-            </div>
-          </div>
-          <div class="footer__columns">
-            <div class="footer__columns-item">
-              <h6 class="title-footer" onclick="fadeInAndOut(this)">Learn</h6>
-              <div class="grow">
-                <ul class="footer-list">
-                  <li class="footer-list__item"><a href="{{ '/reference/' | relative_url }}">Documentation</a></li>
-                  <li class="footer-list__item"><a href="{{ '/guides/' | relative_url }}">Guides</a></li>
-                  <li class="footer-list__item"><a href="{{ '/examples/' | relative_url }}">Examples</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="footer__columns-item">
-              <h6 class="title-footer" onclick="fadeInAndOut(this)">More</h6>
-              <div class="grow">
-                <ul class="footer-list">
-                  <li class="footer-list__item"><a href="#">Contributing</a></li>
-                  <li class="footer-list__item"><a href="#">Compatibility</a></li>
-                  <li class="footer-list__item"><a href="#">Release Calendar</a></li>
-                  <li class="footer-list__item"><a href="#">FAQ</a></li>
-                  <li class="footer-list__item"><a href="#">License</a></li>
-                </ul>
-              </div>
-            </div>
+    <div class="row footer-content">
+      <div class="footer__logo">
+        <div class="rubber-footer">
+          <img src='{{ "/resources/img/home/graalpy-logo.svg" | relative_url }}' alt="GraalPy logo">
+        </div>
+      </div>
+      <div class="footer__columns">
+        <div class="footer__columns-item">
+          <h6 class="title-footer" onclick="fadeInAndOut(this)">Learn</h6>
+          <div class="grow">
+            <ul class="footer-list">
+              <li class="footer-list__item"><a href="{{ '/reference/' | relative_url }}">Documentation</a></li>
+              <li class="footer-list__item"><a href="{{ '/guides/' | relative_url }}">Guides</a></li>
+              <li class="footer-list__item"><a href="{{ '/examples/' | relative_url }}">Examples</a></li>
+            </ul>
           </div>
         </div>
-
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-          <div class="row">
-            <div class="col-sm-12">
-              <p class="copyright">
-                GraalPy, the GraalVM Implementation of Python.
-                Copyright © 2023, 2024. All rights reserved. Other names may be trademarks of their respective owners.
-              </p>
-            </div>
+        <div class="footer__columns-item">
+          <h6 class="title-footer" onclick="fadeInAndOut(this)">More</h6>
+          <div class="grow">
+            <ul class="footer-list">
+              <li class="footer-list__item"><a href="#">Contributing</a></li>
+              <li class="footer-list__item"><a href="#">Compatibility</a></li>
+              <li class="footer-list__item"><a href="#">Release Calendar</a></li>
+              <li class="footer-list__item"><a href="#">FAQ</a></li>
+              <li class="footer-list__item"><a href="#">License</a></li>
+            </ul>
           </div>
-
         </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="row">
+        <div class="col-sm-12">
+          <p class="copyright">
+            Copyright © 2023, Oracle and/or its affiliates. All rights reserved.
+          </p>
+        </div>
+      </div>
+
+    </div>
   </div>
 </footer>
 
@@ -95,6 +62,4 @@
         //attributes which triggers the transition CSS
         */
   }
-
-
 </script>

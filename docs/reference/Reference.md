@@ -8,6 +8,10 @@ title: Reference Documentation
 
 # GraalPy Reference Documentation
 
+{% comment %}
+  The list of docs for this page is in _data/reference_list.yml
+{% endcomment %}
+
 <ul>
    {% for item in site.data.reference_list.docs %}
       {%- assign reference_page = site.pages | where: "path", item | first -%}

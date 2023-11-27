@@ -8,6 +8,10 @@ permalink: /examples/
 
 # Examples to Run on GraalPy
 
+{% comment %}
+  The list of docs for this page is in _data/example_list.yml
+{% endcomment %}
+
 <table>
   <tr>
     <th>Title</th>

@@ -86,7 +86,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  - vendor
+  - vendor/
   - script
   
 gems:

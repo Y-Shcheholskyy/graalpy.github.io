@@ -1,5 +1,5 @@
 ---
-layout: guides
+layout: docs-layout
 toc_group: guides
 permalink: /guides/debugging-python-application/
 link_title: Debugging a Python Application

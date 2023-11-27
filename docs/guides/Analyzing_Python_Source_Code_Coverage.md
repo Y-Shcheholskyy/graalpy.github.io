@@ -1,5 +1,5 @@
 ---
-layout: guides
+layout: docs-layout
 toc_group: guides
 permalink: /guides/analyzing-coverage/
 link_title: Analyzing Python Source Code Coverage

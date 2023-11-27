@@ -1,5 +1,5 @@
 ---
-layout: reference
+layout: docs-layout
 toc_group: reference
 permalink: /reference/parser-details/
 link_title: Python Code Parsing and pyc Files

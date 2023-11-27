@@ -1,5 +1,5 @@
 ---
-layout: reference
+layout: docs-layout
 toc_group: reference
 permalink: /reference/java-interoperability/
 link_title: Java Interoperability

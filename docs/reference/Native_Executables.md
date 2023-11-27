@@ -1,5 +1,5 @@
 ---
-layout: reference
+layout: docs-layout
 toc_group: reference
 permalink: /reference/native-executables/
 link_title: Native GraalPy Executables

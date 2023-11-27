@@ -1,5 +1,5 @@
 ---
-layout: examples
+layout: docs-layout
 toc_group: examples
 link_title: Pandas DataFrame Example
 title: Pandas DataFrame Example

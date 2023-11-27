@@ -1,5 +1,5 @@
 ---
-layout: guides
+layout: docs-layout
 toc_group: guides
 permalink: /guides/using-vscode/
 link_title: Using Visual Studio Code with GraalPy

@@ -1,5 +1,5 @@
 ---
-layout: guides
+layout: docs-layout
 toc_group: guides
 permalink: /guides/running-python-application/
 link_title: Running a Python Application

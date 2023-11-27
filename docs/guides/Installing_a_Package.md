@@ -1,5 +1,5 @@
 ---
-layout: guides
+layout: docs-layout
 toc_group: guides
 permalink: /guides/installing-package/
 link_title: Installing a Python Package

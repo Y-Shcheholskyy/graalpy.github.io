@@ -1,5 +1,5 @@
 ---
-layout: reference
+layout: docs-layout
 toc_group: reference
 permalink: /reference/os-interfaces/
 link_title: Operating System Interfaces

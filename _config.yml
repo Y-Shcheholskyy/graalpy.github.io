@@ -89,7 +89,7 @@ exclude:
   - vendor/
   - script
   
-gems:
+plugins: 
   - jekyll-redirect-from
   - jekyll-relative-links
   - jekyll-last-modified-at

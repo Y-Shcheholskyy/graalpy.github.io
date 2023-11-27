@@ -1,5 +1,5 @@
 ---
-layout: reference
+layout: docs-layout
 title: Interoperability
 permalink: /reference/interoperability/
 link_title: Interoperability with Other Languages

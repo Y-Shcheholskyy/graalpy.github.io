@@ -1,5 +1,5 @@
 ---
-layout: guides
+layout: docs-layout
 toc_group: guides
 permalink: /guides/profiling-python-application/
 link_title: Profiling a Python Application

@@ -1,5 +1,5 @@
 ---
-layout: examples
+layout: docs-layout
 toc_group: examples
 link_title: Standalone Flask Example
 title: Standalone Flask Example

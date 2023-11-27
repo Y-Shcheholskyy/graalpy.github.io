@@ -1,5 +1,5 @@
 ---
-layout: guides
+layout: docs-layout
 toc_group: guides
 permalink: /guides/creating-virtual-environment/
 link_title: Creating a Virtual Environment

@@ -1,5 +1,5 @@
 ---
-layout: examples
+layout: docs-layout
 toc_group: examples
 link_title: Standalone SQLite REST Server Example
 title: Standalone SQLite REST Server Example

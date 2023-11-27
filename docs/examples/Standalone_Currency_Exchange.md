@@ -1,5 +1,5 @@
 ---
-layout: examples
+layout: docs-layout
 toc_group: examples
 link_title: Standalone Python `requests` and `beautifulsoup` Example
 title: Standalone Python `requests` and `beautifulsoup` Example

@@ -1,0 +1,18 @@
+<ul class="toc-bullets">
+    {% for path in site.tables_of_contents %}
+      {% if path["toc_group"] == page.toc_group %}
+        {% for sub in path["subgroups"] %}
+          {% if sub.main_link == page.path %}
+            {% for link in sub["links"] %}
+              <li>
+                {% assign curr_pg = site.pages | where: "path", link | first %}
+                <a href="{{ curr_pg.url | relative_url }}">
+                  {{ curr_pg.link_title | escape }}
+                </a>
+              </li>
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+</ul>

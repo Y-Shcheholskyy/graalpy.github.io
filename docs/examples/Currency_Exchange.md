@@ -1,9 +1,14 @@
 ---
 layout: examples
-title: Currency Exchange
+toc_group: examples
+link_title: Python `requests` and `beautifulsoup` Example
+title: Python `requests` and `beautifulsoup` Example
 permalink: /examples/currency_exchange/
 description: This example provides a demonstration of using the Python [`requests`](https://pypi.org/project/requests/) and [`beautifulsoup`](https://www.crummy.com/software/BeautifulSoup/) modules to scrape a web page.
 ---
+
+# Python `requests` and `beautifulsoup` Example
+
 {{ page.description }}
 
 1. Install `graalpy` and [create a Virtual Environment](/guides/creating_a_virtual_environment/), then activate it. 

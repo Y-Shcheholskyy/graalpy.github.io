@@ -1,9 +1,14 @@
 ---
 layout: examples
-title: Polynomial Plot
+toc_group: examples
+link_title: Polynomial Plot Example
+title: Polynomial Plot Example
 permalink: /examples/polynomial_plot/
 description: This example provides a demonstration of the use of [Matplotlib](https://matplotlib.org/), a visualization library for Python, combined with [NumPy](https://numpy.org/), an open source library of mathematical functions.
 ---
+
+# Polynomial Plot Example
+
 {{ page.description }}
 
 >**Prerequisites**: A recent version of [CMake](https://cmake.org/) is required to install the matplotlib package. (For more information, see [Installing CMake](https://cmake.org/install/).)

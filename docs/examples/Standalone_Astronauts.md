@@ -1,10 +1,16 @@
 ---
 layout: examples
-title: Standalone Astronauts
+toc_group: examples
+link_title: Standalone Python REST API Example
+title: Standalone Python REST API Example
 permalink: /examples/standalone_astronauts/
 description: This example provides a demonstration of creating a standalone executable from your Python application, using GraalVM Native Image. 
 ---
+
+# Standalone Python REST API Example
+
 {{ page.description }}
+
 It is based on the [Astronauts](/examples/astronauts/) example.
 
 1. Follow the steps in the [Astronauts](/examples/astronauts/) example.

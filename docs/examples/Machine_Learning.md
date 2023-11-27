@@ -1,9 +1,14 @@
 ---
 layout: examples
-title: Machine Learning
+toc_group: examples
+link_title: Machine Learning Example
+title:  Machine Learning Example
 permalink: /examples/machine_learning/
 description: This example provides a demonstration of using [`scikit-learn`](https://scikit-learn.org/stable/) (a free machine learning library for Python) to model a dataset of Iris plants.
 ---
+
+# Machine Learning Example
+
 {{ page.description }}
 
 1. Install `graalpy` and [create a Virtual Environment](/guides/creating_a_virtual_environment/), then activate it. 

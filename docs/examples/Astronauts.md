@@ -1,9 +1,14 @@
 ---
 layout: examples
-title: Astronauts
+toc_group: examples
+link_title: Python REST API Example
+title: Python REST API Example
 permalink: /examples/astronauts/
 description: This example provides a demonstration of using the Python [`requests`](https://pypi.org/project/requests/) module to call a REST API.
 ---
+
+# Python REST API Example
+
 {{ page.description }}
 
 1. Install `graalpy` and [create a Virtual Environment](/guides/creating_a_virtual_environment/), then activate it. 

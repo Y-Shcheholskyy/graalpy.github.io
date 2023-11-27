@@ -1,5 +1,7 @@
 ---
 layout: examples
+toc_group: examples
+link_title: GraalPy Examples
 title: GraalPy Examples
 permalink: /examples/
 ---

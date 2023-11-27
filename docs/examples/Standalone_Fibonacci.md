@@ -1,10 +1,16 @@
 ---
 layout: examples
-title: Standalone Fibonacci
-permalink: /examples/standalone_fibonacci/
+toc_group: examples
+link_title: Standalone Fibonacci Example
+title: Standalone Fibonacci Example
+permalink: /examples/standalone_currency_exchange/
 description: This example provides a demonstration of creating a standalone executable from your Python application, using GraalVM Native Image.
 ---
-{{ page.description }} 
+
+# Standalone Fibonacci Example
+
+{{ page.description }}
+
 It is based on the [Fibonacci](/examples/fibonacci/) example.
 
 1. Follow the steps in the [Fibonacci](/examples/fibonacci/) example.

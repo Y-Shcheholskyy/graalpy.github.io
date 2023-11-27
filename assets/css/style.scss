@@ -1,7 +1,9 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-
+// Bootstrap 4.5.0
+@import "minima/plugins/bootstrap-4.5.0/bootstrap";
+@import "minima/plugins/bootstrap-4.5.0/bootstrap-grid";
 @import
   // "minima/layout",
   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
@@ -14,8 +16,10 @@
   "minima/layout/footer",
   "minima/layout/header",
   "minima/layout/menu",
+  "minima/layout/sidebar",
   "minima/utilities/variables",
   "minima/layout/buttons",
+  "minima/layout/toc-bullets",
 
   "minima/base",
   "minima/layout"

@@ -2,7 +2,12 @@
 layout: reference
 title: Interoperability
 permalink: /reference/interoperability/
+link_title: Interoperability with Other Languages
+title: Interoperability with Other Languages
 ---
+
+# Interoperability with Other Languages
+
 The best way to embed GraalPy is to use the [GraalVM SDK Polyglot API](https://www.graalvm.org/sdk/javadoc/org/graalvm/polyglot/package-summary.html).
 
 <h4>Table of Contents</h4>

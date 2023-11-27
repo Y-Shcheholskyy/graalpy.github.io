@@ -1,14 +1,12 @@
 ---
 layout: reference
-title: Reference
+toc_group: reference
 permalink: /reference/
+link_title: Reference Documentation
+title: Reference Documentation
 ---
-Lorem Ipsum
 
-{% comment %}
-  The list of docs for this page is in _data/reference_list.yml
-{% endcomment %}
-
+# GraalPy Reference Documentation
 
 <ul>
    {% for item in site.data.reference_list.docs %}

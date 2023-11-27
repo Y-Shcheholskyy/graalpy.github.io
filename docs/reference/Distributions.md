@@ -1,8 +1,13 @@
 ---
 layout: reference
-title: GraalPy Distributions
+toc_group: reference
 permalink: /reference/distributions/
+link_title: GraalPy Distributions
+title: GraalPy Distributions
 ---
+
+# GraalPy Distributions
+
 As of **GraalVM for JDK 21**, GraalPy is available as separate "standalones" from GraalVM: Oracle GraalPy and GraalPy Community.
 Oracle GraalPy provides the best experience: it comes with additional optimizations, is significantly faster and more memory-efficient.
 

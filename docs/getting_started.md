@@ -1,26 +1,21 @@
 ---
 layout: docs-layout
-title: Getting Started
 permalink: /getting_started/
+link_title: Getting Started
+title: Getting Started
 ---
 
-<h4>Table of Contents</h4>
-* this unordered seed list will be replaced by toc as unordered list
-{:toc}
+# Get Started with GraalPy
 
 ## Installing GraalPy
 
 ### Linux and macOS
+
 The easiest way to install GraalPy on Linux and macOS platforms is to use [Pyenv](https://github.com/pyenv/pyenv) (the Python version manager).
-To install version 23.1.0 using `pyenv`, run the following commands:
+To install using `pyenv`, run the following commands, specifying the version:
 
 ```bash
 % pyenv install graalpy-23.1.0
- 
-Downloading graalpy-23.0.0.tar.gz...
--> https://github.com/oracle/graalpython/releases/download/graal-23.1.0/graalpython-23.1.0-macos-amd64.tar.gz
-Installing graalpy-23.1.0...
-Installed graalpy-23.1.0 to ~/.pyenv/versions/graalpy-23.1.0
  
 % pyenv shell graalpy-23.1.0
 ```
@@ -45,9 +40,7 @@ For example
 There is a GraalPy preview build for Windows that you can [download](https://github.com/oracle/graalpython/releases/).
 It supports installation of pure Python packages via `pip`.
 
-## Hello World!
-
-### Invoke the Python Interpreter
+## Invoke the Python Interpreter
 
 Start the Python interactive shell from the command line, using the command `graalpy`, then enter the following line at the Python shell prompt (identified by `>>>`), followed by **CR**.
 
@@ -62,7 +55,7 @@ Hello World!
 >>>
 ```
 
-### Invoke a Python Script
+## Invoke a Python Script
 
 Copy the following contents into a file named _helloworld.py_:
 
@@ -82,6 +75,6 @@ Hello World!
 ```
 
 ### Related Documentation
-{:.no_toc}
+
 * [Creating a Virtual Environment](/guides/creating_a_virtual_environment/)
 * [Running a Python Application](/guides/running_a_python_application/)

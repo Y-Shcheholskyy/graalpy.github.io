@@ -1,8 +1,11 @@
 ---
 layout: page
-title: FAQ
 permalink: /faq/
+link_title: FAQs
+title: FAQs
 ---
+
+# Frequently Asked Questions
 
 ## Does module/package XYZ work on GraalPy?
 

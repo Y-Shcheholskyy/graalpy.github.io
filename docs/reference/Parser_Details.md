@@ -1,8 +1,13 @@
 ---
 layout: reference
+toc_group: reference
+permalink: /reference/parser-details/
+link_title: Python Code Parsing and pyc Files
 title: Python Code Parsing and pyc Files
-permalink: /reference/parser_details/
 ---
+
+# Python Code Parsing and pyc Files
+
 This document describes how Python files are parsed by GraalPy.
 
 <h4>Table of Contents</h4>

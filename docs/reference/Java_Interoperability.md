@@ -1,8 +1,12 @@
 ---
 layout: reference
+toc_group: reference
+permalink: /reference/java-interoperability/
+link_title: Java Interoperability
 title: Java Interoperability
-permalink: /reference/java_interoperability/
 ---
+
+# GraalPy Interoperability with Java
 
 <h4>Table of Contents</h4>
   * this unordered seed list will be replaced by toc as unordered list

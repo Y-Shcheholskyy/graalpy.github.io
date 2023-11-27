@@ -1,8 +1,12 @@
 ---
 layout: reference
-title: Jython Migration Guide
+toc_group: reference
 permalink: /reference/jython/
+link_title: Jython Migration Guide
+title: Jython Migration Guide
 ---
+
+# Jython Migration Guide
 
 Most Jython code that uses Java integration will be based on a stable Jython release, and these only come in Python 2.x versions.
 GraalPy, in contrast, is only targeting Python 3.x.

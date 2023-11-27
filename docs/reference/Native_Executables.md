@@ -1,8 +1,12 @@
 ---
 layout: reference
-title: Native GraalPy Executables
+toc_group: reference
 permalink: /reference/native-executables/
+link_title: Native GraalPy Executables
+title: Native GraalPy Executables
 ---
+
+# Native GraalPy Executables
 
 Python is a large language.
 "Batteries included" has long been a core tenet of CPython.

@@ -1,9 +1,12 @@
 ---
 layout: reference
+toc_group: reference
+permalink: /reference/windows-distribution/
+link_title: Windows Distribution
 title: Windows Distribution
-permalink: /reference/windows_distribution/
 ---
 
+# Windows Distribution
 The GraalPy preview build for Windows that you can [download](https://github.com/oracle/graalpython/releases/) has several known issues:
 
   - JLine treats Windows a dumb terminal, no autocomplete and limited editing capabilities in the REPL

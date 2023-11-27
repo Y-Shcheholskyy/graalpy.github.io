@@ -54,7 +54,7 @@ description: This example provides a demonstration of using the Python [`request
     % graalpy currency_exchange.py
     ```
 
-5. A CSV file is produced, similar to [_currency\_exchange.csv_](/examples/assets/currency_exchange.csv).
+5. A CSV file is produced, similar to [_currency\_exchange.csv_](assets/currency_exchange.csv).
 
 ### Related Documentation
 * [Creating a Virtual Environment](/guides/creating_a_virtual_environment/)

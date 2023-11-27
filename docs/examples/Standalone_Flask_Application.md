@@ -56,7 +56,7 @@ It is adapted from the Flask [Quickstart](https://flask.palletsprojects.com/en/3
     ```
 
 6. Visit the URL with a web browser, and you should see something like:
-![Hello Flask](/examples/assets/Hello_Flask.png)
+![Hello Flask](assets/Hello_Flask.png)
 
 7. Unset your JAVA_HOME environment variable. 
 (For example, on Linux and macOS, use the command `unset JAVA_HOME`.)

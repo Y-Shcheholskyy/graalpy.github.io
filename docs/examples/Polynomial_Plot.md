@@ -55,7 +55,7 @@ description: This example provides a demonstration of the use of [Matplotlib](ht
     ```
 
 5. The script creates several files as follows:
-   ![Polynomial Regressions](/examples/assets/Polynomial_Regression.png)
+   ![Polynomial Regressions](assets/Polynomial_Regression.png)
 
 ### Related Documentation
 * [Creating a Virtual Environment](/guides/creating_a_virtual_environment/)

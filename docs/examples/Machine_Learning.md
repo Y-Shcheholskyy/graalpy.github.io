@@ -61,7 +61,7 @@ description: This example provides a demonstration of using [`scikit-learn`](htt
 4. Use the following command to run the script:
 
     ```bash
-    % graalpy iris.py
+    % graalpy irises.py
     ```
 
 5. You should see output similar to:

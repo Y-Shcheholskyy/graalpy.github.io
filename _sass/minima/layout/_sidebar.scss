@@ -1,0 +1,233 @@
+.col-bg {
+  &:after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: "";
+    width: 9999%;
+    height: 100%;
+    // background: linear-gradient(180deg, #002E38 20.34%, #004a5a 100.15%, #002E38 20.34%);
+    background: #171F26;
+    z-index: -1;
+  }
+}
+
+.sidebar-wrap {
+  position: relative;
+  background-color: transparent;
+  margin-left: 15px;
+
+  // @include media-breakpoint-up(sm) {
+  //   min-height: calc(100vh - 70px);
+  // }
+}
+
+.inner-wrapper-sticky {
+  // margin-top: 16px;
+  @media only screen
+  and (min-width: 320px)
+  and (max-width: 768px) {
+    transform: none!important;
+}
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  background: transparent;
+  z-index: 99;
+  padding: 0 15px;
+
+  &.open {
+    transform: translateX(0);
+    background: url("/resources/img/home/grain.png") repeat, radial-gradient(142.83% 143.5% at 0.12% 128.91%, #264d6d 0%, rgba(38, 84, 107, 0) 100%), #171E25;
+    margin-top: 44px;
+  }
+
+  /* Portrait and Landscape iPhones 4, 5, 5SE */
+  @media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 480px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+      margin-left: 0;
+    }
+
+  @include media-breakpoint-up(sm) {
+    position: relative;
+    top: auto;
+    height: auto;
+    padding: 80px 0 10px;
+    background: transparent;
+    z-index: 2;
+    width: 320px;
+    left: auto;
+    transform: translate(0, 0); /* For browsers don't support translate3d. */
+    transform: translate3d(0, 0, 0);
+    will-change: position, transform;
+  }
+
+  &--ecosysytem {
+    @include media-breakpoint-up(sm) {
+      top: 60px;
+      position: sticky;
+      flex: 1;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}
+
+//FOR DOCS PAGE_________NOT ONLY SIDEBAR
+
+.space-color{
+  // background-color: #F3F7FF;
+}
+
+.col-sm-3.docsimpro {
+  flex: 0 0 335px;
+  max-width: 335px;
+  padding: 0px;
+}
+
+.col-sm-9.docsmod {
+  flex: 1 1 260px;
+  flex-wrap: wrap;
+  min-width: none;
+  overflow: auto;
+  background: #ffffff;
+  max-width: 100%;
+}
+
+.guides-container {
+  padding: 40px 24px 40px 48px;
+}
+.guide__content_2 {
+  min-width: none;
+  background-color: #F3F7FF;
+}
+
+.menuabout img {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  margin: 10px 0px 20px 20px;
+  @media only screen
+  and (min-width: 320px)
+  and (max-width: 575px) {
+      display: none;
+    }
+}
+
+.no-display {
+  display: none;
+}
+
+.btn-color {
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 767px) {
+    background: #2F3747;
+    border-radius: 3px;
+    }
+}
+
+.container-fluid--sidebar {
+  max-width: 2440px;
+  margin: 0 auto;
+  background: #ffffff;
+}
+
+//COLAPSED SIDEBAR STYLES
+.short {
+
+  .menuabout img {  
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-left: 10px;
+    @media only screen
+    and (min-width: 320px)
+    and (max-width: 575px) {
+      display: none;
+      }
+  }
+  .toc-bullets {
+    display: none;
+  }
+  .element-about-pad {
+    padding-left: 0px;
+  }
+  .diagram-about {
+    margin-left: -32px;
+    @media only screen
+    and (min-device-width: 600px)
+    and (max-device-width: 1024px) {
+      margin-left: 0px;
+      }
+  }
+  .tagline_about_gcn p {
+    margin-left: 0px;
+  }
+
+  .version-dropdown {
+    display: none !important;
+  }
+
+  .col-sm-9 {
+    flex: 0 0 95% !important;
+    max-width: 95% !important;
+    @media only screen
+    and (min-width: 576px)
+    and (max-width: 719px) {
+      flex: 0 0 91% !important;
+    }
+    @media only screen
+    and (min-width: 720px)
+    and (max-width: 767px) {
+      flex: 0 0 92% !important;
+    }
+    @media only screen
+    and (min-width: 768px)
+    and (max-width: 860px) {
+      flex: 0 0 93% !important;
+    }
+    @media only screen
+    and (min-width: 861px)
+    and (max-width: 1024px) {
+      flex: 0 0 94% !important;
+    }
+  }
+  .col-sm-3.docsimpro {
+    max-width: 4%;
+    padding: 0px;
+    @media only screen
+    and (min-width: 576px)
+    and (max-width: 719px) {
+      max-width: 9%;
+    }
+    @media only screen
+    and (min-width: 720px)
+    and (max-width: 767px) {
+      max-width: 8%;
+    }
+    @media only screen
+    and (min-width: 768px)
+    and (max-width: 860px) {
+      max-width: 7%;
+    }
+    @media only screen
+    and (min-width: 861px)
+    and (max-width: 1024px) {
+      max-width: 6%;
+    }
+    @media only screen
+    and (min-width: 1025px)
+    and (max-width: 1270px) {
+      max-width: 5%;
+    }
+  }
+}

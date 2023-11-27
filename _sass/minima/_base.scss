@@ -135,8 +135,8 @@ a {
 
   &:hover {
     // color: $link-hover-color;
-    color: #AFDEED;
-    // text-decoration: underline;
+    color: #f29111;
+    text-decoration: none;
   }
 
   .social-media-list &:hover {
@@ -177,6 +177,7 @@ code {
   // border: 1px solid $border-color-01;
   border-radius: 12px;
   background-color: $code-background-color;
+  color: #ffffff;
 }
 
 code {

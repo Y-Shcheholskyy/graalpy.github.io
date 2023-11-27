@@ -1,2 +1,18 @@
+.docs-content {
+    padding-top: 80px;
+}
+.docs-content p {
+    font-size: 16px;
+    margin-bottom: 7px;
+    color: #171f26;
 
+    &:last-of-type { margin-bottom: 0; }
+
+    code {
+        color: rgb(255, 255, 255);
+        background: #208086;
+        padding: 2px 4px;
+        border-radius: 4px;
+    }
+  }
 

@@ -52,7 +52,7 @@ description: This example provides a demonstration of creating a standalone web 
     ```
 
 5. Visit the URL with a web browser, and you should see something like:
-![GraalPy web server](/examples/assets/GraalPy_Web_Server.png)
+![GraalPy web server](assets/GraalPy_Web_Server.png)
 
 6. Unset your JAVA_HOME environment variable. 
 (For example, on Linux and macOS, use the command `unset JAVA_HOME`.)

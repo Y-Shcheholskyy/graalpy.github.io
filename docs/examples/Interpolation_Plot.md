@@ -52,7 +52,7 @@ description: This example provides a demonstration creating an interpolation plo
     ```
 
 5. The script creates a plot as follows:
-   ![Interpolation Plot](/examples/assets/Interpolation.png)
+   ![Interpolation Plot](assets/Interpolation.png)
 
 ### Related Documentation
 * [Creating a Virtual Environment](/guides/creating_a_virtual_environment/)

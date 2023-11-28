@@ -65,7 +65,7 @@ description: This example provides a demonstration of the use of [Matplotlib](ht
     ```
 
 5. The script creates a file named _Poland\_covid\_plot.png_ with content similar to:
-    ![Covid Plot for Poland](/examples/assets/Poland_covid_plot.png)
+    ![Covid Plot for Poland](assets/Poland_covid_plot.png)
 
 ### Related Documentation
 * [Creating a Virtual Environment](/guides/creating_a_virtual_environment/)

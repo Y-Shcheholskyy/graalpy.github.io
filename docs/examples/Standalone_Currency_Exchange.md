@@ -30,7 +30,7 @@ It is based on the [Currency Exchange](/examples/currency_exchange/) example.
     % ./currency_exchange
     ```
 
-5. A CSV file is produced, similar to [_currency\_exchange.csv_](/examples/assets/currency_exchange.csv).
+5. A CSV file is produced, similar to [_currency\_exchange.csv_](assets/currency_exchange.csv).
 
 ### Related Documentation
 * [Currency Exchange](/examples/currency_exchange/)

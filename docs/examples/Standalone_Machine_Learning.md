@@ -1,9 +1,10 @@
 ---
-layout: page
+layout: learn
 title: Standalone Machine Learning
-permalink: /examples/standalone_machine_learning/
+permalink: /examples/standalone-machine-learning/
 description: This example provides a demonstration of creating a standalone executable from your Python application, using GraalVM Native Image.
 ---
+# Standalone Machine Learning
 {{ page.description }}
 It is based on the [Machine Learning](/examples/machine_learning/) example.
 

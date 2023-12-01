@@ -206,6 +206,40 @@
   // padding: $spacing-unit 0;
   flex: 1 0 auto;
   background-color: #0F2F3D;
+  // padding-top: 80px;
+}
+
+.docs-content {
+  flex: 1 0 auto;
+  background-color: #98d2e152;
+  padding: 80px 0px 10px 40px;
+}
+
+.edu-content {
+  flex: 1 0 auto;
+  background-color: #e2f9ff;
+  padding: 0px 20px;
+  margin-top: 48px
+}
+
+.edu-content-container {
+  padding: 20px 0px;
+}
+
+.edu-content-container h1,h2,h3,h4,h5,h6,p,li {
+  color: #09222E;
+}
+
+.edu-content-container code {
+  color: #ffffff;
+  background: #208086;
+  padding: 2px 4px;
+  border-radius: 4px
+}
+
+.edu-content-container pre > code {
+  color: #ffffff;
+  background: transparent;
 }
 
 .page-heading {

@@ -16,3 +16,32 @@
     }
   }
 
+.toc .h2 {
+    font-size: 20px;
+    padding: 10px 0px;
+    a {
+        color: #ffffff;
+        text-decoration: none;
+        list-style-type: none;
+        &:hover {
+            color: #AFDEED;
+          }
+    }
+}
+.toc .h3 {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 28px;
+    padding: 0px 0px 0px 15px;
+    a {
+        color: #ffffff;
+        text-decoration: none;
+        list-style-type: none;
+        &:hover {
+            color: #AFDEED;
+            font-weight: 400;
+          }
+    }
+    font-size: 14px;
+    padding-left: 15px;
+}

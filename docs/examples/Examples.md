@@ -1,9 +1,8 @@
 ---
-layout: page
+layout: examples
 title: Examples
 permalink: /examples/
 ---
-Lorem Ipsum
 
 {% comment %}
   The list of docs for this page is in _data/example_list.yml

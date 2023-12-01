@@ -1,9 +1,10 @@
 ---
-layout: page
+layout: learn
 title: Styled Text
-permalink: /examples/styled_text/
+permalink: /examples/styled-text/
 description: This example provides a demonstration of the [Pyfiglet](https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/) ASCII art package.
 ---
+# Styled Text
 {{ page.description }}
 
 1. Install `graalpy` and [create a Virtual Environment](/guides/creating_a_virtual_environment/), then activate it. 

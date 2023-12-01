@@ -1,9 +1,10 @@
 ---
-layout: page
+layout: learn
 title: Astronauts
 permalink: /examples/astronauts/
 description: This example provides a demonstration of using the Python [`requests`](https://pypi.org/project/requests/) module to call a REST API.
 ---
+# Astronauts
 {{ page.description }}
 
 1. Install `graalpy` and [create a Virtual Environment](/guides/creating_a_virtual_environment/), then activate it. 

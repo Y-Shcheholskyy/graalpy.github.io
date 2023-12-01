@@ -158,6 +158,39 @@ a.btn.btn-primary {
   padding-bottom: 20px;
 }
 
+//Benchmarks
+.pypage__title {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 400;
+  width: fit-content;
+  margin: 0 auto;
+  color: #FFFFFF;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.pyperform {
+  padding: 80px 0px 80px 0px;
+}
+
+.pyperform__text h5 {
+  text-align: center;
+  color: #ffffff;
+  max-width: 600px;
+  margin: 0 auto;
+  small {
+    line-height: 14px;
+  }
+}
+.pyperform__text-bot {
+  padding-top: 40px;
+}
+
+.pyperform img {
+  display: flex;
+  margin: 0 auto;
+}
+
 //Get Started section
 .pygs__step {
   margin-bottom: 40px;
@@ -179,7 +212,7 @@ a.btn.btn-primary {
 }
 .pygetstarted__descrip h5 {
   text-align: center;
-  color: #C0DBE9;
+  color: #ffffff;
   max-width: 600px;
   margin: 0 auto;
   padding-bottom: 24px;

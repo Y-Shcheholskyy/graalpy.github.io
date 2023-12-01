@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: learn
 title: Installing a Package
 permalink: /guides/installing_a_package/
 ---

@@ -9,3 +9,17 @@ function expandSidebar() {
   $('#sidebarClose').toggleClass("no-display")
   $('#sidebarOpen').toggleClass("no-display")
 }
+
+// Sticky sidebar
+var sidebar = document.querySelector('.sidebar-wrap');
+
+if (sidebar) {
+  var stickySidebar = new StickySidebar(sidebar, {
+    topSpacing: 74,
+    bottomSpacing: 40
+  });
+
+  sidebar.addEventListener('affix.container-bottom.stickySidebar', function (event) {
+    window.dispatchEvent(new Event('resize'));
+  });
+}

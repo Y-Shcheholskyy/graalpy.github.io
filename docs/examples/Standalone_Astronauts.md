@@ -1,9 +1,10 @@
 ---
-layout: page
+layout: learn
 title: Standalone Astronauts
-permalink: /examples/standalone_astronauts/
+permalink: /examples/standalone-astronauts/
 description: This example provides a demonstration of creating a standalone executable from your Python application, using GraalVM Native Image. 
 ---
+# Standalone Astronauts
 {{ page.description }}
 It is based on the [Astronauts](/examples/astronauts/) example.
 

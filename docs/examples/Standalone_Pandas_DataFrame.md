@@ -1,9 +1,10 @@
 ---
-layout: page
+layout: learn
 title: Standalone Pandas DataFrame
-permalink: /examples/standalone_pandas_dataframe/
+permalink: /examples/standalone-pandas-dataframe/
 description: This example provides a demonstration of creating a standalone executable from your Python application, using GraalVM Native Image.
 ---
+# Standalone Pandas DataFrame
 {{ page.description }}
 It is based on the [Pandas DataFrame](/examples/pandas_dataframe/) example.
 

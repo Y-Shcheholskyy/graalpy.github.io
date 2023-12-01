@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: learn
 title: Debugging a Python Application
 permalink: /guides/debugging_a_python_application/
+toc: true
 ---
 
 The standard python debugger `pdb` is supported on GraalPy. 

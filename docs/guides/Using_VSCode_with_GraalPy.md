@@ -1,8 +1,10 @@
----
+<!-- ---
 layout: learn
 title: Using Visual Studio Code with GraalPy
 permalink: /guides/using_vscode/
----
+--- -->
+
+## Using Visual Studio Code with GraalPy
 
 1. Install `graalpy`. 
 (For more information, see [Getting Started](/getting_started/).)
@@ -22,8 +24,3 @@ Alternatively, use a Python terminal emulator to run the `graalpy` command (for 
 
 7. You cannot use VS Code to debug your Python application.
 Instead, open a VS Code Python terminal emulator and follow these instructions: [Debugging a Python Application](/guides/debugging_a_python_application/).
-
-## Related Documentation
-* [Getting Started](/getting_started/)
-* [Running a Python Application](/guides/running_a_python_application/)
-* [Debugging a Python Application](/guides/debugging_a_python_application/)

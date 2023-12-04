@@ -1,8 +1,10 @@
----
+<!-- ---
 layout: learn
 title: Using PyCharm with GraalPy
 permalink: /guides/using_pycharm/
----
+--- -->
+
+## Using PyCharm with GraalPy
 
 1. Install `graalpy`. 
 (For more information, see [Getting Started](/getting_started/).)
@@ -24,8 +26,3 @@ Alternatively, use the terminal emulator to run the `graalpy` command (for more 
 
 7. You cannot use PyCharm to debug your Python application.
 Instead, follow these instructions: [Debugging a Python Application](/guides/debugging_a_python_application/).
-
-## Related Documentation
-* [Getting Started](/getting_started/)
-* [Running a Python Application](/guides/running_a_python_application/)
-* [Debugging a Python Application](/guides/debugging_a_python_application/)

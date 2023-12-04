@@ -1,37 +1,8 @@
+environment: community
 title: GraalPy
-email: your-email@domain.com
-description: 
-  GraalPy, the GraalVM Implementation of Python.
-  Copyright © 2023, 2024, All rights reserved. Other names may be trademarks of their respective owners.
-baseurl: # the subpath of your site, e.g. /blog
-url: https://graalpy.github.io # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
-
-# Build settings
-markdown: kramdown
-theme: minima
-
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-redirect-from
-  - jekyll-relative-links
-  - jekyll-last-modified-at
-  - jekyll-sitemap
-  - jekyll-toc
-
-exclude:
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+description: GraalPy is a Python 3.10 compliant runtime on top of GraalVM. GraalPy offers high-performance execution, modern language features, and easy interoperability with Java. 
+url: "https://graalpy.github.io"
+baseurl: ""
 
 header_pages:
   - docs/Getting_Started.md
@@ -43,9 +14,31 @@ footer_pages:
   - docs/contributor/Contributing.md
   - docs/License.md
 
+# Build settings
+markdown: kramdown
+theme: minima
 
+kramdown:
+  input: GFM
+  syntax_highlighter: none
+  syntax_highlighter_opts:
+    disable: true
 
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+  - jekyll-relative-links
+  - jekyll-last-modified-at
+  - jekyll-sitemap
+  - jekyll-toc
 
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - script
+  - vendor
 
-
-
+defaults:
+  sitemap: false

@@ -1,13 +1,12 @@
----
+<!-- ---
 layout: learn
 title: Analyzing Python Source Code Coverage
 permalink: /guides/analyzing_coverage/
----
-<h4>Table of Contents</h4>
-* this unordered seed list will be replaced by toc as unordered list
-{:toc}
+--- -->
 
-## Coverage
+## Analyzing Python Source Code Coverage
+
+### Coverage
 
 GraalPy provides a _coverage_ feature, using the `--coverage` command-line option.
 (For details, use the `graalpy --help:tools` command.)
@@ -272,7 +271,7 @@ Code coverage histogram.
 </details>
 {::options parse_block_html="false" /}
 
-## Trace
+### Trace
 
 The standard Python `trace` module is also provided.
 > Note: This works in the same way as CPython.
@@ -387,8 +386,3 @@ lines   cov%   module   (path)
 ```
 </details>
 {::options parse_block_html="false" /}
-
-## Related Documentation
-{:.no_toc}
-* [GraalVM Code Coverage Tool](ttps://www.graalvm.org/latest/tools/code-coverage/)
-* [Python Trace](https://docs.python.org/3/library/trace.html)

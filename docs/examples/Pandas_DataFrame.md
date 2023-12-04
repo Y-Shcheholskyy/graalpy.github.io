@@ -1,9 +1,13 @@
 ---
-layout: page
+layout: learn
 title: Pandas DataFrame
-permalink: /examples/pandas_dataframe/
+permalink: /examples/pandas-dataframe/
 description: This example provides a demonstration of using the Python [`requests`](https://pypi.org/project/requests/) and [`pandas`](https://pandas.pydata.org/) modules to manipulate data from an open source dataset provided by the US government.
 ---
+
+<a href='{{ "/examples/" | relative_url }}' class="btn btn-back">&lt; Back</a>
+
+# Pandas DataFrame
 {{ page.description }}
 
 

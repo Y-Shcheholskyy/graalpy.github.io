@@ -61,7 +61,7 @@
     position: relative;
     top: auto;
     height: auto;
-    padding: 80px 0 10px;
+    padding: 0px 0 10px;
     background: transparent;
     z-index: 2;
     width: 320px;
@@ -92,6 +92,7 @@
   flex: 0 0 335px;
   max-width: 335px;
   padding: 0px;
+  background: linear-gradient(180deg, #18525c 10%,#07212C 100%);
 }
 
 .col-sm-9.docsmod {
@@ -101,6 +102,7 @@
   overflow: auto;
   background: #ffffff;
   max-width: 100%;
+  padding: 0px 15px 0px 0px;
 }
 
 .guides-container {
@@ -229,5 +231,8 @@
     and (max-width: 1270px) {
       max-width: 5%;
     }
+  }
+  .toc {
+    display: none;
   }
 }

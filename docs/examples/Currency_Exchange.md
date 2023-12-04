@@ -1,9 +1,13 @@
 ---
-layout: page
+layout: learn
 title: Currency Exchange
-permalink: /examples/currency_exchange/
+permalink: /examples/currency-exchange/
 description: This example provides a demonstration of using the Python [`requests`](https://pypi.org/project/requests/) and [`beautifulsoup`](https://www.crummy.com/software/BeautifulSoup/) modules to scrape a web page.
 ---
+
+<a href='{{ "/examples/" | relative_url }}' class="btn btn-back">&lt; Back</a>
+
+# Currency Exchange
 {{ page.description }}
 
 1. Install `graalpy` and [create a Virtual Environment](/guides/creating_a_virtual_environment/), then activate it. 

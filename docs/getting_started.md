@@ -1,12 +1,9 @@
 ---
 layout: docs-layout
 title: Getting Started
-permalink: /getting_started/
+permalink: /getting-started/
+toc: true
 ---
-
-<h4>Table of Contents</h4>
-* this unordered seed list will be replaced by toc as unordered list
-{:toc}
 
 ## Installing GraalPy
 
@@ -16,8 +13,7 @@ To install version 23.1.0 using `pyenv`, run the following commands:
 
 ```bash
 % pyenv install graalpy-23.1.0
- 
-Downloading graalpy-23.0.0.tar.gz...
+
 -> https://github.com/oracle/graalpython/releases/download/graal-23.1.0/graalpython-23.1.0-macos-amd64.tar.gz
 Installing graalpy-23.1.0...
 Installed graalpy-23.1.0 to ~/.pyenv/versions/graalpy-23.1.0

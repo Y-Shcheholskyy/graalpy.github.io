@@ -1,9 +1,13 @@
 ---
-layout: page
+layout: learn
 title: Interpolation Plot
-permalink: /examples/interpolation_plot/
+permalink: /examples/interpolation-plot/
 description: This example provides a demonstration creating an interpolation plot with the use of [Matplotlib](https://matplotlib.org/) (a visualization library for Python), [NumPy](https://numpy.org/) (an open source library of mathematical functions), and [SciPy](https://scipy.org/) (an open source library for scientific and  technical computing).
 ---
+
+<a href='{{ "/examples/" | relative_url }}' class="btn btn-back">&lt; Back</a>
+
+# Interpolation Plot
 {{ page.description }}
 
 >**Prerequisites**: A recent version of [CMake](https://cmake.org/) is required to install the matplotlib package. (For more information, see [Installing CMake](https://cmake.org/install/).)

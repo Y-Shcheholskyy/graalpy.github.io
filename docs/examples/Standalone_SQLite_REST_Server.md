@@ -1,9 +1,13 @@
 ---
-layout: page
+layout: learn
 title: Standalone SQLite REST Server
-permalink: /examples/standalone_sqlite_rest_server/
+permalink: /examples/standalone-sqlite-rest-server/
 description: This example provides a demonstration of creating a standalone web server to provide a minimal REST interface to a SQLite database, using the Python `http.server` and sqlite modules, and GraalVM Native Image.
 ---
+
+<a href='{{ "/examples/" | relative_url }}' class="btn btn-back">&lt; Back</a>
+
+# Standalone SQLite REST Server
 {{ page.description }}
 The database models musical genres.
 

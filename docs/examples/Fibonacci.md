@@ -1,9 +1,13 @@
 ---
-layout: page
+layout: learn
 title: Fibonacci
 permalink: /examples/fibonacci/
 description: This example provides a demonstration of a small Python script.
 ---
+
+<a href='{{ "/examples/" | relative_url }}' class="btn btn-back">&lt; Back</a>
+
+# Fibonacci
 {{ page.description }}
 
 1. Install `graalpy` and [create a Virtual Environment](/guides/creating_a_virtual_environment/), then activate it. 

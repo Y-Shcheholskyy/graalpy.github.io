@@ -153,7 +153,7 @@ a {
  */
 blockquote {
   color: $brand-color;
-  border-left: 4px solid $border-color-01;
+  border-left: 4px solid #FF7967;
   padding-left: $spacing-unit * .5;
   @include relative-font-size(1.125);
   font-style: italic;
@@ -202,7 +202,8 @@ pre {
 
   .highlighter-rouge & {
     // background: $code-background-color;
-    background: #00000040;
+    background: #09222E;
+    margin-right: 15px;
   }
 }
 

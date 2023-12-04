@@ -1,5 +1,5 @@
 ---
-layout: default-docs
+layout: base
 ---
 
 <article>
@@ -12,15 +12,23 @@ layout: default-docs
               alt="Expand or collapse sidebar" class="btn-color no-display">
             <img id="sidebarOpen" src='{{ "/resources/img/docs-sidebar/arrow-sidebar.svg" | relative_url }}' alt="Expand or collapse sidebar">
           </div>
-          {% include toc.html dynamic=true floating=true focus="content-wrapper" %}
+          <div class="toc-container">
+                {% if page.toc %}
+                <ul class="toc">
+                  {% for item in page.toc %}
+                    <li><a href="#{{ item.id }}">{{ item.text }}</a></li>
+                  {% endfor %}
+                </ul>
+
+              {% endif %}
+          </div>
         </div>
       </div>
     </div>
 
     <div class="col-sm-9 docsmod">
       <div id="content-wrapper" class="docs-content docs-content--with-sidebar">
-        {% include anchor_headings.html html=content anchorBody="#" h_min=2 h_max=3 anchorClass="anchor_heading"
-        afterHeading=true %}
+        {{ content }}
       </div>
 
       <div role="button" class="menu-btn menu-btn--sidebar js-show-sidebar" title="sweet hamburger">
@@ -31,3 +39,37 @@ layout: default-docs
     </div>
   </div>
 </article>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var tocContainer = document.querySelector('.toc');
+  var contentWrapper = document.querySelector('#content-wrapper');
+
+  if (tocContainer && contentWrapper) {
+    var headings = contentWrapper.querySelectorAll('h2, h3');
+
+    if (headings.length > 0) {
+      var ul = document.createElement('ul');
+
+      headings.forEach(function (heading) {
+        var li = document.createElement('li');
+        var a = document.createElement('a');
+        a.href = '#' + heading.id;
+        a.textContent = heading.textContent;
+
+        li.classList.add(heading.tagName.toLowerCase());
+
+        li.style.listStyleType = 'none';
+
+        li.appendChild(a);
+        ul.appendChild(li);
+      });
+
+      tocContainer.appendChild(ul);
+    } else {
+      tocContainer.innerHTML = '<p>No table of contents available.</p>';
+    }
+  }
+});
+
+</script>

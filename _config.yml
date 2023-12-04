@@ -19,6 +19,8 @@ plugins:
   - jekyll-relative-links
   - jekyll-last-modified-at
   - jekyll-sitemap
+  - jekyll-toc
+
 exclude:
   - .sass-cache/
   - .jekyll-cache/

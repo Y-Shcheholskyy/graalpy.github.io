@@ -1,9 +1,13 @@
 ---
-layout: page
+layout: learn
 title: Standalone Web Server
-permalink: /examples/standalone_web_server/
+permalink: /examples/standalone-web-server/
 description: This example provides a demonstration of creating a standalone web server, using the Python `http.server` module and GraalVM Native Image.
 ---
+
+<a href='{{ "/examples/" | relative_url }}' class="btn btn-back">&lt; Back</a>
+
+# Standalone Web Server
 {{ page.description }}
 
 1. Install `graalpy` and [create a Virtual Environment](/guides/creating_a_virtual_environment/), then activate it. 

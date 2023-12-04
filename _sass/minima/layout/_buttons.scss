@@ -66,3 +66,15 @@
       }
     }
   }
+
+  .btn-back {
+    border: 1px solid #09222E;
+    border-radius: 4px;
+    padding: 0px 4px;
+    &:hover {
+      background-color: #f29111;
+      color: #ffffff;
+      border: none;
+      padding: 1px 5px;
+    }
+  }

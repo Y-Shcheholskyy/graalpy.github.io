@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: learn
 title: Profiling a Python Application
 permalink: /guides/profiling_a_python_application/
 ---

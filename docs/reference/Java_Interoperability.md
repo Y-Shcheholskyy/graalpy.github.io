@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: docs-layout
 title: Java Interoperability
 permalink: /reference/java_interoperability/
+toc: true
 ---
 
 <h4>Table of Contents</h4>

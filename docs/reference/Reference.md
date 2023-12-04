@@ -3,8 +3,8 @@ layout: docs-layout
 title: Reference
 permalink: /reference/
 ---
-Lorem Ipsum
 
+# GraalPy Reference Documentation
 {% comment %}
   The list of docs for this page is in _data/reference_list.yml
 {% endcomment %}

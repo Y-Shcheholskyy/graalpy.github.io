@@ -4,6 +4,9 @@ title: Standalone Fibonacci
 permalink: /examples/standalone-fibonacci/
 description: This example provides a demonstration of creating a standalone executable from your Python application, using GraalVM Native Image.
 ---
+
+<a href='{{ "/examples/" | relative_url }}' class="btn btn-back">&lt; Back</a>
+
 # Standalone Fibonacci
 {{ page.description }} 
 It is based on the [Fibonacci](/examples/fibonacci/) example.

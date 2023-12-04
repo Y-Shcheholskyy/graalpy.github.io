@@ -4,6 +4,9 @@ title: Covid Plot
 permalink: /examples/covid-plot/
 description: This example provides a demonstration of the use of [Matplotlib](https://matplotlib.org/), a visualization library for Python, combined with [`pandas`](https://pandas.pydata.org/), an open source data analysis and manipulation tool.
 ---
+
+<a href='{{ "/examples/" | relative_url }}' class="btn btn-back">&lt; Back</a>
+
 # Covid Plot
 {{ page.description }}
 

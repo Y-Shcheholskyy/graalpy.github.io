@@ -4,6 +4,9 @@ title: Currency Exchange
 permalink: /examples/currency-exchange/
 description: This example provides a demonstration of using the Python [`requests`](https://pypi.org/project/requests/) and [`beautifulsoup`](https://www.crummy.com/software/BeautifulSoup/) modules to scrape a web page.
 ---
+
+<a href='{{ "/examples/" | relative_url }}' class="btn btn-back">&lt; Back</a>
+
 # Currency Exchange
 {{ page.description }}
 

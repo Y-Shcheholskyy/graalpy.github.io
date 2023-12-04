@@ -4,6 +4,9 @@ title: Astronauts
 permalink: /examples/astronauts/
 description: This example provides a demonstration of using the Python [`requests`](https://pypi.org/project/requests/) module to call a REST API.
 ---
+
+<a href='{{ "/examples/" | relative_url }}' class="btn btn-back">&lt; Back</a>
+
 # Astronauts
 {{ page.description }}
 

@@ -4,6 +4,9 @@ title: Machine Learning
 permalink: /examples/machine-learning/
 description: This example provides a demonstration of using [`scikit-learn`](https://scikit-learn.org/stable/) (a free machine learning library for Python) to model a dataset of Iris plants.
 ---
+
+<a href='{{ "/examples/" | relative_url }}' class="btn btn-back">&lt; Back</a>
+
 # Machine Learning
 {{ page.description }}
 

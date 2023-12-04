@@ -5,6 +5,8 @@ permalink: /examples/fibonacci/
 description: This example provides a demonstration of a small Python script.
 ---
 
+<a href='{{ "/examples/" | relative_url }}' class="btn btn-back">&lt; Back</a>
+
 # Fibonacci
 {{ page.description }}
 

@@ -4,6 +4,9 @@ title: Standalone Flask Application
 permalink: /examples/standalone-flask-application/
 description: This example provides a demonstration of creating a standalone [Flask](https://flask.palletsprojects.com/en/3.0.x/) application, using GraalVM Native Image.
 ---
+
+<a href='{{ "/examples/" | relative_url }}' class="btn btn-back">&lt; Back</a>
+
 # Standalone Flask Application
 {{ page.description }}
 

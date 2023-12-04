@@ -4,6 +4,9 @@ title: Styled Text
 permalink: /examples/styled-text/
 description: This example provides a demonstration of the [Pyfiglet](https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/) ASCII art package.
 ---
+
+<a href='{{ "/examples/" | relative_url }}' class="btn btn-back">&lt; Back</a>
+
 # Styled Text
 {{ page.description }}
 

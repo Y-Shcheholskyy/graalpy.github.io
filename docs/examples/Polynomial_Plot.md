@@ -4,6 +4,9 @@ title: Polynomial Plot
 permalink: /examples/polynomial-plot/
 description: This example provides a demonstration of the use of [Matplotlib](https://matplotlib.org/), a visualization library for Python, combined with [NumPy](https://numpy.org/), an open source library of mathematical functions.
 ---
+
+<a href='{{ "/examples/" | relative_url }}' class="btn btn-back">&lt; Back</a>
+
 # Polynomial Plot
 {{ page.description }}
 

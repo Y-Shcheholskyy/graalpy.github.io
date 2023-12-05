@@ -1,6 +1,6 @@
 title: GraalPy
 description: GraalPy is a Python 3.10 compliant runtime on top of GraalVM. GraalPy offers high-performance execution, modern language features, and easy interoperability with Java. 
-url: https://graalpy.github.io
+url: "https://graalpy.github.io"
 baseurl: ""
 
 header_pages:

@@ -82,7 +82,11 @@
   }
 }
 
-//FOR DOCS PAGE, NOT ONLY SIDEBAR
+//FOR DOCS PAGE_________NOT ONLY SIDEBAR
+
+.space-color{
+  // background-color: #F3F7FF;
+}
 
 .col-sm-3.docsimpro {
   flex: 0 0 335px;
@@ -104,7 +108,6 @@
 .guides-container {
   padding: 40px 24px 40px 48px;
 }
-
 .guide__content_2 {
   min-width: none;
   background-color: #F3F7FF;
@@ -143,6 +146,7 @@
 
 //COLAPSED SIDEBAR STYLES
 .short {
+
   .menuabout img {  
     margin: 0 auto;
     margin-top: 10px;
@@ -170,9 +174,11 @@
   .tagline_about_gcn p {
     margin-left: 0px;
   }
+
   .version-dropdown {
     display: none !important;
   }
+
   .col-sm-9 {
     flex: 0 0 95% !important;
     max-width: 95% !important;

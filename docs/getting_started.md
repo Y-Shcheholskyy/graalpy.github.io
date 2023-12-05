@@ -13,6 +13,11 @@ To install version 23.1.0 using `pyenv`, run the following commands:
 
 ```bash
 % pyenv install graalpy-23.1.0
+
+-> https://github.com/oracle/graalpython/releases/download/graal-23.1.0/graalpython-23.1.0-macos-amd64.tar.gz
+Installing graalpy-23.1.0...
+Installed graalpy-23.1.0 to ~/.pyenv/versions/graalpy-23.1.0
+ 
 % pyenv shell graalpy-23.1.0
 ```
 
@@ -36,7 +41,7 @@ For example
 There is a GraalPy preview build for Windows that you can [download](https://github.com/oracle/graalpython/releases/).
 It supports installation of pure Python packages via `pip`.
 
-## Hello World!
+## Running GraalPy
 
 ### Invoke the Python Interpreter
 
@@ -72,7 +77,7 @@ You should see the following output
 Hello World!
 ```
 
-#### Related Documentation
+#### Learn More
 
 * [User Guides](guides/Guides.md)
 * [Reference Documentation](reference/Reference.md)

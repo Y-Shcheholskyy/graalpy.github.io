@@ -41,7 +41,7 @@ For example
 There is a GraalPy preview build for Windows that you can [download](https://github.com/oracle/graalpython/releases/).
 It supports installation of pure Python packages via `pip`.
 
-## Running GraalPy
+## Hello World!
 
 ### Invoke the Python Interpreter
 
@@ -77,7 +77,7 @@ You should see the following output
 Hello World!
 ```
 
-#### Learn More
-
-* [User Guides](guides/Guides.md)
-* [Reference Documentation](reference/Reference.md)
+### Related Documentation
+{:.no_toc}
+* [Creating a Virtual Environment](/guides/creating_a_virtual_environment/)
+* [Running a Python Application](/guides/running_a_python_application/)

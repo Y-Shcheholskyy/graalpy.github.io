@@ -1,17 +1,19 @@
-<!-- ---
+---
 layout: learn
 title: Profiling a Python Application
 permalink: /guides/profiling_a_python_application/
---- -->
-
-## Profiling a Python Application
+---
 
 GraalPy provides three main profiling capabilities: a cpu sampler, a cpu tracer, and a memory tracer.
 These are described below.
 
 For more information about these tools, use the command `graalpy --help:tools`.
 
-### CPU Sampler
+<h4>Table of Contents</h4>
+  * this unordered seed list will be replaced by toc as unordered list
+  {:toc}
+
+## CPU Sampler
 Use the `--cpusampler` command-line option to take a CPU sample.
 For example:
 
@@ -535,7 +537,7 @@ Tracing Histogram. Counted a total of 1135 element executions.
 </details>
 {::options parse_block_html="false" /}
 
-### Memory Tracer
+## Memory Tracer
 
 Use the `--memtracer --memtracer.TraceStatements` command-line options to trace memory usage.
 For example:
@@ -587,3 +589,6 @@ You should see output similar to:
 ```
 </details>
 {::options parse_block_html="false" /}
+
+
+

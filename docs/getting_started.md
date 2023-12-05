@@ -13,6 +13,11 @@ To install version 23.1.0 using `pyenv`, run the following commands:
 
 ```bash
 % pyenv install graalpy-23.1.0
+
+-> https://github.com/oracle/graalpython/releases/download/graal-23.1.0/graalpython-23.1.0-macos-amd64.tar.gz
+Installing graalpy-23.1.0...
+Installed graalpy-23.1.0 to ~/.pyenv/versions/graalpy-23.1.0
+ 
 % pyenv shell graalpy-23.1.0
 ```
 
@@ -72,7 +77,7 @@ You should see the following output
 Hello World!
 ```
 
-#### Related Documentation
-
-* [User Guides](guides/Guides.md)
-* [Reference Documentation](reference/Reference.md)
+### Related Documentation
+{:.no_toc}
+* [Creating a Virtual Environment](/guides/creating_a_virtual_environment/)
+* [Running a Python Application](/guides/running_a_python_application/)

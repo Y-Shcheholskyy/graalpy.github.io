@@ -1,9 +1,11 @@
----
+<!-- ---
 layout: learn
 title: Debugging a Python Application
 permalink: /guides/debugging_a_python_application/
 toc: true
----
+--- -->
+
+## Debugging a Python Application
 
 The standard python debugger `pdb` is supported on GraalPy. 
 Refer to the official [PDB documentation](https://docs.python.org/3/library/pdb.html) for usage.
@@ -62,7 +64,3 @@ Follow the steps below to debug the [Currency Exchange](/examples/currency_excha
 Now you can inspect the stack, variables, evaluate variables, and selected expressions in a tooltip, and so on.
 For example:
     ![Chrome Inspector](/docs/guides/assets/Chrome_Inspector.png)
-
-### Related Documentation
-* [GraalVM’s Chrome Inspector](https://www.graalvm.org/latest/tools/chrome-debugger/)
-* [Currency Exchange](/examples/currency_exchange/)

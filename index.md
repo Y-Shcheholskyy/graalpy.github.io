@@ -9,8 +9,8 @@ title: Welcome to GraalPy!
       <div class="container">
         <div class="hi__row">
           <div class="hi__body">
-            <h1 class="hi__title">Run your applications faster 
-              <br>and more efficiently with GraalPy</h1>
+            <h1 class="hi__title">Bring the Python ecosystem 
+              <br>to the JVM with GraalPy</h1>
             <div class="hi__buttons">
               <a href='{{ "/downloads/" | relative_url }}' class="btn btn-primary">Download</a>
               <a href='{{ "/docs/getting-started/" | relative_url }}' class="btn btn-primary">Get Started</a>
@@ -29,8 +29,8 @@ title: Welcome to GraalPy!
   <div class="container">
     <div class="home__overview-text">
       <h5>
-        GraalPy is a Python 3.10 compliant runtime.
-        It is already compatible with many machine learning and data science libraries from the rich Python ecosystem and more are being added.
+        GraalPy is a Python 3.10 compliant runtime that has first class support for embedding into Java.
+        It is already compatible with many machine learning and data science libraries from the rich Python ecosystem and more are being worked on.
 
         GraalPy uses state-of-the-art JIT and GC of the GraalVM project to speed up Python code at runtime.
         When C extensions are involved, GraalPy closely matches CPython performance.

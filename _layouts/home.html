@@ -26,9 +26,13 @@ layout: base
 <section class="home__overview">
   <div class="container">
     <div class="home__overview-text">
-      <h5>GraalPy is a Python 3.10 compliant runtime. A primary goal of GraalPy is to support SciPy and its constituent
-        libraries, as well as to work with other data science and machine learning libraries from the rich Python
-        ecosystem. GraalPy is available for experimentation and curious end-users.</h5>
+      <h5>
+        GraalPy is a Python 3.10 compliant runtime.
+        It is already compatible with many machine learning and data science libraries from the rich Python ecosystem and more are being added.
+
+        GraalPy uses state-of-the-art JIT and GC of the GraalVM project to speed up Python code at runtime.
+        When C extensions are involved, GraalPy closely matches CPython performance.
+      </h5>
     </div>
   </div>
 </section>
@@ -46,7 +50,7 @@ layout: base
             <h4>High Performance</h4>
           </div>
           <div class="pybenefits__text">
-            <h5>GraalPy optimizes your workload across language boundaries
+            <h5>GraalPy optimizes your Python code and runs native extensions at full speed
             </h5>
           </div>
         </div>
@@ -68,10 +72,10 @@ layout: base
               alt="improved security advantage icon">
           </div>
           <div class="pybenefits__title">
-            <h4>Managed Execution</h4>
+            <h4>Managed Embedding</h4>
           </div>
           <div class="pybenefits__text">
-            <h5>Reduce risks by running native extensions in a managed mode
+            <h5>Control Python permissions when embedding Python in Java or GraalVM Native Images
             </h5>
           </div>
         </div>

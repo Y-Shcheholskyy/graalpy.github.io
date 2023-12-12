@@ -1,10 +1,3 @@
-<!-- ---
-layout: learn
-title: Running a Python Application
-permalink: /guides/running_a_python_application/
-toc: true
---- -->
-
 ## Running a Python Application
 
 The `graalpy` launcher can be used in interactive mode or to run a script.

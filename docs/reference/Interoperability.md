@@ -1,15 +1,8 @@
----
-layout: page
-title: Interoperability
-permalink: /reference/interoperability/
----
+## Interoperability with Other Languages
+
 The best way to embed GraalPy is to use the [GraalVM SDK Polyglot API](https://www.graalvm.org/sdk/javadoc/org/graalvm/polyglot/package-summary.html).
 
-<h4>Table of Contents</h4>
-* this unordered seed list will be replaced by toc as unordered list
-{:toc}
-
-## The Polyglot API
+### The Polyglot API
 
 Since GraalVM supports several other programming languages including JavaScript, R,
 Ruby, and those that compile to LLVM bitcode, it also provides a Python API to interact with them.
@@ -150,12 +143,12 @@ draw(result)
 time.sleep(10)
 ```
 
-## The Behavior of Types
+### The Behavior of Types
 
 The interop protocol defines different "types" which can overlap in all kinds of
 ways and have restrictions on how they can interact with Python.
 
-### Interop Types to Python
+#### Interop Types to Python
 
 Most importantly and upfront: all foreign objects passing into Python have the Python type `foreign`.
 There is no emulation of i.e., objects that are interop booleans to have the Python type `bool`.
@@ -181,7 +174,7 @@ Types not listed in the below table have no special interpretation in Python rig
 | Executable   | Executable objects can be executed as functions, but never with keyword arguments.                                                                                                                                                                                                                                   |
 | Instantiable | Instantiable objects behave like executable objects (similar to how Python treats this)                                                                                                                                                                                                                              |
 
-### Python to Interop Types
+#### Python to Interop Types
 
 | Interop type | Python interpretation                                                                                                             |
 |:-------------|:----------------------------------------------------------------------------------------------------------------------------------|

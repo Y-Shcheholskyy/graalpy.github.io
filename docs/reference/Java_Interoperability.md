@@ -1,15 +1,6 @@
----
-layout: docs-layout
-title: Java Interoperability
-permalink: /reference/java_interoperability/
-toc: true
----
+## Java Interoperability
 
-<h4>Table of Contents</h4>
-  * this unordered seed list will be replaced by toc as unordered list
-  {:toc}
-
-## The Java Host Interop API
+### The Java Host Interop API
 
 To interoperate with Java (only when running on the JVM), you can use the `java` module:
 ```python
@@ -70,7 +61,7 @@ True
 True
 ```
 
-## Embedding GraalPy in a Java Application
+### Embedding GraalPy in a Java Application
 
 The best way to embed GraalPy is to use the [GraalVM SDK Polyglot API](https://www.graalvm.org/sdk/javadoc/org/graalvm/polyglot/package-summary.html).
 
@@ -99,7 +90,7 @@ Depending on which supported JDK you run embedded GraalPy, the level of optimiza
 
 Learn more in a dedicated [GraalPy Interoperability guide](/reference/interoperability). See also the [Embedding Languages documentation](https://www.graalvm.org/latest/reference-manual/embed-languages/) on how a guest language like Python can possibly interact with Java.
 
-## Including packages in a Java application
+### Including packages in a Java application
 
 When using Python from Java via the GraalVM embedder APIs, some preparation is required to make packages available to the runtime.
 After you have created a `venv` virtual environment and installed your required packages, the virtual environment is made available to the Python embedded in Java by setting a context option.

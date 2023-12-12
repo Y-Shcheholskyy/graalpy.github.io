@@ -1,8 +1,4 @@
----
-layout: page
-title: Standalone Python Applications
-permalink: /reference/standalone-applications/
----
+## Standalone Python Applications
 
 With GraalPy, you can distribute Python applications or libraries as standalone binaries or JAR files without any external dependencies.
 The [Truffle framework](https://github.com/oracle/graal/tree/master/truffle) on which GraalPy is built, and the [Sulong LLVM runtime](https://github.com/oracle/graal/tree/master/sulong) that GraalPy leverages for managed execution of Python's native extensions enables users to completely virtualize all filesystem accesses of Python programs, including those to the standard library and installed packages.
@@ -13,15 +9,11 @@ The binaries bundle everything into a single-file native executable.
 The tool can also generate a skeleton Maven project that sets up a polyglot embedding of Python packages into Java.
 The polyglot skeletons are set up with Maven to to generate a standalone binary for a simple Java-Python HelloWorld example and can be used as a starting point or inspiration for further Java-Python polyglot development.
 
-<h4>Table of Contents</h4>
-  * this unordered seed list will be replaced by toc as unordered list
-  {:toc}
-
-## Prerequisite
+#### Prerequisite
 
 Any GraalPy distribution starting from than 23.1 from [the GraalPy releases page](https://github.com/oracle/graalpython/releases).
 
-## Creating GraalPy Native Applications
+### Creating GraalPy Native Applications
 
 Suppose there is a simple Python script, _my_script.py_, that does some useful work when run directly.
 To distribute it as a standalone native binary, run the following command:
@@ -35,7 +27,7 @@ To distribute it as a standalone native binary, run the following command:
 It generates a standalone _my_binary_ file which includes the Python code, the GraalPy runtime, and the Python standard library in a single, self-contained executable.
 Use `graalpy -m standalone native --help` for further options.
  
-## Embedding GraalPy in a Java Application
+### Embedding GraalPy in a Java Application
 
 You can also generate a Java-Python polyglot project skeleton.
 To achieve this, run the `polyglot_app` subcommand of GraalPy's `standalone` module:
@@ -57,7 +49,7 @@ It includes the entire Python standard library, so the Python code can invoke al
 The resources can be manually pruned to reduce the included Python libraries to the necessary amount, reducing both the size of the package and the time to start up.
 This Java example demonstrates some useful default options for the Python context, but other settings may be desirable to further control what the Python code is allowed to do.
 
-## Security Considerations
+### Security Considerations
 
 Creating a native executable or a JAR file that includes the Python code could be seen as a mild form of obfuscation, but it does not protect your source code.
 While the Python sources are not stored verbatim into the executable (only the GraalPy bytecode is stored), that bytecode is easy to convert back into Python sources.

@@ -1,15 +1,8 @@
----
-layout: page
-title: Python Code Parsing and pyc Files
-permalink: /reference/parser_details/
----
+## Python Code Parsing and pyc Files
+
 This document describes how Python files are parsed by GraalPy.
 
-<h4>Table of Contents</h4>
-* this unordered seed list will be replaced by toc as unordered list
-{:toc}
-
-## Creating and Managing pyc Files
+### Creating and Managing pyc Files
 
 GraalPy automatically creates a _.pyc_ file when there is an invalid or absent _.pyc_ file that matches the corresponding _.py_ file.
 
@@ -83,7 +76,7 @@ The `graalpy` launcher enables it by default, but if this is desired in the embe
 Note also that to upgrade the application sources to Oracle GraalPy, old _.pyc_
 files must be removed by the embedder as required.
 
-## Security Considerations
+### Security Considerations
 
 All file operations (obtaining the data, timestamps, and writing _.pyc_ files)
 are achieved through the [FileSystem API](https://www.graalvm.org/sdk/javadoc/org/graalvm/polyglot/io/FileSystem.html). Embedders can modify all of these operations by means of custom (for example, read-only) `FileSystem` implementations.

@@ -1,14 +1,4 @@
----
-layout: page
-title: Operating System Interfaces
-permalink: /reference/os_interfaces/
----
-
-<h4>Table of Contents</h4>
-  * this unordered seed list will be replaced by toc as unordered list
-  {:toc}
-
-## Background
+## Operating System Interfaces
 
 Truffle-based GraalVM languages usually implement the system related functions using the [Truffle abstraction layer](https://github.com/oracle/graal/blob/master/truffle/docs/README.md), which is OS independent and provides extension points for the users when embedding GraalPy or other Truffle based languages into Java applications.
 See, for example, [Truffle FileSystem service-provider](https://www.graalvm.org/truffle/javadoc/org/graalvm/polyglot/io/FileSystem.html).
@@ -19,7 +9,7 @@ On non-POSIX platforms, this interface is emulated to a degree.
 GraalPy provides two alternative implementations of the system-related functionality offered by the built-in Python modules such as `os`.
 Which implementation is used can be controlled by the option `PosixModuleBackend`: valid values are `native` and `java`.
 
-## Native Backend
+### Native Backend
 
 The `native` backend directly calls the POSIX API in mostly the same way as CPython (the reference Python implementation).
 
@@ -30,21 +20,21 @@ By default, this implementation bypasses the Truffle abstraction layer, therefor
 The native backend is chosen by default when GraalPy is started via the `graalpy` or any other Python related launcher.
 The exceptions are Python related launchers with `-managed` suffix available only in Oracle GraalVM (for example, `graalpy-managed`), which by default use the `java` POSIX backend.
 
-### Limitations of the Native Backend
+#### Limitations of the Native Backend
 
 Known limitations are:
 
 * `os.fork` is not supported
 * `_posixsubprocess.fork_exec` does not support the `preexec_fn` parameter
 
-## Java Backend
+### Java Backend
 
 The `java` backend uses the [Truffle abstraction layer](https://github.com/oracle/graal/blob/master/truffle/docs/README.md) and therefore supports custom Polyglot API providers related to system interfaces and sandboxing.
 Since this abstraction is POSIX agnostic, it does not expose all the necessary functionality. Some functionality is emulated, and some functionality is not supported at all.
 
 The Java backend is the default when GraalPy is run via the `Context` API, i.e., [embedded in Java applications](https://github.com/oracle/graal/blob/master/docs/reference-manual/embedding/embed-languages.md), or when it is launched using Python related launchers with the `-managed` suffix (available only in Oracle GraalVM).
 
-### Limitations of the Emulated Backend
+#### Limitations of the Emulated Backend
 
 GraalPy can log information about known incompatibility of functions executed at runtime, which includes the OS interface-related functions.
 To turn on this logging, use `--log.python.compatibility.level=FINE` or other desired logging level.
@@ -64,7 +54,7 @@ Known limitations of the emulated layer are:
   * effective IDs
   * `follow_symlinks=False` unless the mode is only `F_OK`
 
-## Relation to Python Native Extensions
+### Relation to Python Native Extensions
 
 Apart from operating system interfaces exposed as built-in Python level modules, Python native extensions run via the GraalVM LLVM runtime may also access OS interfaces at the C level.
 How such accesses are handled depends on the GraalVM LLVM runtime configuration.

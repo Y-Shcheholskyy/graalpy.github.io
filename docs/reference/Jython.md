@@ -1,8 +1,4 @@
----
-layout: page
-title: Jython Migration Guide
-permalink: /reference/jython/
----
+## Jython Migration Guide
 
 Most Jython code that uses Java integration will be based on a stable Jython release, and these only come in Python 2.x versions.
 GraalPy, in contrast, is only targeting Python 3.x.
@@ -14,11 +10,7 @@ For Jython-specific features, follow this document to learn about migration to G
 Note that some features of Jython have a negative impact on runtime performance, and are disabled by default.
 To make migration easier, you can enable some features using a command line option: `--python.EmulateJython`.
 
-<h4>Table of Contents</h4>
-  * this unordered seed list will be replaced by toc as unordered list
-  {:toc}
-
-## Importing Java Packages
+### Importing Java Packages
 
 There are certain features of Jython's Java integration that are enabled by default on GraalPy.
 Here is an example:
@@ -57,7 +49,7 @@ Instead, you will have to import one of the classes directly:
 import javax.swing.Window as Window
 ```
 
-## Basic Object Usage
+### Basic Object Usage
 
 Constructing and working with Java objects and classes is achieved with natural
 Python syntax. The methods of Java objects can also be retrieved and passed
@@ -74,7 +66,7 @@ methods:
 1672896916
 ```
 
-## Java-to-Python Types: Automatic Conversion
+### Java-to-Python Types: Automatic Conversion
 
 Method overloads are resolved by matching the Python arguments in a best-effort manner to the available parameter types.
 This also happens during data conversion.
@@ -95,7 +87,7 @@ This enables you, for example, to use Pandas frames as `double[][]` or NumPy arr
 | Java objects           | Wrapped Java object of the appropriate type                                       |
 | java.lang.Object       | Any object                                                                        |
 
-## Special Jython Modules
+### Special Jython Modules
 
 The `jarray` module which is used to create primitive Java arrays is supported for compatibility.
 
@@ -130,7 +122,7 @@ However, implicitly, this may entail a copy of the array data, which can be dece
 
 Modules other than `jarray` are not supported.
 
-## Exceptions from Java
+### Exceptions from Java
 
 Catching all kinds of Java exceptions comes with a performance penalty and is only enabled with the `--python.EmulateJython` option. For example:
 
@@ -145,7 +137,7 @@ Catching all kinds of Java exceptions comes with a performance penalty and is on
 7 >= 0
 ```
 
-## Java Collections
+### Java Collections
 Java arrays and collections implementing `java.util.Collection` can be accessed using the `[]` syntax. Empty collections
 are considered false in boolean conversions. Their length is exposed by `len` built-in function. For example:
 
@@ -222,7 +214,7 @@ True
 False
 ```
 
-## Inheritance from Java
+### Inheritance from Java
 
 Inheriting from a Java class or implementing an interface is supported with some syntactical differences from Jython. A
 class inheriting from a Java class can be created using an ordinary `class` statement where declared methods will
@@ -258,7 +250,7 @@ for record in handler.this.logged:
     print(f'Python captured message "{record.getMessage()}" at level {record.getLevel().getName()}')
 ```
 
-## Embedding Python into Java
+### Embedding Python into Java
 
 The other way to use Jython is to embed it into Java applications.
 

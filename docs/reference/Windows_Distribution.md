@@ -1,8 +1,4 @@
----
-layout: page
-title: Windows Distribution
-permalink: /reference/windows_distribution/
----
+## GraalPy Windows Distribution
 
 The GraalPy preview build for Windows that you can [download](https://github.com/oracle/graalpython/releases/) has several known issues:
 

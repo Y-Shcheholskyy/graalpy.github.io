@@ -1,6 +1,6 @@
 ---
 layout: docs-layout
-title: Reference
+title: GraalPy Reference Documentation
 permalink: /reference/
 ---
 

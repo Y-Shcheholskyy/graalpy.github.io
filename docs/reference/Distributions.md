@@ -22,11 +22,13 @@ Two runtime options are available for both Oracle GraalPy and Community GraalPy:
 * In the Native configuration, GraalPy is compiled ahead-of-time to a standalone native executable. 
 This means that you do not need a JVM installed on your system to use it and it is compact in size.
 * In the JVM configuration, you can use Java interoperability easily, and peak performance may be higher than the native configuration.
-A JVM standalone that comes with a JVM has the `-jvm` suffix in its name: `graalpy-jvm-<version>-<os>-<arch>.tar.gz`.
+
+A JVM standalone that comes with a JVM has the `-jvm` suffix in the name: `graalpy-jvm-<version>-<os>-<arch>.tar.gz`.
 
 | Configuration:     | Native (default) | JVM           |
 | ------------------ | ---------------: | ------------: |
 | Time to start | faster | slower |
 | Time to reach peak performance | faster | slower |
-| Peak performance (also considering Garbage Collection) | good | best |
+| Peak performance (also considering GC) | good | best |
 | Java host interoperability | needs configuration | works |
+

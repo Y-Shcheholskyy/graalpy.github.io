@@ -1,17 +1,10 @@
----
-layout: learn
-title: Standalone Web Server
-permalink: /examples/standalone-web-server/
-description: This example provides a demonstration of creating a standalone web server, using the Python `http.server` module and GraalVM Native Image.
----
+# HTTP Server Application
 
-<a href='{{ "/examples/" | relative_url }}' class="btn btn-back">&lt; Back</a>
+This example provides a demonstration of creating a standalone web server based on the Python [`http.server`](https://docs.python.org/3/library/http.server.html) module, using GraalPy and GraalVM Native Image. 
 
-# Standalone Web Server
-{{ page.description }}
-
-1. Install `graalpy` and [create a Virtual Environment](/guides/creating_a_virtual_environment/), then activate it. 
-(For more information, see [Getting Started](/getting_started/).)
+1. [Install GraalPy](https://y-shcheholskyy.github.io/graalpy.github.io/getting-started/) in the **native** configuration. Consider Oracle GraalPy for the best experience. Then [create a Virtual Environment](https://y-shcheholskyy.github.io/graalpy.github.io/guides/#creating-a-virtual-environment) and activate it. 
+    
+    >Consider **Oracle GraalPy** for the best experience. It is licensed under the [GraalVM Free Terms and Conditions (GFTC)](https://www.oracle.com/downloads/licenses/graal-free-license.html) license, which permits use by any user including commercial and production use.
 
 2. Copy the following contents into a file named _webserver.py_:
 
@@ -47,39 +40,39 @@ description: This example provides a demonstration of creating a standalone web 
 
 3. Use the following command to run the script:
     ```bash
-    % graalpy webserver.py
+    graalpy webserver.py
     ```
-
-4. You should see output similar to:
+    The server is started on localhost port 8080:
     ```
     Server started http://localhost:8080
     ```
+    Visit the URL with a web browser, and you should see something like:
+    
+    ![GraalPy web server](assets/GraalPy_Web_Server.png)
 
-5. Visit the URL with a web browser, and you should see something like:
-![GraalPy web server](assets/GraalPy_Web_Server.png)
+    Now continue and create a native executable from this Python application, using [GraalVM ahead-of-time Native Image compilation](https://www.graalvm.org/latest/reference-manual/native-image/).
 
-6. Unset your JAVA_HOME environment variable. 
+4. Unset your `JAVA_HOME` environment variable. 
 (For example, on Linux and macOS, use the command `unset JAVA_HOME`.)
 
-7. Create a native executable based on your _webserver.py_ script, as shown below.
+5. Create a native executable based on your _webserver.py_ script, as shown below.
 (For more information about the command-line options, see [Standalone Python Applications](/reference/standalone-applications/).)
 
     ```bash
-    % graalpy -m standalone native \
+    graalpy -m standalone native \
         --module webserver.py \
         --output webserver \
         --venv <venv-dir>
-    …
-    Finished generating 'webserver' in 29m 1s.
     ```
 
 8. Run the executable, as follows:
     ```bash
-    % ./webserver
+    ./webserver
     ```
-And you should see the same output as earlier.
+    You should see the same output as earlier.
 
 ### Related Documentation
-* [Getting Started](/getting_started/)
-* [Creating a Virtual Environment](/guides/creating_a_virtual_environment/)
-* [Standalone Python Applications](/reference/standalone-applications/)
+
+* [Python HTTP server](https://docs.python.org/3/library/http.server.html)
+* [GraalPy Getting Started](https://y-shcheholskyy.github.io/graalpy.github.io/getting-started/)
+* [Standalone Python Applications](https://y-shcheholskyy.github.io/graalpy.github.io/reference/standalone-applications/)

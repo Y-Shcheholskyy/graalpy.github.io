@@ -1,9 +1,11 @@
 # Fibonacci Sequence
 
-This example provides a demonstration of creating a standalone executable from your Python application, using GraalPy and GraalVM Native Image.
+This example provides a demonstration of creating a standalone executable from a Python application, using GraalPy and GraalVM Native Image.
 A demo application is a Python program that prints Fibonacci numbers using recursion.
 
-1. [Install GraalPy](https://y-shcheholskyy.github.io/graalpy.github.io/getting-started/). Then [create a Virtual Environment](https://y-shcheholskyy.github.io/graalpy.github.io/guides#creating_a_virtual_environment) and activate it. 
+1. [Install GraalPy](https://y-shcheholskyy.github.io/graalpy.github.io/getting-started/) in the **native** configuration. Consider Oracle GraalPy for the best experience. Then [create a Virtual Environment](https://y-shcheholskyy.github.io/graalpy.github.io/guides/#creating-a-virtual-environment) and activate it. 
+    
+    >Consider **Oracle GraalPy** for the best experience. It is licensed under the [GraalVM Free Terms and Conditions (GFTC)](https://www.oracle.com/downloads/licenses/graal-free-license.html) license, which permits use by any user including commercial and production use.
 
 2. Copy the following contents into a file named _fib.py_:
 
@@ -44,7 +46,7 @@ A demo application is a Python program that prints Fibonacci numbers using recur
     graalpy fib.py 4
     ```
     
-    Now continue and build a native executable from this Python application, using [GraalVM ahead-of-time Native Image compilation](https://www.graalvm.org/latest/reference-manual/native-image/).
+    Now continue and create a native executable from this Python application, using [GraalVM ahead-of-time Native Image compilation](https://www.graalvm.org/latest/reference-manual/native-image/).
 
 4. Unset your `JAVA_HOME` environment variable. 
 (For example, on Linux and macOS, use the command `unset JAVA_HOME`.)
@@ -70,5 +72,7 @@ A demo application is a Python program that prints Fibonacci numbers using recur
     ```
 
 ### Related Documentation
-* [Standalone Python Applications](https://y-shcheholskyy.github.io/graalpy.github.io/reference/standalone-applications/)
+
+* [GraalPy Getting Started](https://y-shcheholskyy.github.io/graalpy.github.io/getting-started/)
 * [GraalVM ahead-of-time Native Image compilation](https://www.graalvm.org/latest/reference-manual/native-image/)
+* [Standalone Python Applications](https://y-shcheholskyy.github.io/graalpy.github.io/reference/standalone-applications/)

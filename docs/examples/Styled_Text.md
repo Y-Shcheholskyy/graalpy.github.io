@@ -1,21 +1,14 @@
----
-layout: learn
-title: Styled Text
-permalink: /examples/styled-text/
-description: This example provides a demonstration of the [Pyfiglet](https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/) ASCII art package.
----
+# Styled Text with Pyfiglet Package
 
-<a href='{{ "/examples/" | relative_url }}' class="btn btn-back">&lt; Back</a>
+This example provides a demonstration of the [Pyfiglet](https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/) ASCII art package with GraalPy and shows how to create a standalone executable from this application, using GraalPy and GraalVM Native Image. 
 
-# Styled Text
-{{ page.description }}
-
-1. Install `graalpy` and [create a Virtual Environment](/guides/creating_a_virtual_environment/), then activate it. 
-(For more information, see [Getting Started](/getting_started/).)
+1. [Install GraalPy](https://y-shcheholskyy.github.io/graalpy.github.io/getting-started/) in the **native** configuration. Consider Oracle GraalPy for the best experience. Then [create a Virtual Environment](https://y-shcheholskyy.github.io/graalpy.github.io/guides/#creating-a-virtual-environment) and activate it. 
+    
+    >Consider **Oracle GraalPy** for the best experience. It is licensed under the [GraalVM Free Terms and Conditions (GFTC)](https://www.oracle.com/downloads/licenses/graal-free-license.html) license, which permits use by any user including commercial and production use.
 
 2. Install the `pyfiglet` package using `pip`:
     ```bash
-    % pip install pyfiglet
+    pip install pyfiglet
     ```
 
 3. Copy the following contents into a file named _text\_styler.py_:
@@ -36,11 +29,28 @@ description: This example provides a demonstration of the [Pyfiglet](https://www
 4. Use the following command to run the script, with some example arguments:
 
     ```bash
-    % graalpy text_styler.py Welcome to GraalPy!
+    graalpy text_styler.py Welcome to GraalPy!
     ```
 
-5. You should see output similar to
+    Now continue and create a native executable from this Python application, using [GraalVM ahead-of-time Native Image compilation](https://www.graalvm.org/latest/reference-manual/native-image/).
 
+4. Unset your `JAVA_HOME` environment variable. 
+(For example, on Linux and macOS, use the command `unset JAVA_HOME`.)
+
+5. Create a standalone executable based on your _text\_styler.py_ script.
+(For more information about the command-line options, see [Standalone Python Applications](https://y-shcheholskyy.github.io/graalpy.github.io/reference/standalone-applications/).)
+
+    ```bash
+    graalpy -m standalone native \
+        --module text_styler.py \
+        --output text_styler \
+        --venv <venv-dir>
+    ```
+4. Run the executable, as follows:
+    ```bash
+    ./text_styler
+    ```
+    You should see a similar output:
     ```
     _       __     __                             __     
     | |     / /__  / /________  ____ ___  ___     / /_____
@@ -57,5 +67,7 @@ description: This example provides a demonstration of the [Pyfiglet](https://www
     ```
 
 ### Related Documentation
-* [Creating a Virtual Environment](/guides/creating_a_virtual_environment/)
-* [Installing a Package](/guides/installing_a_package/)
+
+* [GraalPy Getting Started](https://y-shcheholskyy.github.io/graalpy.github.io/getting-started/)
+* [GraalVM ahead-of-time Native Image compilation](https://www.graalvm.org/latest/reference-manual/native-image/)
+* [Standalone Python Applications](https://y-shcheholskyy.github.io/graalpy.github.io/reference/standalone-applications/)

@@ -47,7 +47,7 @@ Follow the steps below to debug the [Currency Exchange](/examples/currency_excha
 
 4. You should see output similar to:
 
-    ```
+    ```bash
     Debugger listening on ws://127.0.0.1:9229/VrhCaY7wR5tIqy2zLsdFr3f7ixY3QB6kVQ0S54_SOMo
     For help, see: https://www.graalvm.org/tools/chrome-debugger
     E.g. in Chrome open: devtools://devtools/bundled/js_app.html?ws=127.0.0.1:9229/VrhCaY7wR5tIqy2zLsdFr3f7ixY3QB6kVQ0S54_SOMo

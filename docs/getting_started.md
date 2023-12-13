@@ -11,7 +11,7 @@ toc: true
 The easiest way to install GraalPy on Linux and macOS platforms is to use [Pyenv](https://github.com/pyenv/pyenv) (the Python version manager).
 To install version 23.1.0 using `pyenv`, run the following commands:
 
-```bash
+```python
 % pyenv install graalpy-23.1.0
 % pyenv shell graalpy-23.1.0
 ```
@@ -42,13 +42,13 @@ It supports installation of pure Python packages via `pip`.
 
 Start the Python interactive shell from the command line, using the command `graalpy`, then enter the following line at the Python shell prompt (identified by `>>>`), followed by **CR**.
 
-```bash
+```python
 >>> print("Hello World!")
 ```
 
 You should see the output displayed directly, followed by the shell prompt
 
-```
+```bash
 Hello World!
 >>>
 ```
@@ -68,7 +68,8 @@ Start `graalpy` and pass the file name as an argument
 ```
 
 You should see the following output
-```
+
+```bash
 Hello World!
 ```
 

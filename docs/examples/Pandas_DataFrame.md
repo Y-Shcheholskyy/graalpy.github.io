@@ -1,28 +1,21 @@
----
-layout: learn
-title: Pandas DataFrame
-permalink: /examples/pandas-dataframe/
-description: This example provides a demonstration of using the Python [`requests`](https://pypi.org/project/requests/) and [`pandas`](https://pandas.pydata.org/) modules to manipulate data from an open source dataset provided by the US government.
----
+# DataFrame Application Using Python Requests and Pandas
 
-<a href='{{ "/examples/" | relative_url }}' class="btn btn-back">&lt; Back</a>
+This example provides a demonstration of using the Python [Requests](https://pypi.org/project/requests/) and [Pandas](https://pandas.pydata.org/) modules to manipulate data from an open source dataset provided by the US government.
+The demo shows how to create a standalone executable from this application using GraalPy. 
+GraalPy comes with a module that can create Python single-file native binaries for Linux, Windows, and macOS.
 
-# Pandas DataFrame
-{{ page.description }}
+1. [Install GraalPy](https://y-shcheholskyy.github.io/graalpy.github.io/getting-started/) in the **native** configuration (default). Then [create a Virtual Environment](https://y-shcheholskyy.github.io/graalpy.github.io/guides/#creating-a-virtual-environment) and activate it.
+    
+    >Consider **Oracle GraalPy** for the best experience. It is licensed under the [GraalVM Free Terms and Conditions (GFTC)](https://www.oracle.com/downloads/licenses/graal-free-license.html) license, which permits use by any user including commercial and production use.
 
-
-1. Install `graalpy` and [create a Virtual Environment](/guides/creating_a_virtual_environment/), then activate it. 
-(For more information, see [Getting Started](/getting_started/).)
-
-2. Install the `requests` and `pandas` packages (and their dependencies):
-
+2. Install the `requests` and `pandas` packages (and their dependencies) using `pip`:
     ```bash
-    % pip install requests
-    % pip install pandas
+    pip install requests
+    pip install pandas
     ```
 
 3. Copy the following contents into a file named _pandas\_dataframe.py_:
-
+    
     ```python
     import pandas as pd
     
@@ -57,13 +50,10 @@ description: This example provides a demonstration of using the Python [`request
     ```
 
 4. Run the script:
-
     ```bash
-    % graalpy pandas_dataframe.py
+    graalpy pandas_dataframe.py
     ```
-
-5. You should output similar to the following:
-
+    You should see a similar output:
     ```
     Columns: Index(['Year', 'Gender', 'Cohort', 'State', 'Drivers'], dtype='object')
     Columns: Index(['Gender', 'State', 'Drivers'], dtype='object')
@@ -85,6 +75,30 @@ description: This example provides a demonstration of using the Python [`request
     Total number of drivers: 39285916075.0
     ```
 
+    Now continue and create a native executable from this Python application.
+
+5. Unset your `JAVA_HOME` environment variable. 
+(For example, on Linux and macOS, use the command `unset JAVA_HOME`.)
+
+6. Create a standalone executable based on your _pandas_dataframe.py_ script, as shown below.
+(For more information about the command-line options, see [Standalone Python Applications](https://y-shcheholskyy.github.io/graalpy.github.io/reference/standalone-applications/).)
+    
+    ```bash
+    graalpy -m standalone native \
+        --module pandas_dataframe.py \
+        --output pandas_dataframe \
+        --venv <venv-dir>
+    ```
+
+7. Run the executable, as follows:
+    ```bash
+    ./pandas_dataframe
+    ```
+    You should see the same output as earlier.
+
 ### Related Documentation
-* [Creating a Virtual Environment](/guides/creating_a_virtual_environment/)
-* [Installing a Package](/guides/installing_a_package/)
+
+* [Pandas Package](https://pandas.pydata.org/)
+* [Requests Package](https://pypi.org/project/requests/)
+* [GraalPy Getting Started](https://y-shcheholskyy.github.io/graalpy.github.io/getting-started/)
+* [Standalone Python Applications](https://y-shcheholskyy.github.io/graalpy.github.io/reference/standalone-applications/)

@@ -1,17 +1,13 @@
----
-layout: learn
-title: Fibonacci
-permalink: /examples/fibonacci/
-description: This example provides a demonstration of a small Python script.
----
+# Fibonacci Sequence Application
 
-<a href='{{ "/examples/" | relative_url }}' class="btn btn-back">&lt; Back</a>
+This example provides a demonstration of creating a standalone executable from a Python application, using GraalPy. 
+GraalPy comes with a module that can create Python single-file native binaries for Linux, Windows, and macOS.
 
-# Fibonacci
-{{ page.description }}
+A demo application is a Python program that prints Fibonacci numbers using recursion.
 
-1. Install `graalpy` and [create a Virtual Environment](/guides/creating_a_virtual_environment/), then activate it. 
-(For more information, see [Getting Started](/getting_started/).)
+1. [Install GraalPy](https://y-shcheholskyy.github.io/graalpy.github.io/getting-started/) in the **native** configuration (default). Then [create a Virtual Environment](https://y-shcheholskyy.github.io/graalpy.github.io/guides/#creating-a-virtual-environment) and activate it.
+    
+    >Consider **Oracle GraalPy** for the best experience. It is licensed under the [GraalVM Free Terms and Conditions (GFTC)](https://www.oracle.com/downloads/licenses/graal-free-license.html) license, which permits use by any user including commercial and production use.
 
 2. Copy the following contents into a file named _fib.py_:
 
@@ -49,13 +45,36 @@ description: This example provides a demonstration of a small Python script.
 
 3. Use the following command to run the script, with an example argument:
     ```bash
-    % graalpy fib.py 4
+    graalpy fib.py 4
     ```
-
-4. You should see output similar to
+    You should see a similar output:
     ```
     The result is 3
     ```
+
+    Now continue and create a native executable from this Python application.
+
+4. Unset your `JAVA_HOME` environment variable. 
+(For example, on Linux and macOS, use the command `unset JAVA_HOME`.)
+
+5. Create a standalone executable based on your _fib.py_ script.
+(For more information about the command-line options, see [Standalone Python Applications](https://y-shcheholskyy.github.io/graalpy.github.io/reference/standalone-applications/).)
+
+    ```bash
+    graalpy -m standalone native \
+        --module fib.py \
+        --output fib \
+        --venv <venv-dir>
+    ```
+
+4. Run the executable, as follows:
+
+    ```bash
+    ./fib 4
+    ```
+    You should see the same output as earlier.
+
 ### Related Documentation
-* [Getting Started](/getting_started/)
-* [Creating a Virtual Environment](/guides/creating_a_virtual_environment/)
+
+* [GraalPy Getting Started](https://y-shcheholskyy.github.io/graalpy.github.io/getting-started/)
+* [Standalone Python Applications](https://y-shcheholskyy.github.io/graalpy.github.io/reference/standalone-applications/)

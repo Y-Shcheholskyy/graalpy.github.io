@@ -78,6 +78,6 @@ This example provides a demonstration of using the Python [Requests](https://pyp
 
 ### Related Documentation
 
-* [Python Requests module](https://pypi.org/project/requests/)
+* [Python Requests Package](https://pypi.org/project/requests/)
 * [GraalPy Getting Started](https://y-shcheholskyy.github.io/graalpy.github.io/getting-started/)
 * [Standalone Python Applications](https://y-shcheholskyy.github.io/graalpy.github.io/reference/standalone-applications/)

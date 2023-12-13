@@ -14,6 +14,7 @@ It shows how to create a standalone executable from this application using Graal
     ```
 
 3. Copy the following contents into a file named _pandas\_dataframe.py_:
+    
     ```python
     import pandas as pd
     

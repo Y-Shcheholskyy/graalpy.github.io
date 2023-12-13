@@ -1,28 +1,20 @@
----
-layout: learn
-title: Covid Plot
-permalink: /examples/covid-plot/
-description: This example provides a demonstration of the use of [Matplotlib](https://matplotlib.org/), a visualization library for Python, combined with [`pandas`](https://pandas.pydata.org/), an open source data analysis and manipulation tool.
----
+# Covid Plot with Matplotlib and Pandas Libraries
 
-<a href='{{ "/examples/" | relative_url }}' class="btn btn-back">&lt; Back</a>
+This example provides a demonstration of the use of [Matplotlib](https://matplotlib.org/), a visualization library for Python, combined with [`pandas`](https://pandas.pydata.org/), an open source data analysis and manipulation tool.
 
-# Covid Plot
-{{ page.description }}
-
->**Prerequisites**: A recent version of [CMake](https://cmake.org/) is required to install the matplotlib package. (For more information, see [Installing CMake](https://cmake.org/install/).)
+>**Prerequisites**: A recent version of [CMake](https://cmake.org/) is required to install the Matplotlib package. (For more information, see [Installing CMake](https://cmake.org/install/).)
 
 >Note: GraalPy does not implement the [Tkinter](https://docs.python.org/3/library/tkinter.html) user interface, so some features of matplotlib may not work as expected.
 
-1. Install `graalpy` and [create a Virtual Environment](/guides/creating_a_virtual_environment/), then activate it. 
-(For more information, see [Getting Started](/getting_started/).)
+1. [Install GraalPy](https://y-shcheholskyy.github.io/graalpy.github.io/getting-started/) in the **native** configuration. Consider Oracle GraalPy for the best experience. Then [create a Virtual Environment](https://y-shcheholskyy.github.io/graalpy.github.io/guides/#creating-a-virtual-environment) and activate it. 
+    
+    >Consider **Oracle GraalPy** for the best experience. It is licensed under the [GraalVM Free Terms and Conditions (GFTC)](https://www.oracle.com/downloads/licenses/graal-free-license.html) license, which permits use by any user including commercial and production use.
 
-2. Install the `requests`, `pandas`, and `matplotlib` packages (and their dependencies):
-
+2. Install the `requests`, `pandas`, and `matplotlib` packages (and their dependencies) using `pip`:
     ```bash
-    % pip install requests
-    % pip install pandas
-    % pip install matplotlib
+    pip install requests
+    pip install pandas
+    pip install matplotlib
     ```
 
 3. Copy the following contents into a file named _covid\_plot.py_.
@@ -63,15 +55,15 @@ description: This example provides a demonstration of the use of [Matplotlib](ht
     ```
 
 4. Use the following command to run the script, with an example argument:
-
     ```bash
-    % graalpy covid_plot.py POL
+    graalpy covid_plot.py POL
     ```
-
-5. The script creates a file named _Poland\_covid\_plot.png_ with content similar to:
-    ![Covid Plot for Poland](assets/Poland_covid_plot.png)
+    The script creates a file named _Poland\_covid\_plot.png_ with content similar to:
+        ![Covid Plot for Poland](assets/Poland_covid_plot.png)
 
 ### Related Documentation
-* [Creating a Virtual Environment](/guides/creating_a_virtual_environment/)
-* [Installing a Package](/guides/installing_a_package/)
-* [Pandas DataFrame](/examples/pandas_dataframe/)
+
+* [Matplotlib](https://matplotlib.org/)
+* [Pandas](https://pandas.pydata.org/)
+* [GraalPy Getting Started](https://y-shcheholskyy.github.io/graalpy.github.io/getting-started/)
+* [Standalone Python Applications](https://y-shcheholskyy.github.io/graalpy.github.io/reference/standalone-applications/)

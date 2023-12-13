@@ -12,6 +12,7 @@ This example provides a demonstration of using the Python [Requests](https://pyp
     ```
 
 3. Copy the following contents into a file named _astronauts.py_:
+    
     ```python
     import requests
     

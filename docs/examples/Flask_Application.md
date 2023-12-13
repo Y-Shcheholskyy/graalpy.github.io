@@ -61,7 +61,7 @@ It is adapted from the Flask [Quickstart](https://flask.palletsprojects.com/en/3
 (For example, on Linux and macOS, use the command `unset JAVA_HOME`.)
 
 6. Create a native executable based on your _hello\_flask.py_ script, as shown below.
-(For more information about the command-line options, see [Standalone Python Applications](/reference/standalone-applications/).)
+(For more information about the command-line options, see [Standalone Python Applications](https://y-shcheholskyy.github.io/graalpy.github.io/reference/standalone-applications/).)
 
     ```bash
     graalpy -m standalone native \

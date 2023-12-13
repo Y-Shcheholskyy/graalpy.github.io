@@ -1,6 +1,6 @@
 # Python REST Application
 
-This example provides a demonstration of using the Python [Requests](https://pypi.org/project/requests/) module to call a REST API. It shows how to create a standalone executable from this application using GraalPy and GraalVM Native Image. 
+This example provides a demonstration of using the Python [Requests](https://pypi.org/project/requests/) module to call a REST API. It shows how to create a standalone executable from this application using GraalPy and GraalVM Native Image.
 
 1. [Install GraalPy](https://y-shcheholskyy.github.io/graalpy.github.io/getting-started/) in the **native** configuration. Consider Oracle GraalPy for the best experience. Then [create a Virtual Environment](https://y-shcheholskyy.github.io/graalpy.github.io/guides/#creating-a-virtual-environment) and activate it. 
     

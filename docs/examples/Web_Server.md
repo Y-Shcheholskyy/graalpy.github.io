@@ -1,4 +1,4 @@
-# HTTP Server Application
+# HTTP Web Server
 
 This example provides a demonstration of creating a standalone web server based on the Python [`http.server`](https://docs.python.org/3/library/http.server.html) module, using GraalPy and GraalVM Native Image. 
 
@@ -56,7 +56,7 @@ This example provides a demonstration of creating a standalone web server based 
 (For example, on Linux and macOS, use the command `unset JAVA_HOME`.)
 
 5. Create a native executable based on your _webserver.py_ script, as shown below.
-(For more information about the command-line options, see [Standalone Python Applications](/reference/standalone-applications/).)
+(For more information about the command-line options, see [Standalone Python Applications](https://y-shcheholskyy.github.io/graalpy.github.io/reference/standalone-applications/).)
 
     ```bash
     graalpy -m standalone native \

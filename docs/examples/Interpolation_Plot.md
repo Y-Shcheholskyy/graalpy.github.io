@@ -52,8 +52,8 @@ This example provides a demonstration creating an interpolation plot with the us
 
 ### Related Documentation
 
-* [GraalPy Getting Started](https://y-shcheholskyy.github.io/graalpy.github.io/getting-started/)
-* [Standalone Python Applications](https://y-shcheholskyy.github.io/graalpy.github.io/reference/standalone-applications/)
 * [Matplotlib](https://matplotlib.org/)
 * [NumPy](https://numpy.org/)
 * [SciPy](https://scipy.org/)
+* [GraalPy Getting Started](https://y-shcheholskyy.github.io/graalpy.github.io/getting-started/)
+* [Standalone Python Applications](https://y-shcheholskyy.github.io/graalpy.github.io/reference/standalone-applications/)

@@ -7,13 +7,11 @@ This example provides a demonstration of using the Python [Requests](https://pyp
     >Consider **Oracle GraalPy** for the best experience. It is licensed under the [GraalVM Free Terms and Conditions (GFTC)](https://www.oracle.com/downloads/licenses/graal-free-license.html) license, which permits use by any user including commercial and production use.
 
 2. Install the `requests` package using `pip`:
-
     ```bash
     pip install requests
     ```
 
 3. Copy the following contents into a file named _astronauts.py_:
-
     ```python
     import requests
     
@@ -33,7 +31,6 @@ This example provides a demonstration of using the Python [Requests](https://pyp
     ```
 
 4. Run the script:
-
     ```bash
     graalpy astronauts.py
     ```

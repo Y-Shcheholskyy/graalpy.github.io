@@ -1,4 +1,4 @@
-# Fibonacci Sequence
+# Fibonacci Sequence Application
 
 This example provides a demonstration of creating a standalone executable from a Python application, using GraalPy and GraalVM Native Image.
 A demo application is a Python program that prints Fibonacci numbers using recursion.

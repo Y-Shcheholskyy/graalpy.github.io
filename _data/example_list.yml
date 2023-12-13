@@ -1,13 +1,13 @@
 docs:
-  - docs/examples/Astronauts.md
-  - docs/examples/Covid_Plot.md
-  - docs/examples/Currency_Exchange.md
-  - docs/examples/Fibonacci.md
-  - docs/examples/Flask_Application.md
-  - docs/examples/Interpolation_Plot.md
-  - docs/examples/Machine_Learning.md
-  - docs/examples/Pandas_DataFrame.md
-  - docs/examples/Polynomial_Plot.md
-  - docs/examples/SQLite_REST_Server.md
-  - docs/examples/Styled_Text.md
-  - docs/examples/Web_Server.md
+  - https://github.com/graalvm/graalpy-demos/blob/main/Astronauts.md
+  - https://github.com/graalvm/graalpy-demos/blob/main/Covid_Plot.md
+  - https://github.com/graalvm/graalpy-demos/blob/main/Currency_Exchange.md
+  - https://github.com/graalvm/graalpy-demos/blob/main/Fibonacci.md
+  - https://github.com/graalvm/graalpy-demos/blob/main/Flask_Application.md
+  - https://github.com/graalvm/graalpy-demos/blob/main/Interpolation_Plot.md
+  - https://github.com/graalvm/graalpy-demos/blob/main/Machine_Learning.md
+  - https://github.com/graalvm/graalpy-demos/blob/main/Pandas_DataFrame.md
+  - https://github.com/graalvm/graalpy-demos/blob/main/Polynomial_Plot.md
+  - https://github.com/graalvm/graalpy-demos/blob/main/SQLite_REST_Server.md
+  - https://github.com/graalvm/graalpy-demos/blob/main/Styled_Text.md
+  - https://github.com/graalvm/graalpy-demos/blob/main/Web_Server.md

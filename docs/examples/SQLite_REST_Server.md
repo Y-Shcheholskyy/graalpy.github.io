@@ -1,9 +1,10 @@
 # SQLite REST Server
 
 This example provides a demonstration of creating a web server to provide a minimal REST interface to a SQLite database, using the Python [`http.server`](https://docs.python.org/3/library/http.server.html) and [SQLite](https://www.sqlitetutorial.net/sqlite-python/) modules. The database models musical genres.
-This demo shows how to create a standalone executable from this application using GraalPy and GraalVM Native Image. 
+The demo shows how to create a standalone executable from this application using GraalPy. 
+GraalPy comes with a module that can create Python single-file native binaries for Linux, Windows, and macOS.
 
-1. [Install GraalPy](https://y-shcheholskyy.github.io/graalpy.github.io/getting-started/) in the **native** configuration. Consider Oracle GraalPy for the best experience. Then [create a Virtual Environment](https://y-shcheholskyy.github.io/graalpy.github.io/guides/#creating-a-virtual-environment) and activate it. 
+1. [Install GraalPy](https://y-shcheholskyy.github.io/graalpy.github.io/getting-started/) in the **native** configuration (default). Then [create a Virtual Environment](https://y-shcheholskyy.github.io/graalpy.github.io/guides/#creating-a-virtual-environment) and activate it. 
     
     >Consider **Oracle GraalPy** for the best experience. It is licensed under the [GraalVM Free Terms and Conditions (GFTC)](https://www.oracle.com/downloads/licenses/graal-free-license.html) license, which permits use by any user including commercial and production use.
 
@@ -138,7 +139,7 @@ Run the following commands:
     {"id": 1, "name": "Pop"}{"id": 2, "name": "Rock"}{"id": 3, "name": "Blues"}
     ```
 
-    Now continue and create a native executable from this Python application, using [GraalVM ahead-of-time Native Image compilation](https://www.graalvm.org/latest/reference-manual/native-image/).
+    Now continue and create a native executable from this Python application.
 
 6. Unset your `JAVA_HOME` environment variable. 
 (For example, on Linux and macOS, use the command `unset JAVA_HOME`.)
@@ -161,7 +162,7 @@ Run the following commands:
 
 ### Related Documentation
 
-* [SQLite](https://www.sqlitetutorial.net/sqlite-python/)
-* [Python HTTP server](https://docs.python.org/3/library/http.server.html)
+* [SQLite Package](https://www.sqlitetutorial.net/sqlite-python/)
+* [Python HTTP Server](https://docs.python.org/3/library/http.server.html)
 * [GraalPy Getting Started](https://y-shcheholskyy.github.io/graalpy.github.io/getting-started/)
 * [Standalone Python Applications](https://y-shcheholskyy.github.io/graalpy.github.io/reference/standalone-applications/)

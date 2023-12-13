@@ -1,9 +1,10 @@
 # DataFrame Application Using Python Requests and Pandas
 
 This example provides a demonstration of using the Python [Requests](https://pypi.org/project/requests/) and [Pandas](https://pandas.pydata.org/) modules to manipulate data from an open source dataset provided by the US government.
-It shows how to create a standalone executable from this application using GraalPy and GraalVM Native Image. 
+The demo shows how to create a standalone executable from this application using GraalPy. 
+GraalPy comes with a module that can create Python single-file native binaries for Linux, Windows, and macOS.
 
-1. [Install GraalPy](https://y-shcheholskyy.github.io/graalpy.github.io/getting-started/) in the **native** configuration. Consider Oracle GraalPy for the best experience. Then [create a Virtual Environment](https://y-shcheholskyy.github.io/graalpy.github.io/guides/#creating-a-virtual-environment) and activate it. 
+1. [Install GraalPy](https://y-shcheholskyy.github.io/graalpy.github.io/getting-started/) in the **native** configuration (default). Then [create a Virtual Environment](https://y-shcheholskyy.github.io/graalpy.github.io/guides/#creating-a-virtual-environment) and activate it.
     
     >Consider **Oracle GraalPy** for the best experience. It is licensed under the [GraalVM Free Terms and Conditions (GFTC)](https://www.oracle.com/downloads/licenses/graal-free-license.html) license, which permits use by any user including commercial and production use.
 
@@ -52,25 +53,6 @@ It shows how to create a standalone executable from this application using Graal
     ```bash
     graalpy pandas_dataframe.py
     ```
-    Now continue and create a native executable from this Python application, using [GraalVM ahead-of-time Native Image compilation](https://www.graalvm.org/latest/reference-manual/native-image/).
-
-5. Unset your `JAVA_HOME` environment variable. 
-(For example, on Linux and macOS, use the command `unset JAVA_HOME`.)
-
-6. Create a standalone executable based on your _pandas_dataframe.py_ script, as shown below.
-(For more information about the command-line options, see [Standalone Python Applications](https://y-shcheholskyy.github.io/graalpy.github.io/reference/standalone-applications/).)
-    
-    ```bash
-    graalpy -m standalone native \
-        --module pandas_dataframe.py \
-        --output pandas_dataframe \
-        --venv <venv-dir>
-    ```
-
-7. Run the executable, as follows:
-    ```bash
-    ./pandas_dataframe
-    ```
     You should see a similar output:
     ```
     Columns: Index(['Year', 'Gender', 'Cohort', 'State', 'Drivers'], dtype='object')
@@ -93,9 +75,30 @@ It shows how to create a standalone executable from this application using Graal
     Total number of drivers: 39285916075.0
     ```
 
+    Now continue and create a native executable from this Python application.
+
+5. Unset your `JAVA_HOME` environment variable. 
+(For example, on Linux and macOS, use the command `unset JAVA_HOME`.)
+
+6. Create a standalone executable based on your _pandas_dataframe.py_ script, as shown below.
+(For more information about the command-line options, see [Standalone Python Applications](https://y-shcheholskyy.github.io/graalpy.github.io/reference/standalone-applications/).)
+    
+    ```bash
+    graalpy -m standalone native \
+        --module pandas_dataframe.py \
+        --output pandas_dataframe \
+        --venv <venv-dir>
+    ```
+
+7. Run the executable, as follows:
+    ```bash
+    ./pandas_dataframe
+    ```
+    You should see the same output as earlier.
+
 ### Related Documentation
 
-* [Pyhton Pandas Package](https://pandas.pydata.org/)
-* [Python Requests Package](https://pypi.org/project/requests/)
+* [Pandas Package](https://pandas.pydata.org/)
+* [Requests Package](https://pypi.org/project/requests/)
 * [GraalPy Getting Started](https://y-shcheholskyy.github.io/graalpy.github.io/getting-started/)
 * [Standalone Python Applications](https://y-shcheholskyy.github.io/graalpy.github.io/reference/standalone-applications/)

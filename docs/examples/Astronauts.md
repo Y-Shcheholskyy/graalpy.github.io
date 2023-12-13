@@ -1,8 +1,9 @@
 # Python REST Application
 
-This example provides a demonstration of using the Python [Requests](https://pypi.org/project/requests/) module to call a REST API. It shows how to create a standalone executable from this application using GraalPy and GraalVM Native Image.
+This example provides a demonstration of using the Python [Requests](https://pypi.org/project/requests/) module to call a REST API. The demo shows how to create a standalone executable from this application using GraalPy.
+GraalPy comes with a module that can create Python single-file native binaries for Linux, Windows, and macOS.
 
-1. [Install GraalPy](https://y-shcheholskyy.github.io/graalpy.github.io/getting-started/) in the **native** configuration. Consider Oracle GraalPy for the best experience. Then [create a Virtual Environment](https://y-shcheholskyy.github.io/graalpy.github.io/guides/#creating-a-virtual-environment) and activate it. 
+1. [Install GraalPy](https://y-shcheholskyy.github.io/graalpy.github.io/getting-started/) in the **native** configuration (default). Then [create a Virtual Environment](https://y-shcheholskyy.github.io/graalpy.github.io/guides/#creating-a-virtual-environment) and activate it.
     
     >Consider **Oracle GraalPy** for the best experience. It is licensed under the [GraalVM Free Terms and Conditions (GFTC)](https://www.oracle.com/downloads/licenses/graal-free-license.html) license, which permits use by any user including commercial and production use.
 
@@ -35,28 +36,6 @@ This example provides a demonstration of using the Python [Requests](https://pyp
     ```bash
     graalpy astronauts.py
     ```
-
-    Now continue and create a native executable from this Python application, using [GraalVM ahead-of-time Native Image compilation](https://www.graalvm.org/latest/reference-manual/native-image/).
-
-5. Unset your `JAVA_HOME` environment variable. 
-(For example, on Linux and macOS, use the command `unset JAVA_HOME`.)
-
-6. Create a standalone executable based on your _astronauts.py_ script, as shown below.
-(For more information about the command-line options, see [Standalone Python Applications](https://y-shcheholskyy.github.io/graalpy.github.io/reference/standalone-applications/).)
-
-    ```bash
-    graalpy -m standalone native \
-        --module astronauts.py \
-        --output astronauts \
-        --venv <venv-dir>
-    …
-    Finished generating 'astronauts' in 22m 33s.
-    ```
-
-7. Run the executable, as follows:
-    ```bash
-    ./astronauts
-    ```
     You should see a similar output:
     ```
     ISS
@@ -74,8 +53,29 @@ This example provides a demonstration of using the Python [Requests](https://pyp
     ```
     That is, the names of the spacecraft and their occupants.
 
+    Now continue and create a native executable from this Python application.
+
+5. Unset your `JAVA_HOME` environment variable. 
+(For example, on Linux and macOS, use the command `unset JAVA_HOME`.)
+
+6. Create a standalone executable based on your _astronauts.py_ script, as shown below.
+(For more information about the command-line options, see [Standalone Python Applications](https://y-shcheholskyy.github.io/graalpy.github.io/reference/standalone-applications/).)
+
+    ```bash
+    graalpy -m standalone native \
+        --module astronauts.py \
+        --output astronauts \
+        --venv <venv-dir>
+    ```
+
+7. Run the executable, as follows:
+    ```bash
+    ./astronauts
+    ```
+    You should see the same output as earlier.
+
 ### Related Documentation
 
-* [Python Requests Package](https://pypi.org/project/requests/)
+* [Requests Package](https://pypi.org/project/requests/)
 * [GraalPy Getting Started](https://y-shcheholskyy.github.io/graalpy.github.io/getting-started/)
 * [Standalone Python Applications](https://y-shcheholskyy.github.io/graalpy.github.io/reference/standalone-applications/)

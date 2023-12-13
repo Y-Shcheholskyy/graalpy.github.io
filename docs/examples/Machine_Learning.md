@@ -1,9 +1,10 @@
 # Machine Learning with Python scikit-learn Library
 
 This example provides a demonstration of using [`scikit-learn`](https://scikit-learn.org/stable/) (a free machine learning library for Python) to model a dataset of Iris plants. 
-It shows how to create a standalone executable from this application using GraalPy and GraalVM Native Image. 
+The demo shows how to create a standalone executable from this application using GraalPy. 
+GraalPy comes with a module that can create Python single-file native binaries for Linux, Windows, and macOS.
 
-1. [Install GraalPy](https://y-shcheholskyy.github.io/graalpy.github.io/getting-started/) in the **native** configuration. Consider Oracle GraalPy for the best experience. Then [create a Virtual Environment](https://y-shcheholskyy.github.io/graalpy.github.io/guides/#creating-a-virtual-environment) and activate it. 
+1. [Install GraalPy](https://y-shcheholskyy.github.io/graalpy.github.io/getting-started/) in the **native** configuration (default). Then [create a Virtual Environment](https://y-shcheholskyy.github.io/graalpy.github.io/guides/#creating-a-virtual-environment) and activate it.
     
     >Consider **Oracle GraalPy** for the best experience. It is licensed under the [GraalVM Free Terms and Conditions (GFTC)](https://www.oracle.com/downloads/licenses/graal-free-license.html) license, which permits use by any user including commercial and production use.
 
@@ -59,8 +60,18 @@ It shows how to create a standalone executable from this application using Graal
     ```bash
     graalpy irises.py
     ```
+    You should see a similar output:
+    ```
+    Feature names: ['sepal length (cm)', 'sepal width (cm)', 'petal length (cm)', 'petal width (cm)']
+    Response names: ['setosa' 'versicolor' 'virginica']
+    Features training: (105, 4)
+    Features testing: (45, 4)
+    Responses training: (105,)
+    Responses testing: (45,)
+    Accuracy: 0.9777777777777777
+    ```
 
-    Now continue and create a native executable from this Python application, using [GraalVM ahead-of-time Native Image compilation](https://www.graalvm.org/latest/reference-manual/native-image/).
+    Now continue and create a native executable from this Python application.
 
 5. Unset your `JAVA_HOME` environment variable. 
 (For example, on Linux and macOS, use the command `unset JAVA_HOME`.)
@@ -78,16 +89,7 @@ It shows how to create a standalone executable from this application using Graal
     ```bash
     ./irises
     ```
-    You should see  a similar output:
-    ```
-    Feature names: ['sepal length (cm)', 'sepal width (cm)', 'petal length (cm)', 'petal width (cm)']
-    Response names: ['setosa' 'versicolor' 'virginica']
-    Features training: (105, 4)
-    Features testing: (45, 4)
-    Responses training: (105,)
-    Responses testing: (45,)
-    Accuracy: 0.9777777777777777
-    ```
+    You should see the same output as earlier.
 
 ### Related Documentation
 

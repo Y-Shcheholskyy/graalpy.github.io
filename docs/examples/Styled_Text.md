@@ -68,6 +68,6 @@ This example provides a demonstration of the [Pyfiglet](https://www.geeksforgeek
 
 ### Related Documentation
 
+* [Pyfiglet Python Package](https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/)
 * [GraalPy Getting Started](https://y-shcheholskyy.github.io/graalpy.github.io/getting-started/)
-* [GraalVM ahead-of-time Native Image compilation](https://www.graalvm.org/latest/reference-manual/native-image/)
 * [Standalone Python Applications](https://y-shcheholskyy.github.io/graalpy.github.io/reference/standalone-applications/)

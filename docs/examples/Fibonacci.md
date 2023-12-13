@@ -74,5 +74,4 @@ A demo application is a Python program that prints Fibonacci numbers using recur
 ### Related Documentation
 
 * [GraalPy Getting Started](https://y-shcheholskyy.github.io/graalpy.github.io/getting-started/)
-* [GraalVM ahead-of-time Native Image compilation](https://www.graalvm.org/latest/reference-manual/native-image/)
 * [Standalone Python Applications](https://y-shcheholskyy.github.io/graalpy.github.io/reference/standalone-applications/)

@@ -1,18 +1,13 @@
 docs:
   - docs/examples/Fibonacci.md
-  - docs/examples/Standalone_Fibonacci.md
   - docs/examples/Styled_Text.md
   - docs/examples/Astronauts.md
-  - docs/examples/Standalone_Astronauts.md
   - docs/examples/Currency_Exchange.md
-  - docs/examples/Standalone_Currency_Exchange.md
   - docs/examples/Pandas_DataFrame.md
-  - docs/examples/Standalone_Pandas_DataFrame.md
   - docs/examples/Covid_Plot.md
   - docs/examples/Polynomial_Plot.md
   - docs/examples/Interpolation_Plot.md
   - docs/examples/Machine_Learning.md
-  - docs/examples/Standalone_Machine_Learning.md
-  - docs/examples/Standalone_Web_Server.md
-  - docs/examples/Standalone_Flask_Application.md
-  - docs/examples/Standalone_SQLite_REST_Server.md
+  - docs/examples/Web_Server.md
+  - docs/examples/Flask_Application.md.md
+  - docs/examples/SQLite_REST_Server.md

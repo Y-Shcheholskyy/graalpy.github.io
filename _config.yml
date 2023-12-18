@@ -9,10 +9,6 @@ header_pages:
   - docs/examples/Examples.md
   - docs/reference/Reference.md
 
-footer_pages:
-  - docs/contributor/Contributing.md
-  - docs/License.md
-
 # Build settings
 markdown: kramdown
 theme: minima

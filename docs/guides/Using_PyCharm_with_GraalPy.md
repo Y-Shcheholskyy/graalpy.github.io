@@ -1,9 +1,3 @@
-<!-- ---
-layout: learn
-title: Using PyCharm with GraalPy
-permalink: /guides/using_pycharm/
---- -->
-
 ## Using PyCharm with GraalPy
 
 1. Install `graalpy`. 

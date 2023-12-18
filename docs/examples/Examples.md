@@ -1,8 +1,12 @@
 ---
 layout: examples
-title: Examples
+title: GraalPy Examples
 permalink: /examples/
 ---
+
+# GraalPy Examples
+
+Here you will find Python applications based on most popular Python packages, and see how to create standalone native applications with GraalPy.
 
 {% comment %}
   The list of docs for this page is in _data/example_list.yml

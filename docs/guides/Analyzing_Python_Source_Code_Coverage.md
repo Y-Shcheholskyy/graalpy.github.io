@@ -1,9 +1,3 @@
-<!-- ---
-layout: learn
-title: Analyzing Python Source Code Coverage
-permalink: /guides/analyzing_coverage/
---- -->
-
 ## Analyzing Python Source Code Coverage
 
 ### Coverage
@@ -20,7 +14,7 @@ Gives example output:
 
 {::options parse_block_html="true" /}
 <details><summary markdown="span">Coverage (Click to expand)</summary>
-```
+```bash
 ------------------------------------------------------------------------------------------------------------------------------------------------
 Code coverage histogram.
   Shows what percent of each element was covered during execution
@@ -288,7 +282,7 @@ Gives example output:
 
 {::options parse_block_html="true" /}
 <details><summary markdown="span">Trace (Click to expand)</summary>
-```
+```bash
 _       __     __                             __     
 | |     / /__  / /________  ____ ___  ___     / /_____
 | | /| / / _ \/ / ___/ __ \/ __ `__ \/ _ \   / __/ __ \

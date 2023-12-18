@@ -1,18 +1,12 @@
----
-layout: learn
-title: Standalone SQLite REST Server
-permalink: /examples/standalone-sqlite-rest-server/
-description: This example provides a demonstration of creating a standalone web server to provide a minimal REST interface to a SQLite database, using the Python `http.server` and sqlite modules, and GraalVM Native Image.
----
+# SQLite REST Server
 
-<a href='{{ "/examples/" | relative_url }}' class="btn btn-back">&lt; Back</a>
+This example provides a demonstration of creating a web server to provide a minimal REST interface to a SQLite database, using the Python [`http.server`](https://docs.python.org/3/library/http.server.html) and [SQLite](https://www.sqlitetutorial.net/sqlite-python/) modules. The database models musical genres.
+The demo shows how to create a standalone executable from this application using GraalPy. 
+GraalPy comes with a module that can create Python single-file native binaries for Linux, Windows, and macOS.
 
-# Standalone SQLite REST Server
-{{ page.description }}
-The database models musical genres.
-
-1. Install `graalpy` and [create a Virtual Environment](/guides/creating_a_virtual_environment/), then activate it. 
-(For more information, see [Getting Started](/getting_started/).)
+1. [Install GraalPy](https://y-shcheholskyy.github.io/graalpy.github.io/getting-started/) in the **native** configuration (default). Then [create a Virtual Environment](https://y-shcheholskyy.github.io/graalpy.github.io/guides/#creating-a-virtual-environment) and activate it. 
+    
+    >Consider **Oracle GraalPy** for the best experience. It is licensed under the [GraalVM Free Terms and Conditions (GFTC)](https://www.oracle.com/downloads/licenses/graal-free-license.html) license, which permits use by any user including commercial and production use.
 
 2. Copy the following contents into a file named _sqlite_rest.py_:
 
@@ -119,56 +113,56 @@ The database models musical genres.
 
 3. Use the following command to run the script:
     ```bash
-    % graalpy sqlite_rest.py
+    graalpy sqlite_rest.py
     ```
-
-4. You should see output similar to:
+    You should see a similar output:
     ```
     Database opened successfully
     Table created successfully
     Values inserted successfully
     Server started http://localhost:8080
     ```
+4. Use `curl` to access the `/list` endpoint of the server, as follows:
+    ```bash
+    % curl http://localhost:8080/list
+    {"id": 1, "name": "Pop"}{"id": 2, "name": "Rock"}
+    ```
 
-5. Use `curl` to access the `/list` endpoint of the server, as follows:
-```bash
-% curl http://localhost:8080/list
-{"id": 1, "name": "Pop"}{"id": 2, "name": "Rock"}
-```
-
-6. Use `curl` to access the `/add` endpoint of the server and then use the `/list` endpoint to confirm that the REST operation succeeded.
+5. Use `curl` to access the `/add` endpoint of the server and then use the `/list` endpoint to confirm that the REST operation succeeded.
 Run the following commands:
 
     ```bash
-    % curl -X "POST" "http://localhost:8080/add" \
+    curl -X "POST" "http://localhost:8080/add" \
             -H 'Content-Type: application/json; charset=utf-8' \
             -d '{ "name": "Blues" }'
-    % curl http://localhost:8080/list
+    curl http://localhost:8080/list
     {"id": 1, "name": "Pop"}{"id": 2, "name": "Rock"}{"id": 3, "name": "Blues"}
     ```
 
-7. Unset your JAVA_HOME environment variable. 
+    Now continue and create a native executable from this Python application.
+
+6. Unset your `JAVA_HOME` environment variable. 
 (For example, on Linux and macOS, use the command `unset JAVA_HOME`.)
 
-8. Create a native executable based on your _sqlite_rest.py_ script, as shown below.
-(For more information about the command-line options, see [Standalone Python Applications](/reference/standalone-applications/).)
 
+7. Create a native executable based on your _sqlite_rest.py_ script, as shown below.
+(For more information about the command-line options, see [Standalone Python Applications](https://y-shcheholskyy.github.io/graalpy.github.io/reference/standalone-applications/).)
     ```bash
-    % graalpy -m standalone native \
+    graalpy -m standalone native \
         --module sqlite_rest.py \
         --output sqlite_rest \
         --venv <venv-dir>
-    …
-    Finished generating 'sqlite_rest' in 34m 1s.
     ```
 
-9. Run the executable, as follows:
+8. Run the executable, as follows:
     ```bash
-    % ./sqlite_rest
+    ./sqlite_rest
     ```
-And you should see the same output as earlier.
+    You should see the same output as earlier.
 
 ### Related Documentation
-* [Getting Started](/getting_started/)
-* [Creating a Virtual Environment](/guides/creating_a_virtual_environment/)
-* [Standalone Python Applications](/reference/standalone-applications/)
+
+* [SQLite Package](https://www.sqlitetutorial.net/sqlite-python/)
+* [Python HTTP Server](https://docs.python.org/3/library/http.server.html)
+* [GraalPy Getting Started](https://y-shcheholskyy.github.io/graalpy.github.io/getting-started/)
+* [Standalone Python Applications](https://y-shcheholskyy.github.io/graalpy.github.io/reference/standalone-applications/)

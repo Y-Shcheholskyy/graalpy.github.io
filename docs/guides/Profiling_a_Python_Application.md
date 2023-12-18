@@ -1,9 +1,3 @@
-<!-- ---
-layout: learn
-title: Profiling a Python Application
-permalink: /guides/profiling_a_python_application/
---- -->
-
 ## Profiling a Python Application
 
 GraalPy provides three main profiling capabilities: a cpu sampler, a cpu tracer, and a memory tracer.
@@ -23,7 +17,7 @@ You should see output similar to:
 
 {::options parse_block_html="true" /}
 <details><summary markdown="span">CPU Sampler Output (Click to expand)</summary>
-```
+```bash
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 Sampling Histogram. Recorded 564 samples with period 10ms. Missed 235 samples.
   Self Time: Time spent on the top of the stack.
@@ -410,7 +404,7 @@ You should see output similar to:
 
 {::options parse_block_html="true" /}
 <details><summary markdown="span">CPU Tracer Output (Click to Expand)</summary>
-```
+```bash
 --------------------------------------------------------------------------------------------------------------------
 Tracing Histogram. Counted a total of 1135 element executions.
   Total Count: Number of times the element was executed and percentage of total executions.
@@ -549,7 +543,7 @@ You should see output similar to:
 {::options parse_block_html="true" /}
 
 <details><summary markdown="span">Memory Tracer Output (Click to Expand)</summary>
-```
+```bash
 ----------------------------------------------------------------------------
  Location Histogram with Allocation Counts. Recorded a total of 565 allocations.
    Total Count: Number of allocations during the execution of this element.

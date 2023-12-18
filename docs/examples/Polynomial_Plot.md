@@ -1,27 +1,21 @@
----
-layout: learn
-title: Polynomial Plot
-permalink: /examples/polynomial-plot/
-description: This example provides a demonstration of the use of [Matplotlib](https://matplotlib.org/), a visualization library for Python, combined with [NumPy](https://numpy.org/), an open source library of mathematical functions.
----
+# Polynomial Plot with Matplotlib and NumPy Libraries
 
-<a href='{{ "/examples/" | relative_url }}' class="btn btn-back">&lt; Back</a>
+This example provides a demonstration of the use of [Matplotlib](https://matplotlib.org/), a visualization library for Python, combined with [NumPy](https://numpy.org/), an open source library of mathematical functions.
+This demo shows how to create a standalone executable from this application using GraalPy. 
+GraalPy comes with a module that can create Python single-file native binaries for Linux, Windows, and macOS.
 
-# Polynomial Plot
-{{ page.description }}
-
->**Prerequisites**: A recent version of [CMake](https://cmake.org/) is required to install the matplotlib package. (For more information, see [Installing CMake](https://cmake.org/install/).)
+>**Prerequisites**: A recent version of [CMake](https://cmake.org/) is required to install the Matplotlib package. (For more information, see [Installing CMake](https://cmake.org/install/).)
 
 >Note: GraalPy does not implement the [Tkinter](https://docs.python.org/3/library/tkinter.html) user interface, so some features of matplotlib may not work as expected.
 
-1. Install `graalpy` and [create a Virtual Environment](/guides/creating_a_virtual_environment/), then activate it. 
-(For more information, see [Getting Started](/getting_started/).)
+1. [Install GraalPy](https://y-shcheholskyy.github.io/graalpy.github.io/getting-started/) in the **native** configuration (default). Then [create a Virtual Environment](https://y-shcheholskyy.github.io/graalpy.github.io/guides/#creating-a-virtual-environment) and activate it.
+    
+    >Consider **Oracle GraalPy** for the best experience. It is licensed under the [GraalVM Free Terms and Conditions (GFTC)](https://www.oracle.com/downloads/licenses/graal-free-license.html) license, which permits use by any user including commercial and production use.
 
-2. Install the `numpy` and `matplotlib` packages (and their dependencies):
-
+2. Install the `numpy` and `matplotlib` packages (and their dependencies) using `pip`:
     ```bash
-    % pip install numpy
-    % pip install matplotlib
+    pip install numpy
+    pip install matplotlib
     ```
 
 3. Copy the following contents into a file named _polynomial.py_.
@@ -53,14 +47,37 @@ description: This example provides a demonstration of the use of [Matplotlib](ht
     ```
 
 4. Use the following command to run the script:
+    ```bash
+    graalpy polynomial.py
+    ```
+    The script creates several files as follows:
+    
+    ![Polynomial Regressions](assets/Polynomial_Regression.png)
+
+    Now continue and create a native executable from this Python application.
+
+5. Unset your `JAVA_HOME` environment variable. 
+(For example, on Linux and macOS, use the command `unset JAVA_HOME`.)
+
+6. Create a standalone executable based on your _polynomial.py_ script, as shown below.
+(For more information about the command-line options, see [Standalone Python Applications](https://y-shcheholskyy.github.io/graalpy.github.io/reference/standalone-applications/).)
 
     ```bash
-    % graalpy polynomial.py
+    graalpy -m standalone native \
+        --module polynomial.py \
+        --output polynomial \
+        --venv <venv-dir>
     ```
 
-5. The script creates several files as follows:
-   ![Polynomial Regressions](assets/Polynomial_Regression.png)
+7. Run the executable, as follows:
+    ```bash
+    ./polynomial
+    ```
+    You should receive the same output as earlier.
 
 ### Related Documentation
-* [Creating a Virtual Environment](/guides/creating_a_virtual_environment/)
-* [Installing a Package](/guides/installing_a_package/)
+
+* [Matplotlib Package](https://matplotlib.org/)
+* [NumPy Package](https://numpy.org/)
+* [GraalPy Getting Started](https://y-shcheholskyy.github.io/graalpy.github.io/getting-started/)
+* [Standalone Python Applications](https://y-shcheholskyy.github.io/graalpy.github.io/reference/standalone-applications/)

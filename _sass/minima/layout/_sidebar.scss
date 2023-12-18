@@ -95,10 +95,10 @@
   flex: 1 1 260px;
   flex-wrap: wrap;
   min-width: none;
-  overflow: auto;
+  overflow-x: hidden;
   background: #ffffff;
   max-width: 100%;
-  padding: 0px 15px 0px 0px;
+  padding: 0px 0px 0px 0px;
 }
 
 .guides-container {

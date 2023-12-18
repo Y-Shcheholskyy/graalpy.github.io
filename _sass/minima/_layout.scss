@@ -206,13 +206,14 @@
   // padding: $spacing-unit 0;
   flex: 1 0 auto;
   background-color: #0F2F3D;
+  overflow-x: hidden;
   // padding-top: 80px;
 }
 
 .docs-content {
   flex: 1 0 auto;
   background-color: #98d2e152;
-  padding: 80px 0px 10px 40px;
+  padding: 90px 15px 10px 40px;
 }
 
 .edu-content {

@@ -32,4 +32,24 @@ codeBlocks.forEach(function (codeBlock) {
   createCopyButton(codeBlock);
 });
 
+//mobile-menu
+document.addEventListener('DOMContentLoaded', function () {
+  var menuToggle = document.getElementById('mobile-menu-toggle');
+  var menu = document.querySelector('.menu__list');
+
+  menuToggle.addEventListener('click', function (e) {
+    e.stopPropagation();
+    menu.classList.toggle('show');
+  });
+
+  document.addEventListener('click', function (e) {
+    if (!menu.contains(e.target) && !menuToggle.contains(e.target)) {
+      menu.classList.remove('show');
+    }
+  });
+});
+
+
+
+
 

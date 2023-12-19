@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Jython Migration Guide
-permalink: /reference/jython/
+permalink: /graalpy-embedded/reference/jython/
 ---
 
 Most Jython code that uses Java integration will be based on a stable Jython release, and these only come in Python 2.x versions.

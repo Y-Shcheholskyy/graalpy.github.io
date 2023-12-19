@@ -1,23 +1,21 @@
 ## Debugging a Python Application
 
-The standard python debugger `pdb` is supported on GraalPy. 
+GraalPy supports the standard Python debugger `pdb`.
 Refer to the official [PDB documentation](https://docs.python.org/3/library/pdb.html) for usage.
 The built-in `breakpoint()` function uses `pdb` by default.
 
-To enable [GraalVM's Chrome Inspector](https://www.graalvm.org/latest/tools/chrome-debugger/) debugger, pass the `--inspect` command-line option.
+To enable the debugger, pass the `--inspect` command-line option.
 You can inspect variables, set watch expressions, interactively evaluate code snippets, and so on.
 
-Follow the steps below to debug the [Currency Exchange](/examples/currency_exchange/) example.
+1. [Create a demo application](Creating_a_Python_Application.md).
 
-1. Follow the steps in the [Currency Exchange](/examples/currency_exchange/) example.
-
-2. Insert a `breakpoint()` function at line 13 in the file named _currency\_exchange.py_:
+2. To start debugging, insert a `breakpoint()` function at line 13 in the application file _currency\_exchange.py_ before the `for` loop:
 
     ```python
     import requests
     from bs4 import BeautifulSoup
     import csv
-      
+        
     csv_file = open("currency_exchange.csv", "w", 1)
     csv_writer = csv.writer(csv_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_ALL)
     csv_writer.writerow(['Exchange', 'Last Price', '% Change'])
@@ -40,20 +38,16 @@ Follow the steps below to debug the [Currency Exchange](/examples/currency_excha
     ```
 
 3. Run the script using the command-line option `--inspect`:
-
     ```bash
-    % graalpy --inspect currency_exchange.py
-    ```
-
-4. You should see output similar to:
-
+    graalpy --inspect currency_exchange.py
+    ``` 
+    You should see output similar to:
     ```bash
     Debugger listening on ws://127.0.0.1:9229/VrhCaY7wR5tIqy2zLsdFr3f7ixY3QB6kVQ0S54_SOMo
     For help, see: https://www.graalvm.org/tools/chrome-debugger
     E.g. in Chrome open: devtools://devtools/bundled/js_app.html?ws=127.0.0.1:9229/VrhCaY7wR5tIqy2zLsdFr3f7ixY3QB6kVQ0S54_SOMo
     ```
 
-5. Open your Chrome browser and enter the URL provided.
-Now you can inspect the stack, variables, evaluate variables, and selected expressions in a tooltip, and so on.
-For example:
-    ![Chrome Inspector](/docs/guides/assets/Chrome_Inspector.png)
+4. Open your Chrome browser and enter the URL provided. 
+Now you can inspect the stack, variables, evaluate variables, and selected expressions in a tooltip, and so on. For example: 
+    ![Chrome Inspector](../assets/Chrome_Inspector.png)

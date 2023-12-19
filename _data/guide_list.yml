@@ -1,9 +1,6 @@
 docs:
-  - docs/guides/Creating_a_Virtual_Environment.md
-  - docs/guides/Running_a_Python_Application.md
-  - docs/guides/Installing_a_Package.md
-  - docs/guides/Debugging_a_Python_Application.md
-  - docs/guides/Profiling_a_Python_Application.md
-  - docs/guides/Analyzing_Python_Source_Code_Coverage.md
-  - docs/guides/Using_PyCharm_with_GraalPy.md
-  - docs/guides/Using_VSCode_with_GraalPy.md
+  - docs/graalpy/guides/Analyzing_Python_Source_Code_Coverage.md
+  - docs/graalpy/guides/Debugging_a_Python_Application.md
+  - docs/graalpy/guides/Profiling_a_Python_Application.md
+  - docs/graalpy/guides/Using_PyCharm_with_GraalPy.md
+  - docs/graalpy/guides/Using_VSCode_with_GraalPy.md

@@ -1,11 +1,9 @@
 ---
 layout: docs-layout
-title: Guides
-permalink: /guides/
+title: User Guides
+permalink: /graalpy/guides/
 toc: true
 ---
-
-# User Guides
 
 {% for item in site.data.guide_list.docs %}
   {%- assign guide_page = site.pages | where: "path", item | first -%}

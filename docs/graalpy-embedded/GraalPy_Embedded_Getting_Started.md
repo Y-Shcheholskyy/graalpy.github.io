@@ -1,7 +1,7 @@
 ---
 layout: docs-layout
 title: Getting Started
-permalink: /getting-started/
+permalink: /graalpy-embedded/getting-started/
 toc: true
 ---
 
@@ -51,6 +51,7 @@ Furthermore, GraalPy offers a unique deployment mode for Python applications.
 In contrast to Python applications running on CPython that need to ship Python source code and interpreter to be self-contained, Python applications on GraalPy can be compiled to [a single self-contained binary](/reference/standalone-applications/) that embeds all needed resources.
 
 <a name="downloading"></a>
+
 ####  Linux
 The easiest way to install GraalPy on Linux is to use [Pyenv](https://github.com/pyenv/pyenv) (the Python version manager).
 To install version 23.1.0 using Pyenv, run the following commands:
@@ -111,3 +112,8 @@ In addition, GraalPy has a few convenience modules for [Java interoperability](/
 
 * [User Guides](guides/Guides.md)
 * [Reference Documentation](/reference/Reference.md)
+
+## Running a Java and Python Application
+
+## Extend a Java Application with Python
+

@@ -1,14 +1,10 @@
 ---
-layout: page
+layout: docs-layout
 title: Operating System Interfaces
-permalink: /reference/os_interfaces/
+permalink: /graalpy/reference//os-interfaces/
 ---
 
-<h4>Table of Contents</h4>
-  * this unordered seed list will be replaced by toc as unordered list
-  {:toc}
-
-## Background
+# Operating System Interfaces Supported by GraalPy
 
 Truffle-based GraalVM languages usually implement the system related functions using the [Truffle abstraction layer](https://github.com/oracle/graal/blob/master/truffle/docs/README.md), which is OS independent and provides extension points for the users when embedding GraalPy or other Truffle based languages into Java applications.
 See, for example, [Truffle FileSystem service-provider](https://www.graalvm.org/truffle/javadoc/org/graalvm/polyglot/io/FileSystem.html).

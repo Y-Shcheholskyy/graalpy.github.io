@@ -1,7 +1,7 @@
 ---
 layout: docs-layout
 title: Java Interoperability
-permalink: /reference/java_interoperability/
+permalink: /graalpy-embedded/reference/java_interoperability/
 toc: true
 ---
 

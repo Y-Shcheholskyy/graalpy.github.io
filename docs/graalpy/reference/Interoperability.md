@@ -1,22 +1,25 @@
 ---
-layout: page
+layout: docs-layout
 title: Interoperability
-permalink: /reference/interoperability/
+permalink: /graalpy/reference/polyglot-api/
 ---
-The best way to embed GraalPy is to use the [GraalVM SDK Polyglot API](https://www.graalvm.org/sdk/javadoc/org/graalvm/polyglot/package-summary.html).
 
-<h4>Table of Contents</h4>
-* this unordered seed list will be replaced by toc as unordered list
-{:toc}
+# Interoperability with GraalVM Languages
 
-## The Polyglot API
+GraalPy provides interoperability with languages supported by GraalVM (languages implemented with the [Truffle framework](https://www.graalvm.org/latest/graalvm-as-a-platform/language-implementation-framework/)).
 
-Since GraalVM supports several other programming languages including JavaScript, R,
-Ruby, and those that compile to LLVM bitcode, it also provides a Python API to interact with them.
-In fact, GraalVM uses this API internally when executing Python native extensions using the GraalVM LLVM runtime.
+The best way to create a polyglot Python application is to use the [GraalVM SDK Polyglot API](https://www.graalvm.org/sdk/javadoc/org/graalvm/polyglot/package-summary.html).
 
-Other languages are only available for the GraalPy Java distributions.
-To install other languages into a GraalPy, use `libexec/graalpy-polyglot-get` from the distribution's root directory.
+## Polyglot API
+
+Since GraalVM supports several other programming languages including JavaScript, R, Ruby, and those that compile to LLVM bitcode, it also provides a Python API to interact with them.
+In fact, GraalVM uses this API internally when executing Python native extensions using the [GraalVM LLVM runtime](https://www.graalvm.org/latest/reference-manual/llvm/).
+
+Other languages are only available for a GraalPy JVM distribution.
+
+> A GraalPy JVM distribution contains Python in the JVM configuration. To distinguish between the default, native, and the JVM configuration, the downloadable file has a `-jvm` part in the name. See [GraalPy releases](https://github.com/oracle/graalpython/releases/).
+
+You can install other languages into GraalPy. For that, use `libexec/graalpy-polyglot-get` from the distribution's root directory.
 To install Ruby, for example:
 ```shell
 libexec/graalpy-polyglot-get ruby
@@ -85,8 +88,7 @@ In this case the function name is used as the globally exported name:
 ...     return "Hello from Python!"
 ```
 
-Here is an example of how to use the JavaScript regular expression engine to
-match Python strings:
+Here is an example of how to use the JavaScript Regular Expression Engine to match Python strings:
 ```python
 >>> js_re = polyglot.eval(string="RegExp()", language="js")
 
@@ -101,7 +103,7 @@ match Python strings:
 "Here is what we found: 'This string was matched by Graal.js'"
 ```
 
-This program matches Python strings using the JavaScript regular expression object.
+This program matches Python strings using the JavaScript Regular Expression object.
 Python reads the captured group from the JavaScript result and prints it.
 
 As a more complex example, see how you can read a file using R, process the data in Python, and use R again to display the resulting data image, using both the R and Python libraries in conjunction.
@@ -110,9 +112,8 @@ To run this example, first install the required R library:
 R -e 'install.packages("https://www.rforge.net/src/contrib/jpeg_0.1-8.tar.gz", repos=NULL)'
 ```
 
-This example also uses [image_magix.py](/docs/reference/assets/image_magix.py) and works
-on a JPEG image input (you can try with [this image](/docs/reference/assets/python_demo_picture.jpg)).
-These files have to be in the same directory that the script below is located in and run from.
+This example also uses [image_magix.py](../assets/image_magix.py) and works on a JPEG image input (you can try with [this image](../assets/python_demo_picture.jpg)).
+The files have to be in the same directory that the script below is located in and run from.
 ```python
 import polyglot
 import sys
@@ -150,10 +151,9 @@ draw(result)
 time.sleep(10)
 ```
 
-## The Behavior of Types
+## Interop Types
 
-The interop protocol defines different "types" which can overlap in all kinds of
-ways and have restrictions on how they can interact with Python.
+The interop protocol defines different "types" which can overlap in all kinds of ways and have restrictions on how they can interact with Python.
 
 ### Interop Types to Python
 

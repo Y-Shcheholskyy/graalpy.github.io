@@ -1,0 +1,6 @@
+docs:
+  - docs/graalpy/reference/Standalone_Applications.md
+  - docs/graalpy/reference/Interoperability.md
+  - docs/graalpy/reference/OS_Interfaces.md
+  - docs/graalpy/reference/Parser_Details.md
+  - docs/graalpy/reference/Windows_Distribution.md

@@ -1,8 +1,10 @@
 ---
-layout: page
-title: Standalone Python Applications
-permalink: /reference/standalone-applications/
+layout: docs-layout
+title: Creating Standalone Native Applications
+permalink: /graalpy/reference/standalone-applications/
 ---
+
+# Creating Standalone Native Applications with GraalPy
 
 With GraalPy, you can distribute Python applications or libraries as standalone binaries or JAR files without any external dependencies.
 The [Truffle framework](https://github.com/oracle/graal/tree/master/truffle) on which GraalPy is built, and the [Sulong LLVM runtime](https://github.com/oracle/graal/tree/master/sulong) that GraalPy leverages for managed execution of Python's native extensions enables users to completely virtualize all filesystem accesses of Python programs, including those to the standard library and installed packages.

@@ -1,7 +1,8 @@
 ---
 layout: docs-layout
 title: Interoperability
-permalink: /graalpy/reference/polyglot-api/
+permalink: /graalpy-embedded/reference/polyglot-api/
+toc: true
 ---
 
 # Interoperability with GraalVM Languages
@@ -17,7 +18,7 @@ In fact, GraalVM uses this API internally when executing Python native extension
 
 Other languages are only available for a GraalPy JVM distribution.
 
-> A GraalPy JVM distribution contains Python in the JVM configuration. To distinguish between the default, native, and the JVM configuration, the downloadable file has a `-jvm` part in the name. See [GraalPy releases](https://github.com/oracle/graalpython/releases/).
+> A GraalPy JVM distribution contains Python in the JVM configuration. To distinguish between the default, native, and the JVM configuration, the downloadable file has `-jvm` in the name. See [GraalPy releases](https://github.com/oracle/graalpython/releases/).
 
 You can install other languages into GraalPy. For that, use `libexec/graalpy-polyglot-get` from the distribution's root directory.
 To install Ruby, for example:

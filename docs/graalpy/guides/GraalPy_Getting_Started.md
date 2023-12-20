@@ -1,14 +1,22 @@
 ---
 layout: docs-layout
 title: GraalPy Getting Started
-permalink: /graalpy/getting-started/
+permalink: /graalpy/
 toc: true
 ---
 
 # Getting Started with GraalPy
 
-GraalPy provides a Python 3.10 compliant runtime. A primary goal is to support PyTorch, SciPy, and their constituent libraries, as well as to work with other data science and machine learning libraries from the rich Python ecosystem.
+GraalPy provides a Python 3.x compliant runtime. A primary goal is to support PyTorch, SciPy, and their constituent libraries, as well as to work with other data science and machine learning libraries from the rich Python ecosystem.
 GraalPy is distributed as an ahead-of-time compiled native executable, compact in size.
+
+GraalPy provides the following **capabilities**:
+
+* Replacement for CPython. Use GraalPy as a replacement for CPython. It is the most compatible, since it most closely resembles the structure of CPython installation packages.
+* Unique deployment mode for Python applications. Compile a Python application on GraalPy to [a single self-contained binary](Creating_Standalone_Applications.md) that embeds all needed resources.
+* Access to GraalVM's language ecosystems and tools. GraalPy can run many standard Python tools as well as tools from the GraalVM ecosystem.
+
+<br>
 
 ## GraalPy Distributions
 
@@ -28,6 +36,7 @@ graalpy-<version>-<os>-<arch>.tar.gz
 # GraalPy Community
 graalpy-community-<version>-<os>-<arch>.tar.gz
 ```
+<br>
 
 {% include_relative Installing_GraalPy.md %}
 

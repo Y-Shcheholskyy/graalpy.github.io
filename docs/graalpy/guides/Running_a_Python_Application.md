@@ -47,3 +47,5 @@ The application uses the Python [Pyfiglet ASCII art package](https://www.geeksfo
     You should see the same output as earlier. 
 
 Thanks to the GraalPy `standalone` tool, you can turn a Python application into a self-contained native executable!
+
+<br>

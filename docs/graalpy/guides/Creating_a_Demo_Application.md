@@ -49,3 +49,4 @@ This application uses [Requests](https://pypi.org/project/requests/) and [Beauti
 
 When you run this application, `graalpy currency_exchange.py`, a CSV file is produced, similar to _[currency_exchange.csv](https://github.com/graalvm/graalpy-demos/blob/main/assets/currency_exchange.csv)_.
 
+<br>

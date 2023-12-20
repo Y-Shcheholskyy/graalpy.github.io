@@ -27,3 +27,5 @@ Multiple executables are available in the virtual environment, including: `pytho
 > ```bash
 > deactivate
 > ```
+
+<br>

@@ -1,9 +1,9 @@
 ## Installing GraalPy
 
-####  Linux and macOS
+####  Linux
 
 The easiest way to install GraalPy on Linux is to use [Pyenv](https://github.com/pyenv/pyenv) (the Python version manager).
-To install version 23.1.0 using Pyenv, run the following commands:
+To install version 23.1.1 using Pyenv, run the following commands:
 ```bash
 pyenv install graalpy-23.1.1
 ```
@@ -19,7 +19,7 @@ Alternatively, you can download a compressed GraalPy installation file from [Git
 ####  macOS
 
 The easiest way to install GraalPy on macOS is to use [Pyenv](https://github.com/pyenv/pyenv) (the Python version manager).
-To install version 23.1.0 using Pyenv, run the following commands:
+To install version 23.1.1 using Pyenv, run the following commands:
 ```bash
 pyenv install graalpy-23.1.1
 ```
@@ -35,7 +35,7 @@ Alternatively, you can download a compressed GraalPy installation file from [Git
     ```
     For example:
     ```bash
-    sudo xattr -r -d com.apple.quarantine ~/.pyenv/versions/graalpy-23.1.0
+    sudo xattr -r -d com.apple.quarantine ~/.pyenv/versions/graalpy-23.1.1
     ```
 3. Uncompress the file and update your `PATH` variable to include to the _graalpy-XX.Y.Z-macos-aarch64/bin_ directory.
 
@@ -46,4 +46,6 @@ There is a GraalPy build for Windows.
 1. Find and download a compressed GraalPy installation file from [GitHub releases](https://github.com/oracle/graalpython/releases) that matches the pattern _graalpy-XX.Y.Z-windows-amd64.tar.gz_.  
 2. Uncompress the file and update your `PATH` variable to include to the _graalpy-XX.Y.Z-windows-amd64/bin_ directory.
 
-Be aware that the Windows distribution of GraalPy has [more limitations](../reference/Windows_Distribution.md) than either the macOS or Linux one, so not all features and packages may work as well as they do on the Unices.
+Be aware that the Windows distribution of GraalPy has [more limitations](Windows_Distribution_Limitations.md) than either the macOS or Linux one, so not all features and packages may work as well as they do on the Unices.
+
+<br>

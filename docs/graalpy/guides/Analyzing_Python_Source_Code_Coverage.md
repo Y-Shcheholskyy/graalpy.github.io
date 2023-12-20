@@ -6,7 +6,7 @@ GraalPy provides its own implementation of the [Coverage.py tool](https://pypi.o
 It can be enabled by passing the `--coverage` command-line option. 
 (For details, use the `graalpy --help:tools` command.)
 
-Start by [creating a demo application](Creating_a_Python_Application.md).
+Start by [creating a demo application](Creating_a_Demo_Application.md).
 
 Then run the script with `graalpy` and enable the code coverage:
 ```bash

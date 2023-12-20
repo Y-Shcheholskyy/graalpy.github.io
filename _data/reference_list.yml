@@ -1,0 +1,8 @@
+docs:
+  - docs/graalpy-embedded/reference/Interoperability.md
+  - docs/graalpy-embedded/reference/Java_Interoperability.md
+  - docs/graalpy-embedded/reference/Jython.md
+  - docs/graalpy-embedded/reference/Native_Images.md
+  - docs/graalpy-embedded/reference/OS_Interfaces.md
+  - docs/graalpy-embedded/reference/Parser_Details.md
+  - docs/graalpy-embedded/reference/Standalone_Embedded_Applications.md

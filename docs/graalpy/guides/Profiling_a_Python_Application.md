@@ -3,7 +3,7 @@
 GraalPy provides three main profiling capabilities: a CPU sampler, a CPU tracer, and a memory tracer.
 These are described below. (For details, use the `graalpy --help:tools` command.)
 
-Start by [creating a demo application](Creating_a_Python_Application.md).
+Start by [creating a demo application](Creating_a_Demo_Application.md).
 
 <br>
 

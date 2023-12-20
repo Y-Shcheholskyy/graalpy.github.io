@@ -7,7 +7,7 @@ The built-in `breakpoint()` function uses `pdb` by default.
 To enable the debugger, pass the `--inspect` command-line option.
 You can inspect variables, set watch expressions, interactively evaluate code snippets, and so on.
 
-1. [Create a demo application](Creating_a_Python_Application.md).
+1. [Create a demo application](Creating_a_Demo_Application.md).
 
 2. To start debugging, insert a `breakpoint()` function at line 13 in the application file _currency\_exchange.py_ before the `for` loop:
 
@@ -51,3 +51,5 @@ You can inspect variables, set watch expressions, interactively evaluate code sn
 4. Open your Chrome browser and enter the URL provided. 
 Now you can inspect the stack, variables, evaluate variables, and selected expressions in a tooltip, and so on. For example: 
     ![Chrome Inspector](../assets/Chrome_Inspector.png)
+
+<br>    

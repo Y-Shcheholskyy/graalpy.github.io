@@ -1,10 +1,11 @@
 ---
 layout: page
-title: Native GraalPy Executables
-permalink: /graalpy-embedded/reference/native-executables/
+title: Native GraalPy Images
+permalink: /graalpy-embedded/reference/native-images/
+toc: true
 ---
 
-# Native GraalPy Executables
+# Native GraalPy Images
 
 Python is a large language.
 "Batteries included" has long been a core tenet of CPython.

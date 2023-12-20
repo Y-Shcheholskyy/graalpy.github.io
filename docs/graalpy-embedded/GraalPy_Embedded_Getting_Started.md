@@ -1,14 +1,35 @@
 ---
 layout: docs-layout
 title: Getting Started
-permalink: /graalpy-embedded/getting-started/
+permalink: /graalpy-embedded/
 toc: true
 ---
 
-## Using GraalPy from Java
+# Get Started with GraalPy in Java
 
-We publish Maven artefacts to use GraalPy from a GraalVM JDK, Oracle JDK, or OpenJDK.
-The quickest way to get started is to just use our Maven Archetype to generate a project that embeds Python libraries into Java:
+GraalPy is a Python 3.x compliant runtime. 
+GraalPy offers different **advantages** for the Java developers:
+
+* GraalPy brings modern Python data science libraries into Java applications. Safely embed Python libraries in Java projects thanks to GraalPy.
+* GraalPy is a Python 3 replacement for Jython. Use Java libraries from Python or move your Jython applications to GraalPy for high performance and modern language features, while preserving an easy interoperability with Java.
+* Possibility to create native executables using GraalVM Native Image. Since Python libraries are embed in Java, you can easily generate native images of this Java-Python application to achieve an instantaneous startup.
+
+Here you will find information how to get started in each case.
+
+<br>
+
+## Embedding Python in Java
+
+With GraalPy you can safely embed Python in your Java code. 
+There are two ways to create a sample Java-Python project and achieve that quickly.
+
+<br>
+
+### Using Maven Artefacts
+
+You can generate a skeleton Maven project that sets up an embedding of Python packages into Java using Maven artefacts.
+There are [GraalPy artefacts](https://mvnrepository.com/artifact/org.graalvm.python) to use GraalPy from a GraalVM JDK, Oracle JDK, or OpenJDK.
+This is the quickest way to get started and generate a project that embeds Python libraries into Java:
 
 ```bash
 mvn archetype:generate
@@ -17,103 +38,67 @@ mvn archetype:generate
   -DarchetypeVersion=24.0.0
 ```
 
-This will generate an embeddding with Python and our own Maven Plug-in to manage Python packages.
-It uses the [GraalVM SDK Polyglot API](https://www.graalvm.org/sdk/javadoc/org/graalvm/polyglot/package-summary.html) with additional support from our plug-in for managing Python virtual environments and integrating Python package dependencies with a Maven workflow.
+This generates an embeddding with Python.
+It uses the [GraalVM SDK Polyglot API](https://www.graalvm.org/sdk/javadoc/org/graalvm/polyglot/package-summary.html) with additional support from the plugin for managing Python virtual environments and integrating Python package dependencies with a Maven workflow.
+
 Depending on which supported JDK you run embedded GraalPy, the level of optimizations varies, as described [here](https://www.graalvm.org/latest/reference-manual/embed-languages/#runtime-optimization-support).
-The archetype Java code and *pom.xml* file are heavily documented and browsing the generated code should explain all this embedding lets you do.
+The archetype Java code and the _pom.xml_ file are heavily documented and browsing the generated code should explain what this embedding lets you do.
 We recommend browsing the archetype even if you wish to create a custom embedding using something other than Maven to give you an idea of how to achieve your desired result.
 You can check our guide to [embedding GraalVM languages in Java](https://www.graalvm.org/latest/reference-manual/embed-languages/) for generic setup instructions.
 
-####  Access control and security for Python scripts
+<br>
 
-Embedding GraalPy into Java works with the [GraalVM Polyglot Sandbox](https://www.graalvm.org/latest/reference-manual/embed-languages/#controlling-access-to-host-functions).
-Specific to GraalPy are the way the operating system interface is exposed to Python scripts.
-By default all access is routed through Java interfaces, but some packages rely on details of POSIX APIs and require [direct native access](/reference/os_interfaces/).
+### Using GraalPy Standalone Tool
 
-####  Code loading performance
+Another way is to generate a Java-Python application with the GraalPy `standalone` tool.
+This tool creates a Maven project skeleton and generates a standalone binary for a simple Java-Python HelloWorld example.
+You can use it as a starting point or inspiration for further Java-Python polyglot development.
 
-Parsing Python code requires time so in an embedding please observe the general advice for embedding GraalVM languages related to [code caching](https://www.graalvm.org/latest/reference-manual/embed-languages/#code-caching-across-multiple-contexts).
-Furthermore, some Python libraries require loading a large amount of code on startup before they can do any work.
-Due to the Python language design, incremental parsing is not possible and for some seeimingly inoccuous scripts the parser may represent a significant fraction of runtime and memory.
-To mitigate this, GraalPy can cache the bytecode generated during parsing in *.pyc* files, [if appropriate file system access is configured](/reference/parser_details/).
+1. To use the `standalone` tool, install GraalPy version **23.1.0** or higher for your operating system, as described in the [installation guide](../graalpy/guides/Installing_GraalPy.md). 
 
-####  Using GraalVM Native Image with GraalPy embeddings
+2. To generate a Java-Python project, pass the `polyglot_app` subcommand to the `standalone` tool:
+    ```bash
+    graalpy -m standalone polyglot_app --output-directory MyJavaApplication
+    ```
+    It creates a Java project _MyJavaApplication_. 
+    You can open this Maven project with any Java IDE and edit the main class that was created to modify the Python embedding.
 
-GraalVM Native Image supports [AOT compilation](https://www.graalvm.org/latest/reference-manual/embed-languages/#build-native-executables-from-polyglot-applications) of Java applications that include GraalVM languages, including GraalPy.
-GraalPy provides [some additional options](/reference/native-executables/) to optimize such AOT compiled executables depending on the desired workloads.
+3. To build the application, run: 
+    ```bash
+    mvn -Pnative package
+    ```
+    It packages the project and creates a native executable.
 
-## Replacing CPython with GraalPy
+Take a look at the generated _pom.xml_ file. 
+The project includes the [Maven plugin for Native Image building](https://graalvm.github.io/native-build-tools/latest/maven-plugin.html) that makes it easy to generate a GraalVM native executable.
 
-If you want to use GraalPy as a replacement for *CPython*, you want to download the native distribution of GraalPy.
-These are the most compatible, since they most closely resemble the structure of CPython installation packages.
-In addition to being compatible with standard CPython use cases, GraalPy also supports the [GraalVM tools](/reference/tooling/) for debugging and monitoring and exposes some [additional options](/reference/options/) to tweak the runtime behaviour.
-Furthermore, GraalPy offers a unique deployment mode for Python applications.
-In contrast to Python applications running on CPython that need to ship Python source code and interpreter to be self-contained, Python applications on GraalPy can be compiled to [a single self-contained binary](/reference/standalone-applications/) that embeds all needed resources.
+There are some options to tweak the performance and footprint trade-off.
+Review the [Python Native Images documentation](Native_Images.md) to find out how to remove other unwanted components and further reduce the binary size.
 
-<a name="downloading"></a>
+The generated project should be viewed as a starting point.
+It includes the entire Python standard library, so the Python code can invoke all of the standard library code.
+The resources can be manually pruned to reduce the included Python libraries to the necessary amount, reducing both the size of the package and the time to start up.
+This Java example demonstrates some useful default options for the Python context, but other settings may be desirable to further control what the Python code is allowed to do.
 
-####  Linux
-The easiest way to install GraalPy on Linux is to use [Pyenv](https://github.com/pyenv/pyenv) (the Python version manager).
-To install version 23.1.0 using Pyenv, run the following commands:
+<br>
 
-```bash
-% pyenv install graalpy-23.1.0
-% pyenv shell graalpy-23.1.0
-```
+## Replacing Jython with GraalPy
 
-Alternatively, you can download a compressed GraalPy installation file from [GitHub releases](https://github.com/oracle/graalpython/releases).
-Find the download that matches the pattern *graalpy-XX.Y.Z-linux-amd64.tar.gz*.
-Uncompress the file and update your PATH variable to include to the *graalpy-XX.Y.Z-linux-amd64/bin* directory.
+To use Java libraries from Python or to move on from Jython applications, use the JVM-based GraalPy distribution.
+> A GraalPy JVM distribution contains Python in the JVM configuration. To distinguish between the default, native, and the JVM configuration, the downloadable file has `-jvm` in the name. See [GraalPy releases](https://github.com/oracle/graalpython/releases/).
 
-####  macOS
-The easiest way to install GraalPy on macOS is to use [Pyenv](https://github.com/pyenv/pyenv) (the Python version manager).
-To install version 23.1.0 using Pyenv, run the following commands:
+Be aware that Jython targets the no longer supported Python 2, while GraalPy supports the modern Python 3.
+To migrate code from Python 2 to Python 3, follow [the official guide from the Python community](https://docs.python.org/3/howto/pyporting.html).
+Once your Jython code is Python 3 compatible, use our [Jython migration guide](Jython.md) to iron out other differences between GraalPy and Jython.
 
-```bash
-% pyenv install graalpy-23.1.0
-% pyenv shell graalpy-23.1.0
-```
+Calling Java from Python, in general, is the same as for [any other GraalVM language](Interoperability.md).
+In addition, GraalPy has a few convenience modules for [Java interoperability](Java_Interoperability.md) that make using Java libraries from Python as easy as possible.
 
-Alternatively, you can download a compressed GraalPy installation file from [GitHub releases](https://github.com/oracle/graalpython/releases).
-Find the download that matches the pattern *graalpy-XX.Y.Z-macos-aarch64.tar.gz*.
-Uncompress the file and update your PATH variable to include to the *graalpy-XX.Y.Z-macos-aarch64/bin* directory.
+<br>
 
-You will also need to remove the quarantine attribute.
-To do this, run the following:
+## Creating Native Executables with Python Embeddings
 
-```bash
-% sudo xattr -r -d com.apple.quarantine /path/to/GRAALPYTHON_HOME
-```
+GraalVM Native Image supports [ahead-of-time (AOT) compilation](https://www.graalvm.org/latest/reference-manual/embed-languages/#build-native-executables-from-polyglot-applications) of Java applications that include including GraalPy.
+GraalPy provides [some additional options](Native_Images.md) to optimize such AOT compiled executables depending on the desired workloads.
 
-For example
-
-```bash
-% sudo xattr -r -d com.apple.quarantine ~/.pyenv/versions/graalpy-23.1.0
-```
-
-####  Windows
-There is a GraalPy build for Windows that you can [download](https://github.com/oracle/graalpython/releases/).
-Find the download that matches the pattern *graalpy-XX.Y.Z-windows-amd64.zip*.
-Be aware that the Windows distribution of GraalPy has [more limitations](/reference/windows_distribution/) than either the macOS or Linux one, so not all features and packages may work as well as they do on the Unices.
-
-## Replacing Jython or using Java libraries from Python
-
-To use *Java* libraries from Python or to move on from *Jython* applications, you need to download the JVM-based GraalPy distribution.
-To do so, just replace *graalpy* with *graalpy-jvm* in the [download instructions](#downloading) above.
-
-Be aware that Jython targets the no longer supported Python version 2, while GraalPy targets the modern Python version 3.
-To migrate code from Python 2 to Python 3 you should follow [the official guide from the Python community](https://docs.python.org/3/howto/pyporting.html).
-Once your Jython code is Python 3 compatible you may use our [Jython migration guide](/reference/jython/) to iron out other differences between GraalPy and Jython.
-
-Calling Java from Python in general is the same as for [any other GraalVM language](/reference/interoperability/).
-In addition, GraalPy has a few convenience modules for [Java interoperability](/reference/java_interoperability/) that make using Java libraries from Python a breeze.
-
-## Related Documentation
-
-* [User Guides](guides/Guides.md)
-* [Reference Documentation](/reference/Reference.md)
-
-## Running a Java and Python Application
-
-## Extend a Java Application with Python
-
+<br>

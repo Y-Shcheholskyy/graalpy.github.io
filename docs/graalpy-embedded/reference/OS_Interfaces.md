@@ -1,7 +1,8 @@
 ---
 layout: docs-layout
 title: Operating System Interfaces
-permalink: /graalpy/reference//os-interfaces/
+permalink: /graalpy-embedded/reference/os-interfaces/
+toc: true
 ---
 
 # Operating System Interfaces Supported by GraalPy

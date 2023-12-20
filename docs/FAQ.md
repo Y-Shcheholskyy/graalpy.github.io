@@ -2,6 +2,7 @@
 layout: page
 title: FAQ
 permalink: /faq/
+toc: true
 ---
 
 ## Does module/package XYZ work on GraalPy?

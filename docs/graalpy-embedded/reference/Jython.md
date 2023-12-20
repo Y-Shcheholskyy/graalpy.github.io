@@ -1,8 +1,11 @@
 ---
 layout: page
 title: Jython Migration Guide
-permalink: /graalpy-embedded/reference/jython/
+permalink: /graalpy-embedded/reference/jython-migration/
+toc: true
 ---
+
+# Jython Migration Guide
 
 Most Jython code that uses Java integration will be based on a stable Jython release, and these only come in Python 2.x versions.
 GraalPy, in contrast, is only targeting Python 3.x.
@@ -146,6 +149,7 @@ Catching all kinds of Java exceptions comes with a performance penalty and is on
 ```
 
 ## Java Collections
+
 Java arrays and collections implementing `java.util.Collection` can be accessed using the `[]` syntax. Empty collections
 are considered false in boolean conversions. Their length is exposed by `len` built-in function. For example:
 
@@ -272,4 +276,4 @@ Using this SDK, no APIs particular to Python are exposed, everything is done thr
 The other option to embed Jython in Java is via [JSR 223](https://www.jcp.org/en/jsr/detail?id=223) by using the classes of the the `javax.script` package, and, in particular, via the `ScriptEngine` class.
 We do not recommend this approach, since the `ScriptEngine` APIs are not a clean fit for the options and capabilities of GraalPy.
 However, to migrate existing code, we provide an example ScriptEngine implementation that you can inline into your project.
-Refer to [the reference manual for embedding](https://www.graalvm.org/dev/reference-manual/embed-languages/#compatibility-with-jsr-223-scriptengine) for details.
+Refer to [the reference manual for embedding](https://www.graalvm.org/latest/reference-manual/embed-languages/#compatibility-with-jsr-223-scriptengine) for details.

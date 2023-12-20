@@ -2,16 +2,20 @@ title: GraalPy
 description: GraalPy is a Python 3.10 compliant runtime on top of GraalVM. GraalPy offers high-performance execution, modern language features, and easy interoperability with Java. 
 url: https://graalpy.github.io
 baseurl: #
-
-header_pages:
-  - docs/Getting_Started.md
-  - docs/guides/Guides.md
-  - docs/examples/Examples.md
-  - docs/reference/Reference.md
-
 # Build settings
 markdown: kramdown
 theme: minima
+
+tables_of_contents:
+  - 
+    subgroups:
+      - main_link: docs/graalpy-embedded/reference/Interoperability.md,
+      - main_link: docs/graalpy-embedded/reference/Java_Interoperability.md,
+      - main_link: docs/graalpy-embedded/reference/Jython.md,
+      - main_link: docs/graalpy-embedded/reference/Native_Images.md,
+      - main_link: docs/graalpy-embedded/reference/OS_Interfaces.md,
+      - main_link: docs/graalpy-embedded/reference/Parser_Details.md,
+      - main_link: docs/graalpy-embedded/reference/Standalone_Embedded_Applications.md
 
 kramdown:
   input: GFM

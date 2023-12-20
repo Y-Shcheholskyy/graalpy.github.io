@@ -6,7 +6,7 @@ This repository contains sources for the GraalPy website:
 
 ## How to Run the Website Locally
 
-To build and serve only the website locally, run this command from the root directory:
+To build and serve the website locally, run this command from the root directory:
 ```
 bundle exec jekyll serve --incremental
 ```

@@ -1,21 +1,26 @@
 ---
 layout: page
 title: Jython Migration Guide
-permalink: /graalpy-embedded/reference/jython-migration/
+permalink: /docs/jython-migration/
 toc: true
 ---
 
 # Jython Migration Guide
 
 Most Jython code that uses Java integration will be based on a stable Jython release, and these only come in Python 2.x versions.
-GraalPy, in contrast, is only targeting Python 3.x.
+GraalPy, in contrast, is only targeting Python 3.x. 
 GraalPy does not provide full compatibility with these earlier 2.x versions of Jython.
-Thus, a significant migration step will have to be taken to migrate all your code to Python 3.
 
-For Jython-specific features, follow this document to learn about migration to GraalPy.
+To migrate code from Python 2 to Python 3, follow [the official guide from the Python community](https://docs.python.org/3/howto/pyporting.html).
+Once your Jython code is Python 3 compatible, follow this document to iron out other differences between GraalPy and Jython.
+
+Calling Java from Python, in general, is the same as for [any other GraalVM language](Interoperability.md).
+In addition, GraalPy has a few convenience modules for [Java interoperability](Java_Interoperability.md) that make using Java libraries from Python as easy as possible.
 
 Note that some features of Jython have a negative impact on runtime performance, and are disabled by default.
 To make migration easier, you can enable some features using a command line option: `--python.EmulateJython`.
+
+> To move from Jython applications to GraalPy, use the JVM-based GraalPy distribution. A GraalPy JVM distribution contains Python in the JVM configuration. To distinguish between the default, native, and the JVM configuration, the downloadable file has `-jvm` in the name. See [GraalPy releases](https://github.com/oracle/graalpython/releases/).
 
 <h4>Table of Contents</h4>
   * this unordered seed list will be replaced by toc as unordered list

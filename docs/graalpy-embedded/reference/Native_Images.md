@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Native GraalPy Images
-permalink: /graalpy-embedded/reference/native-images/
+permalink: /docs/native-images/
 toc: true
 ---
 

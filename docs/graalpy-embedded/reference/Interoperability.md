@@ -1,7 +1,7 @@
 ---
 layout: docs-layout
 title: Interoperability
-permalink: /graalpy-embedded/reference/polyglot-api/
+permalink: /docs/polyglot-api/
 toc: true
 ---
 

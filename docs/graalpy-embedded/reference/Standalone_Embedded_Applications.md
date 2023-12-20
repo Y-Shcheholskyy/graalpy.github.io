@@ -1,7 +1,7 @@
 ---
 layout: docs-layout
 title: Creating Standalone Java Applications with GraalPy Embedded
-permalink: /graalpy-embedded/reference/standalone-applications/
+permalink: /docs/standalone-applications/
 toc: true
 ---
 

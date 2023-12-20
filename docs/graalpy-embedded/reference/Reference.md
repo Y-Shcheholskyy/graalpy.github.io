@@ -1,11 +1,12 @@
 ---
 layout: docs-layout
 title: GraalPy Embedded Reference
-permalink: /graalpy-embedded/reference/
+permalink: /docs/
 toc: true
 ---
 
 # GraalPy Embedded Reference Documentation
+
 {% comment %}
   The list of docs for this page is in _data/reference_list.yml
 {% endcomment %}

@@ -1,7 +1,7 @@
 ---
 layout: docs-layout
 title: Python Code Parsing and pyc Files
-permalink: /graalpy-embedded/reference/parser-details/
+permalink: /docs/parser-details/
 toc: true
 ---
 

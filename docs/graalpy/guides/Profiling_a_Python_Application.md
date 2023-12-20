@@ -7,7 +7,7 @@ Start by [creating a demo application](Creating_a_Demo_Application.md).
 
 <br>
 
-### CPU Sampler
+#### CPU Sampler
 
 Use the `--cpusampler` command-line option to take a CPU sample.
 ```bash
@@ -41,7 +41,7 @@ Thread[main,5,main]
 
 <br>
 
-### CPU Tracer
+#### CPU Tracer
 
 Use the `--cputracer --cputracer.TraceStatements` command-line options to trace CPU usage.
 ```bash
@@ -78,7 +78,7 @@ Tracing Histogram. Counted a total of 1135 element executions.
 
 <br>
 
-### Memory Tracer
+#### Memory Tracer
 
 Use the `--memtracer --memtracer.TraceStatements` command-line options to trace memory usage.
 ```bash

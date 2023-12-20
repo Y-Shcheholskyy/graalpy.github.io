@@ -1,6 +1,6 @@
 ## Analyzing Python Source Code Coverage
 
-### Coverage
+#### Coverage
 
 GraalPy provides its own implementation of the [Coverage.py tool](https://pypi.org/project/coverage/) for measuring code coverage of Python programs.
 It can be enabled by passing the `--coverage` command-line option. 
@@ -42,7 +42,7 @@ Code coverage histogram.
 
 <br>
 
-### Trace
+#### Trace
 
 The standard Python `trace` module is also provided.
 > Note: This works in the same way as CPython.

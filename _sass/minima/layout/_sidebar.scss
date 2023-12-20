@@ -36,7 +36,7 @@
   top: 0;
   left: 0;
   transform: translateX(-100%);
-  width: 100%;
+  width: 300px;
   height: 100vh;
   overflow-y: auto;
   background: transparent;
@@ -45,8 +45,8 @@
 
   &.open {
     transform: translateX(0);
-    background: url("/resources/img/home/grain.png") repeat, radial-gradient(142.83% 143.5% at 0.12% 128.91%, #264d6d 0%, rgba(38, 84, 107, 0) 100%), #171E25;
-    margin-top: 44px;
+    background: linear-gradient(180deg, #18525c 10%, #07212C 100%);
+    margin-top: 54px;
   }
 
   /* Portrait and Landscape iPhones 4, 5, 5SE */

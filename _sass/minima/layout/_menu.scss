@@ -73,12 +73,12 @@
 }
 
 .menu__item {
-    margin: 4px 28px 0 28px;
+    margin: 4px 24px 0 24px;
     display: flex;
     font-size: 16px;
     line-height: 48px;
 
-    @media only screen and (min-width: 768px) and (max-width: 1280px) {
+    @media only screen and (min-width: 601px) and (max-width: 768px) {
         margin: 0px 16px 0 16px;
     }
 }
@@ -87,8 +87,14 @@ a.menu__link {
     color: #ffffff;
     font-size: 15px;
     font-weight: 200;
-    @media only screen and (min-width: 768px) and (max-width: 990px) {
+    @media only screen and (min-width: 681px) and (max-width: 768px) {
         font-size: 13px;
+    }
+    @media only screen and (min-width: 601px) and (max-width: 680px) {
+        font-size: 12px;
+    }
+    @media only screen and (min-width: 320px) and (max-width: 600px) {
+        font-size: 16px;
     }
 }
 
@@ -98,7 +104,7 @@ a.stack__header {
 }
 
 li.menu__item {
-    @media only screen and (min-width: 320px) and (max-width: 767px) {
+    @media only screen and (min-width: 320px) and (max-width: 600px) {
         padding: 0px;
     }
 }
@@ -107,15 +113,9 @@ ul.menu__list {
     display: flex;
     align-items: baseline;
     margin-bottom: 0px;
-}
-
-ul.menu__list.open .icons {
-    display: none;
-}
-
-.menu__item {
-    @media only screen and (min-width: 768px) and (max-width: 1024px) {
-        margin: 0px 20px 0 10px !important;
+    @media only screen and (min-width: 320px) and (max-width: 600px) {
+        display: block;
+        margin: 0px 20px;
     }
 }
 
@@ -125,7 +125,7 @@ ul.menu__list.open .icons {
     z-index: 1;
 
     @media only screen and (min-width: 320px) and (max-width: 767px) {
-        margin: 10px 0px;
+        // margin: 10px 0px;
         z-index: auto;
     }
 }
@@ -143,19 +143,19 @@ ul.menu__list.open .icons {
     display: none;
     width: 210px;
     padding: 12px;
-    background-color: #102f3f;
+    background-color: #0a222e;
     opacity: 92%;
-    border: 0.5px solid #1a4f6a;
+    border: 0.5px solid #ffffff4a;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 999;
 
     @media only screen and (min-width: 320px) and (max-width: 767px) {
         top: 90%;
-        left: 80px;
+        left: -110px;
         width: 230px;
         padding: 30px;
-        background-color: #171923;
+        background-color: #0a222e;
     }
 }
 
@@ -243,3 +243,36 @@ ul.menu__list.open .icons {
     line-height: 24px;
     font-weight: 200;
 }
+
+//mobile menu
+
+.menu-toggle {
+    font-size: 2.3rem;
+    cursor: pointer;
+    display: none;
+    &:hover {
+        color: #f29111;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+    ul.menu__list {
+      display: none;
+      flex-direction: column;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #09222E;
+      border-radius: 8px;
+      border: 0.4px solid #ffffff4a;
+    }
+  
+    .menu__list.show {
+      display: flex;
+      padding: 20px 50px;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  }

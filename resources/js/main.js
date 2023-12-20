@@ -49,6 +49,29 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+if ($('.js-show-menu').length) {
+  $(".js-show-menu, .overlay").click(function (e) {
+    e.preventDefault();
+    $('body').toggleClass('overflow-hidden');
+    $(".menu-btn--menu").toggleClass('menu-open').toggleClass('close');
+    $('.menu__list').toggleClass('open');
+    $('.menu__logo').toggleClass('open');
+    $('.menu__downloads').toggleClass('open');
+    $('.menu').toggleClass('open');
+    $('.overlay').fadeToggle();
+  });
+}
+
+if ($(".js-show-sidebar").length) {
+  $(".js-show-sidebar, .overlay").click(function (e) {
+    e.preventDefault();
+    $('body').toggleClass('overflow-hidden');
+    $(".menu-btn--sidebar").toggleClass('menu-open');
+    $('.sidebar').toggleClass('open');
+    $('.overlay').fadeToggle();
+  });
+}
+
 
 
 

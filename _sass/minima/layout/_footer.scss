@@ -33,15 +33,15 @@
         and (min-device-width: 320px)
         and (max-device-width: 480px)
         and (-webkit-min-device-pixel-ratio: 2) {
-          font-size: 12px;
-          line-height: 12px;
+          font-size: 15px;
+          line-height: 15px;
           }
       @media only screen
         and (min-device-width: 414px)
         and (max-device-width: 736px)
         and (-webkit-min-device-pixel-ratio: 3) {
-          font-size: 12px;
-          line-height: 12px;
+          font-size: 15px;
+          line-height: 15px;
         }
 
       &:hover {
@@ -87,7 +87,7 @@ h6.title-footer {
   @media only screen
   and (min-width: 320px)
   and (max-width: 480px) {
-    background: url('/resources/img/docs-home/arrow-down.svg') 96% 50% no-repeat, #213242;
+    background: url('/resources/img/footer/arrow-down.svg') 96% 50% no-repeat, #1F80865E;
     margin-top: 12px;
     font-size: 16px;
     margin-bottom: 8px;
@@ -190,7 +190,7 @@ p.copyright{
 
 .footer__mobile {
   @media (max-width:480px){
-    background: url('/resources/img/home/grain.png') repeat, url('/resources/img/footer/metaimage-footer.svg') 50% 15%/1800px no-repeat, radial-gradient(79.99% 167.49% at 30.24% 129.2%, rgba(47, 79, 124, 0.8) 0%, rgba(38, 84, 107, 0) 100%), #161D24;
+    background: linear-gradient(180deg, #18525c 10%, #07212C 100%);
     display: block;
     position:relative;
     .grow {

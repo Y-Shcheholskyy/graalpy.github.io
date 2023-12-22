@@ -1,6 +1,6 @@
 ---
 layout: docs-layout
-title: Creating Standalone Java Applications with GraalPy Embedded
+title: Creating Standalone Java Applications with GraalPy
 permalink: /docs/standalone-applications/
 toc: true
 ---

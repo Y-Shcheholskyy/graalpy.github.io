@@ -5,9 +5,10 @@ permalink: /graalpy/
 toc: true
 ---
 
-# GraalPy for Python Developers
+# {{ page.title }}
 
-GraalPy provides a Python 3.x compliant runtime. A primary goal is to support PyTorch, SciPy, and their constituent libraries, as well as to work with other data science and machine learning libraries from the rich Python ecosystem.
+GraalPy provides a Python 3.10 compliant runtime. 
+A primary goal is to support PyTorch, SciPy, and their constituent libraries, as well as to work with other data science and machine learning libraries from the rich Python ecosystem.
 GraalPy is distributed as an ahead-of-time compiled native executable, compact in size.
 
 GraalPy provides the following **capabilities**:
@@ -16,11 +17,9 @@ GraalPy provides the following **capabilities**:
 * Unique deployment mode for Python applications. Compile a Python application on GraalPy to [a single self-contained binary](Creating_Standalone_Applications.md) that embeds all needed resources.
 * Access to GraalVM's language ecosystems and tools. GraalPy can run many standard Python tools as well as tools from the GraalVM ecosystem.
 
-<br>
-
 ## GraalPy Distributions
 
-GraalVM is available as **Oracle GraalPy** and **GraalPy Community**.
+GraalPy is available as **Oracle GraalPy** and **GraalPy Community**.
 
 * Oracle GraalPy provides the best experience: it comes with additional optimizations, is significantly faster and more memory-efficient.
 Oracle GraalPy is built on top of Oracle GraalVM, and is licensed under the [GraalVM Free Terms and Conditions (GFTC)](https://www.oracle.com/downloads/licenses/graal-free-license.html) license, which permits use by any user including commercial and production use.
@@ -52,4 +51,5 @@ graalpy-community-<version>-<os>-<arch>.tar.gz
 
 {% include_relative Guides.md %}
 
-## [GraalPy Examples](../examples/Demos.md/){:target="_blank"}
+## Related Documentation 
+* [GraalPy Examples](/graalpy/demos/){:target="_blank"}

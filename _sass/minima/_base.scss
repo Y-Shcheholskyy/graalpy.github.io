@@ -99,6 +99,8 @@ h2 {
   font-size: 40px;
   line-height: 48px;
   font-weight: 500;
+  margin-top: 12px;
+  margin-bottom: 6px;
 }
 h3 { 
   font-size: 32px;
@@ -157,7 +159,7 @@ blockquote {
   border-radius: 6px;
   background: #ffffff;
   @include relative-font-size(1.125);
-  font-style: italic;
+  //font-style: italic;
   margin: 20px 10px 20px 0px;
   padding: 10px;
 

@@ -72,6 +72,23 @@ if ($(".js-show-sidebar").length) {
   });
 }
 
+//Fixing background URLs
+
+document.addEventListener("DOMContentLoaded", function() {
+
+  if (typeof window.Jekyll !== 'undefined' && window.Jekyll.environment === 'production') {
+    var elements = document.querySelectorAll("[style*='background: url']");
+    elements.forEach(function(element) {
+      var currentStyle = element.style.backgroundImage;
+
+      var replacedStyle = currentStyle.replace(/url\(['"]?(\/[^'")]+)/g, "url('/example.github.io$1");
+
+      element.style.backgroundImage = replacedStyle;
+    });
+  }
+});
+
+
 
 
 

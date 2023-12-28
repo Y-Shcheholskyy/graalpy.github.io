@@ -75,7 +75,6 @@ if ($(".js-show-sidebar").length) {
 //Fixing background URLs
 
 document.addEventListener("DOMContentLoaded", function() {
-
   if (typeof window.Jekyll !== 'undefined' && window.Jekyll.environment === 'production') {
     var elements = document.querySelectorAll("[style*='url('/']");
     elements.forEach(function(element) {
@@ -87,6 +86,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 });
+
 
 
 

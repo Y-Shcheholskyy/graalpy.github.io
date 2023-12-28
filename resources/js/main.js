@@ -75,18 +75,18 @@ if ($(".js-show-sidebar").length) {
 //Fixing background URLs
 
 document.addEventListener("DOMContentLoaded", function() {
-
   if (typeof window.Jekyll !== 'undefined' && window.Jekyll.environment === 'production') {
     var elements = document.querySelectorAll("[style*='background: url']");
     elements.forEach(function(element) {
       var currentStyle = element.getAttribute('style');
 
-      var replacedStyle = currentStyle.replace(/url\(['"]?(\/[^'")]+)/g, "url('/example.github.io$1");
+      var replacedStyle = currentStyle.replace(/(background:\s*url\(['"]?\/)([^'")]+)/g, "$1/graalpy.github.io$2");
 
       element.setAttribute('style', replacedStyle);
     });
   }
 });
+
 
 
 

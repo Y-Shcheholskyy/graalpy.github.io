@@ -2,15 +2,17 @@
 
 The `graalpy` launcher can be used in interactive mode or to run a script.
 
-The following example demonstrates how to run a Python script, and then compile it into a native executable file. 
+The following example demonstrates how to run a Python script, and then compile it into a native executable. 
 The application uses the Python [Pyfiglet ASCII art package](https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/).
 
-1. Install the `pyfiglet` package using `pip` in your virtual environment:
+1. Install `graalpy` and [Create a Virtual Environment](#creating-a-virtual-environment), then activate it.
+
+2. Install the `pyfiglet` package using `pip` in your virtual environment:
     ```bash
     pip install pyfiglet
     ```
 
-2. Copy the following contents into a file named _text_styler.py_:
+3. Copy the following contents into a file named _text_styler.py_:
     ```python
     import pyfiglet
     import sys
@@ -24,13 +26,29 @@ The application uses the Python [Pyfiglet ASCII art package](https://www.geeksfo
     print(result)
     ```
 
-3. Use the following command to run the script, with some example arguments:
+4. Use the following command to run the script, with some example arguments:
     ```bash
     graalpy text_styler.py Welcome to GraalPy!
     ```
-    Now continue and create a native executable for this Python application.
 
-4. Create a standalone executable. (For more information about the command-line options, see [Standalone Python Applications](../reference/Standalone_Applications.md).)
+5. You should see output similar to
+
+    ```bash
+        _       __     __                             __     
+    | |     / /__  / /________  ____ ___  ___     / /_____
+    | | /| / / _ \/ / ___/ __ \/ __ `__ \/ _ \   / __/ __ \
+    | |/ |/ /  __/ / /__/ /_/ / / / / / /  __/  / /_/ /_/ /
+    |__/|__/\___/_/\___/\____/_/ /_/ /_/\___/   \__/\____/
+                                                            
+      ______                 ______        __
+      / ____/________ _____ _/ / __ \__  __/ /
+    / / __/ ___/ __ `/ __ `/ / /_/ / / / / /
+    / /_/ / /  / /_/ / /_/ / / ____/ /_/ /_/ 
+    \____/_/   \__,_/\__,_/_/_/    \__, (_)  
+                                  /____/
+    ```
+
+5. Create a native executable. (For more information about the command-line options, see [Creating Native Applications with GraalPy](#creating-native-applications-with-graalpy).)
 
     ```bash
     graalpy -m standalone native \
@@ -38,14 +56,10 @@ The application uses the Python [Pyfiglet ASCII art package](https://www.geeksfo
         --output text_styler \
         --venv <venv-dir>
     ```
-    Substitute `<venv-dir>` with your virtual environment directory.
+    Substitute `<venv-dir>` for your virtual environment directory.
 
-5. Run the application from a native standalone executable:
+6. Run the application from a native executable:
     ```bash
     ./text_styler Welcome to GraalPy!
     ```
-    You should see the same output as earlier. 
-
-Thanks to the GraalPy `standalone` tool, you can turn a Python application into a self-contained native executable!
-
-<br>
+    You should see the same output as above. 

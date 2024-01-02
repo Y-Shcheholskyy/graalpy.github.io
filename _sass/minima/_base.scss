@@ -45,6 +45,9 @@ ul, ol, dl, figure,
 hr {
   margin-top: $spacing-unit;
   margin-bottom: $spacing-unit;
+  height: 6px;
+  border-width: 0;
+  background-color: #1F8086;
 }
 
 /**
@@ -111,6 +114,8 @@ h4 {
   font-size: 24px;
   line-height: 32px;
   font-weight: 500;
+  margin-top: 12px;
+  margin-bottom: 6px;
 }
 h5 { 
   font-size: 16px;
@@ -192,8 +197,9 @@ code {
 }
 
 pre {
-  padding: 8px 12px;
+  padding-top: 6px;
   overflow-x: auto;
+  margin-bottom: 6px;
 
   > code {
     border: 0;

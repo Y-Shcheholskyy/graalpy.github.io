@@ -5,13 +5,13 @@ permalink: /getting-started/
 toc: true
 ---
 
-# Getting Started
+# {{ page.title }}
 
 You can easily add GraalPy to your Java application using Maven or Gradle build tools. 
 
 ## Maven
 
-Generate a skeleton Maven project to embed Python packages into Java using Maven artefacts.
+Generate a skeleton Maven project to embed Python packages into a Java application using Maven artefacts.
 You can use GraalPy from GraalVM JDK, Oracle JDK, or OpenJDK using one of the many [GraalPy artefacts](https://mvnrepository.com/artifact/org.graalvm.python). For example, the following command generates a Java application with embedded GraalPy:
 
 ```bash
@@ -34,8 +34,7 @@ For generic setup instructions, see [embedding GraalVM languages in Java](https:
 [missing content]
 
 
-## Related Documentation
-
+#### Related Documentation
 - [Reference documentation](reference/Reference.md)
 - [Example applications](examples/java-python-examples.md)
 - [Embedding GraalVM languages in Java](https://www.graalvm.org/latest/reference-manual/embed-languages/)

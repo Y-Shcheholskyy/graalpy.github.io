@@ -14,7 +14,7 @@ GraalPy is distributed as an ahead-of-time compiled native executable, compact i
 GraalPy provides the following **capabilities**:
 
 * Replacement for CPython. Use GraalPy as a replacement for CPython. It is the most compatible, since it most closely resembles the structure of CPython installation packages.
-* Unique deployment mode for Python applications. Compile a Python application on GraalPy to [a single self-contained binary](Creating_Standalone_Applications.md) that embeds all needed resources.
+* Unique deployment mode for Python applications. Compile a Python application on GraalPy to [a single native binary](Creating_Standalone_Applications.md) that embeds all needed resources.
 * Access to GraalVM's language ecosystems and tools. GraalPy can run many standard Python tools as well as tools from the GraalVM ecosystem.
 
 ## GraalPy Distributions
@@ -27,7 +27,7 @@ Redistribution is permitted as long as it is not for a fee.
 
 * GraalPy Community is built on top of GraalVM Community Edition, and is fully open-source.
 
-To distinguish between them, GraalPy Community has the suffix `-community` in its name.
+To distinguish between them, GraalPy Community uses the suffix `-community`.
 
 ```bash
 # Oracle GraalPy
@@ -35,21 +35,34 @@ graalpy-<version>-<os>-<arch>.tar.gz
 # GraalPy Community
 graalpy-community-<version>-<os>-<arch>.tar.gz
 ```
-<br>
+
+---
 
 {% include_relative Installing_GraalPy.md %}
 
+---
+
 {% include_relative Creating_a_Virtual_Environment.md %}
+
+---
 
 {% include_relative Installing_a_Package.md %}
 
+---
+
 {% include_relative Running_a_Python_Application.md %}
 
-{% include_relative GraalPy_Options.md %}
-
-{% include_relative Tooling_Support.md %}
+---
 
 {% include_relative Guides.md %}
 
-## Related Documentation 
+{% include_relative Tooling_Support.md %}
+
+---
+
+{% include_relative GraalPy_Options.md %}
+
+---
+
+#### Related Documentation 
 * [GraalPy Examples](/graalpy/demos/){:target="_blank"}

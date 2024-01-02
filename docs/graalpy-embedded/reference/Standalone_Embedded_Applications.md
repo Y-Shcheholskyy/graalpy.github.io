@@ -1,14 +1,14 @@
 ---
 layout: docs-layout
-title: Creating Standalone Java Applications with GraalPy
+title: Creating Native Java Applications with GraalPy
 permalink: /docs/standalone-applications/
 toc: true
 ---
 
-# Creating Standalone Java-Python Applications with GraalPy
+# Creating Native Java-Python Applications with GraalPy
 
 With GraalPy, you can generate a skeleton Maven project that sets up a polyglot embedding of Python packages into Java.
-The polyglot skeletons are set up with Maven to generate a standalone binary for a simple Java-Python HelloWorld example and can be used as a starting point or inspiration for further Java-Python polyglot development.
+The polyglot skeletons are set up with Maven to generate a native binary for a simple Java-Python HelloWorld example and can be used as a starting point or inspiration for further Java-Python polyglot development.
 
 ### Prerequisite
 

@@ -5,11 +5,9 @@ These are described below. (For details, use the `graalpy --help:tools` command.
 
 Start by [creating a demo application](Creating_a_Demo_Application.md).
 
-<br>
-
 #### CPU Sampler
 
-Use the `--cpusampler` command-line option to take a CPU sample.
+Use the `--cpusampler` command-line option to take a CPU sample. For example:
 ```bash
 graalpy --cpusampler currency_exchange.py
 ```
@@ -39,11 +37,9 @@ Thread[main,5,main]
 </details>
 {::options parse_block_html="false" /}
 
-<br>
-
 #### CPU Tracer
 
-Use the `--cputracer --cputracer.TraceStatements` command-line options to trace CPU usage.
+Use the `--cputracer --cputracer.TraceStatements` command-line options to trace CPU usage. For example:
 ```bash
 graalpy --cputracer --cputracer.TraceStatements currency_exchange.py
 ```
@@ -76,11 +72,9 @@ Tracing Histogram. Counted a total of 1135 element executions.
 </details>
 {::options parse_block_html="false" /}
 
-<br>
-
 #### Memory Tracer
 
-Use the `--memtracer --memtracer.TraceStatements` command-line options to trace memory usage.
+Use the `--memtracer --memtracer.TraceStatements` command-line options to trace memory usage. For example:
 ```bash
 graalpy --experimental-options --memtracer --memtracer.TraceStatements currency_exchange.py
 ```
@@ -112,5 +106,3 @@ You should see output similar to:
 ```
 </details>
 {::options parse_block_html="false" /}
-
-<br>

@@ -1,5 +1,5 @@
 docs:
-  - docs/graalpy/guides/Creating_Standalone_Applications.md
+  - docs/graalpy/guides/Creating_a_Native_Application.md
   - docs/graalpy/guides/Analyzing_Python_Source_Code_Coverage.md
   - docs/graalpy/guides/Debugging_a_Python_Application.md
   - docs/graalpy/guides/Profiling_a_Python_Application.md

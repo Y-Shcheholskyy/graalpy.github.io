@@ -32,6 +32,10 @@ plugins:
   - jekyll-sitemap
   - jekyll-toc
 
+toc:
+    min_level: 1
+    max_level: 3
+
 exclude:
   - README.md
   - Gemfile

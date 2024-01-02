@@ -3,7 +3,7 @@
 The best way of using GraalPy is from a [venv](https://docs.python.org/3/library/venv.html) virtual environment.
 This generates wrapper scripts and makes the implementation usable from a shell as the standard Python interpreter. 
 
-1. Create a virtual environment with GraalPy, running the following command:
+1. Create a virtual environment with GraalPy by running the following command:
     ```bash
     graalpy -m venv <venv-dir>
     ```
@@ -12,7 +12,7 @@ This generates wrapper scripts and makes the implementation usable from a shell 
     graalpy -m venv ~/.virtualenvs/graalpy-23.1.1
     ```
 
-2. Activate the environment in your shell session run:
+2. Activate the environment in your shell session:
     ```bash
     source <venv-dir>/bin/activate
     ```
@@ -24,8 +24,6 @@ This generates wrapper scripts and makes the implementation usable from a shell 
 Multiple executables are available in the virtual environment, including: `python`, `python3`, and `graalpy`.
 
 > Note: To deactivate the Python environment (and return to your shell), use the following command:
-> ```bash
-> deactivate
-> ```
-
-<br>
+```bash
+deactivate
+```

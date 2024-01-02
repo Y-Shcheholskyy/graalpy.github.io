@@ -45,6 +45,9 @@ ul, ol, dl, figure,
 hr {
   margin-top: $spacing-unit;
   margin-bottom: $spacing-unit;
+  height: 6px;
+  border-width: 0;
+  background-color: #1F8086;
 }
 
 /**
@@ -99,6 +102,8 @@ h2 {
   font-size: 40px;
   line-height: 48px;
   font-weight: 500;
+  margin-top: 12px;
+  margin-bottom: 6px;
 }
 h3 { 
   font-size: 32px;
@@ -109,6 +114,8 @@ h4 {
   font-size: 24px;
   line-height: 32px;
   font-weight: 500;
+  margin-top: 12px;
+  margin-bottom: 6px;
 }
 h5 { 
   font-size: 16px;
@@ -157,7 +164,7 @@ blockquote {
   border-radius: 6px;
   background: #ffffff;
   @include relative-font-size(1.125);
-  font-style: italic;
+  //font-style: italic;
   margin: 20px 10px 20px 0px;
   padding: 10px;
 
@@ -190,8 +197,9 @@ code {
 }
 
 pre {
-  padding: 8px 12px;
+  padding-top: 6px;
   overflow-x: auto;
+  margin-bottom: 6px;
 
   > code {
     border: 0;

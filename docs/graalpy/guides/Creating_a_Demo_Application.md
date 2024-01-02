@@ -2,21 +2,22 @@
 layout: docs-layout
 title: Creating a Demo Application
 permalink: /graalpy/getting-started/demo-application/
-toc: true
+toc: false
 ---
 
 # Creating a Demo Application
 
-This application uses [Requests](https://pypi.org/project/requests/) and [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/) packages to scrape a web page.
+This application uses the [Requests](https://pypi.org/project/requests/) and [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/) modules to scrape a web page.
 
-1. Install the `requests` and `bs4` packages (and their dependencies) using `pip` in your Python virtual environment:
+1. Install `graalpy` and [Create a Virtual Environment](#creating-a-virtual-environment), then activate it.
+
+2. Install the `requests` and `bs4` packages (and their dependencies) as follows:
     ```bash
     pip install requests
-    ```
-    ```bash
     pip install bs4
     ```
-2. Copy the following contents into a file named _currency_exchange.py_:
+
+3. Copy the following text into a file named _currency_exchange.py_:
     ```python
     import requests
     from bs4 import BeautifulSoup
@@ -47,6 +48,10 @@ This application uses [Requests](https://pypi.org/project/requests/) and [Beauti
     csv_file.close()
     ```
 
-When you run this application, `graalpy currency_exchange.py`, a CSV file is produced, similar to _[currency_exchange.csv](https://github.com/graalvm/graalpy-demos/blob/main/assets/currency_exchange.csv)_.
+4. Run the script:
 
-<br>
+    ```bash
+    graalpy currency_exchange.py
+    ```
+
+5. A CSV file is produced, similar to _[currency_exchange.csv](https://github.com/graalvm/graalpy-demos/blob/main/assets/currency_exchange.csv)_.

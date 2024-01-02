@@ -1,11 +1,11 @@
 ---
 layout: docs-layout
-title: GraalPy Embedded Reference
+title: Embedded Reference Documentation
 permalink: /docs/
 toc: true
 ---
 
-# GraalPy Embedded Reference Documentation
+# {{ page.title }}
 
 {% comment %}
   The list of docs for this page is in _data/reference_list.yml
@@ -21,13 +21,13 @@ toc: true
 {::options parse_block_html="true" /}
 <details><summary markdown="span">(Click to expand)</summary>
 
-### [Polyglot API](Interoperability.md)
+### [Interoperability with GraalVM Languages](Interoperability.md)
 ### [Java Interoperability](Java_Interoperability.md)
 ### [Jython Migration Guide](Jython.md)
 ### [Native GraalPy Images](Native_Images.md)
-### [Operating System Interfaces Supported by GraalPy](OS_Interfaces.md)
+### [Supported Operating System Interfaces](OS_Interfaces.md)
 ### [Python Code Parsing and pyc Files](Parser_Details.md)
-### [Creating Standalone Java-Python Applications with GraalPy](Standalone_Embedded_Applications.md)
+### [Creating Standalone Java-Python Applications](Standalone_Embedded_Applications.md)
 
 </details>
 {::options parse_block_html="false" /}

@@ -1,6 +1,6 @@
 ---
 layout: docs-layout
-title: Interoperability
+title: Interoperability with GraalVM Languages
 permalink: /docs/polyglot-api/
 toc: true
 ---

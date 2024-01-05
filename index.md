@@ -106,7 +106,7 @@ GraalPy is a Python solution for Java, offering the following **advantages** for
           <h5>On average, GraalPy is 4.3 times faster than CPython.</h5>
         </div>
         <div>
-          <img src='{{ "/resources/img/home/graalpy-chart.svg" | relative_url }}' alt="graal python chart">
+          <img src='{{ "/resources/img/home/graalpy-chart.svg" | relative_url }}' alt="graalpy chart">
         </div>
         <div class="pyperform__text pyperform__text-bot">
           <h5>Geomean speedup over CPython on the <a href="https://pyperformance.readthedocs.io/" target="_blank">Python Performance</a>

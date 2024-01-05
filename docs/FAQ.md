@@ -9,7 +9,7 @@ toc: true
 
 It depends.
 The first goal with GraalPy was to show that NumPy and related packages can run using the managed GraalVM LLVM runtime.
-The GraalVM team continues to improve the number of passing CPython unit tests, and to track the compatibility with popular PyPI packages.
+The GraalPy team continues to improve the number of passing CPython unit tests, and to track the compatibility with popular PyPI packages.
 Of the top 500 PyPI packages, about 50% currently pass the majority of their tests on GraalPy.
 
 ## Can GraalPy replace my Jython use case?

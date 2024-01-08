@@ -1,7 +1,7 @@
 ---
 layout: examples
 title: GraalPy Examples
-permalink: /graalpy/demos/
+permalink: /graalpy/examples/
 ---
 
 {% comment %}

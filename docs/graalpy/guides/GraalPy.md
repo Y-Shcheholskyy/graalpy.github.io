@@ -56,6 +56,8 @@ graalpy-community-<version>-<os>-<arch>.tar.gz
 
 {% include_relative Guides.md %}
 
+---
+
 {% include_relative Tooling_Support.md %}
 
 ---
@@ -64,5 +66,4 @@ graalpy-community-<version>-<os>-<arch>.tar.gz
 
 ---
 
-#### Related Documentation 
-* [GraalPy Examples](/graalpy/demos/){:target="_blank"}
+## [GraalPy Examples](/graalpy/examples/){:target="_blank"}
